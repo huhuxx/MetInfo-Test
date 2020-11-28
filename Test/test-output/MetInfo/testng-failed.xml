@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MetInfo]" parallel="none">
+  <test name="Admin(failed)" parallel="none">
+    <classes>
+      <class name="com.hxy.test.Admin">
+        <methods>
+          <include name="admin"/>
+        </methods>
+      </class> <!-- com.hxy.test.Admin -->
+    </classes>
+  </test> <!-- Admin(failed) -->
+</suite> <!-- Failed suite [MetInfo] -->
