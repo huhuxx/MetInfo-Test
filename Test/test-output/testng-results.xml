@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MetInfo" duration-ms="435" started-at="2020-11-28T03:48:07Z" finished-at="2020-11-28T03:48:08Z">
+  <suite name="Test" duration-ms="79" started-at="2020-11-30T01:12:43Z" finished-at="2020-11-30T01:12:43Z">
     <groups>
     </groups>
-    <test name="Demo" duration-ms="13" started-at="2020-11-28T03:48:07Z" finished-at="2020-11-28T03:48:07Z">
+    <test name="Demo" duration-ms="0" started-at="2020-11-30T01:12:43Z" finished-at="2020-11-30T01:12:43Z">
       <class name="com.hxy.test.Demo">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.hxy.test.Demo@149494d8]" name="f" duration-ms="6" started-at="2020-11-28T11:48:07Z" finished-at="2020-11-28T11:48:07Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.hxy.test.Demo@306279ee]" name="f" duration-ms="0" started-at="2020-11-30T09:12:43Z" finished-at="2020-11-30T09:12:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- com.hxy.test.Demo -->
     </test> <!-- Demo -->
-    <test name="Admin" duration-ms="404" started-at="2020-11-28T03:48:07Z" finished-at="2020-11-28T03:48:08Z">
+    <test name="Admin" duration-ms="47" started-at="2020-11-30T01:12:43Z" finished-at="2020-11-30T01:12:43Z">
       <class name="com.hxy.test.Admin">
-        <test-method status="FAIL" signature="admin()[pri:0, instance:com.hxy.test.Admin@5123a213]" name="admin" duration-ms="401" started-at="2020-11-28T11:48:07Z" finished-at="2020-11-28T11:48:08Z">
+        <test-method status="FAIL" signature="admin()[pri:0, instance:com.hxy.test.Admin@281e3708]" name="admin" duration-ms="47" started-at="2020-11-30T09:12:43Z" finished-at="2020-11-30T09:12:43Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: C:\geckodriver\geckodriver.exe]]>
@@ -64,5 +64,5 @@
         </test-method> <!-- admin -->
       </class> <!-- com.hxy.test.Admin -->
     </test> <!-- Admin -->
-  </suite> <!-- MetInfo -->
+  </suite> <!-- Test -->
 </testng-results>
