@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="49" total="50" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30245" started-at="2020-11-27T16:54:25 CST" finished-at="2020-11-27T16:54:56 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30245" started-at="2020-11-27T16:54:25 CST" finished-at="2020-11-27T16:54:56 CST">
+      <class name="test.TestAuto">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:test.TestAuto@56aac163]" name="doBeforeClass" is-config="true" duration-ms="4352" started-at="2020-11-27T16:54:25 CST" finished-at="2020-11-27T16:54:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="yjltest16()[pri:0, instance:test.TestAuto@56aac163]" name="yjltest16" duration-ms="25869" started-at="2020-11-27T16:54:30 CST" finished-at="2020-11-27T16:54:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest16 -->
+      </class> <!-- test.TestAuto -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
