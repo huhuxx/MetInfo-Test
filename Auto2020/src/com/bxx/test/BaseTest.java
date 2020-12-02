@@ -75,9 +75,9 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);
-		webtest.open("http://localhost:9900/admin/index.php");
-		webtest.type("name=login_name","admin");
-		webtest.type("name=login_pass", "123456");
+		webtest.open(ReadProperties.getPropertyValue("base_url"));
+		webtest.type("name=login_name","root");
+		webtest.type("name=login_pass", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 	
 	

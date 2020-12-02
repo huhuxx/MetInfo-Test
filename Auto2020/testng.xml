@@ -2,7 +2,7 @@
 
 <suite name="Suite1" verbose="1">
 	
-	<test name="test">
+	<test name="test5">
 		<classes>
 			<class name="com.bxx.test.JoinusjobTest"/>
 		</classes>
@@ -22,9 +22,14 @@
 			<class name="com.bxx.test.KehuanliEditTest"/>
 		</classes>
 	</test>
-	<test name="test5">
+	<test name="test">
 		<classes>		
 			<class name="com.bxx.test.JoinuspageTest"/>
+		</classes>
+	</test>
+	<test name="test1">
+		<classes>		
+			<class name="com.bxx.test.JoinusjianliTest"/>
 		</classes>
 	</test>
 </suite>
