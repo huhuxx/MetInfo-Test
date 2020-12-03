@@ -8,7 +8,7 @@ import listener.JavaMailTestListener;
 
 @Listeners(JavaMailTestListener.class)
 public class Demo {
-	//æˆåŠŸçš„æ–¹æ³•
+	//³É¹¦µÄ·½·¨
 	@Test
 	public void test1() {
 		Assert.assertEquals(1,1);
@@ -17,7 +17,7 @@ public class Demo {
 	public void test2() {
 		Assert.assertEquals(2,2);
 	}
-	//å¤±è´¥çš„æ–¹æ³•
+	//Ê§°ÜµÄ·½·¨
 	@Test
 	public void test3() {
 		Assert.assertEquals(3,1);

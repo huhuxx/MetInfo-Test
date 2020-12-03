@@ -22,7 +22,7 @@ import java.io.IOException;
 public class MailUtil {
 	public static void Mail() throws IOException {
 		String sendAddress="yjl1837519045@126.com";
-		//æˆæƒç 
+		//ÊÚÈ¨Âë
 		String auth_code="YATGOUGSDVGTJSIR";
 		Properties props=new Properties();
 		FileInputStream fis = new FileInputStream("config.properties");
@@ -32,21 +32,21 @@ public class MailUtil {
 		props.put("mail.transport.protocol", "smtp");
 		props.put("mail.smtp.host", "smtp.126.com");
 		props.put("mail.smtp.auth", true);
-		//1ã€æ„é€ Sessionå¯¹è±¡ï¼ˆé‚®ä»¶ä¼šè¯å¯¹è±¡ï¼‰ï¼Œè®¾ç½®æœåŠ¡å™¨ï¼Œæˆæƒç ï¼Œéœ€è¦Propertieså¯¹è±¡
+		//1¡¢¹¹ÔìSession¶ÔÏó£¨ÓÊ¼ş»á»°¶ÔÏó£©£¬ÉèÖÃ·şÎñÆ÷£¬ÊÚÈ¨Âë£¬ĞèÒªProperties¶ÔÏó
 		Session session=Session.getInstance(props, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(sendAddress, auth_code);
 			}
 		});
-		//2ã€åˆ›å»ºé‚®ä»¶ï¼Œåˆ›å»ºMessageå¯¹è±¡ï¼Œå­ç±» MimeMessage
-		//è®¾ç½®å‘ä»¶äººã€æ”¶ä»¶äººã€ä¸»é¢˜ã€æ­£æ–‡
+		//2¡¢´´½¨ÓÊ¼ş£¬´´½¨Message¶ÔÏó£¬×ÓÀà MimeMessage
+		//ÉèÖÃ·¢¼şÈË¡¢ÊÕ¼şÈË¡¢Ö÷Ìâ¡¢ÕıÎÄ
 		Message message=new MimeMessage(session);
 		try {
 			message.setFrom(new InternetAddress(sendAddress));
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress("tomail"));
-			message.setSubject("æ¨ä½³ä¹-2018011720");
-			//å‘é€HTMLæ ¼å¼çš„é‚®ä»¶
+			message.setSubject("Ñî¼ÑÀÖ-2018011720");
+			//·¢ËÍHTML¸ñÊ½µÄÓÊ¼ş
 			MimeMultipart mimeMultipart=new MimeMultipart();
 			MimeBodyPart mimeBodyPart=new MimeBodyPart();
 			mimeBodyPart.setContent(mimeMultipart,"text/html;charset=utf-8");
@@ -57,10 +57,10 @@ public class MailUtil {
 			mimeMultipart.setSubType("mixed");
 			message.setContent(mimeMultipart,"text/html;charset=gbk");
 			message.setContent(HtmltoString.htmltoS(), "text/html; charset=utf-8");
-			//ä¿å­˜å¹¶ç”Ÿæˆæœ€ç»ˆçš„é‚®ä»¶å†…å®¹
+			//±£´æ²¢Éú³É×îÖÕµÄÓÊ¼şÄÚÈİ
 			message.saveChanges(); 
 
-		//3ã€å‘é€é‚®ä»¶
+		//3¡¢·¢ËÍÓÊ¼ş
 			Transport.send(message);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block

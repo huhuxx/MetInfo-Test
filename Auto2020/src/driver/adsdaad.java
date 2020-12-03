@@ -15,7 +15,7 @@ import javax.mail.internet.MimeMessage;
 public class adsdaad {
 	public static void main(String[] args) {
 		String sender="yjl1837519045@126.com";
-		//æˆæƒç 
+		//ÊÚÈ¨Âë
 		String auth_code="YATGOUGSDVGTJSIR";
 		String to="1837519045@qq.com";
 		
@@ -26,7 +26,7 @@ public class adsdaad {
 		
 		
 		
-		//1ã€æ„é€ Sessionå¯¹è±¡ï¼ˆé‚®ä»¶ä¼šè¯å¯¹è±¡ï¼‰ï¼Œè®¾ç½®æœåŠ¡å™¨ï¼Œæˆæƒç ï¼Œéœ€è¦Propertieså¯¹è±¡
+		//1¡¢¹¹ÔìSession¶ÔÏó£¨ÓÊ¼ş»á»°¶ÔÏó£©£¬ÉèÖÃ·şÎñÆ÷£¬ÊÚÈ¨Âë£¬ĞèÒªProperties¶ÔÏó
 		Session session=Session.getInstance(props, new Authenticator() {
 
 			@Override
@@ -37,16 +37,16 @@ public class adsdaad {
 			
 		});
 		
-		//2ã€åˆ›å»ºé‚®ä»¶ï¼Œåˆ›å»ºMessageå¯¹è±¡ï¼Œå­ç±» MimeMessage
-		//è®¾ç½®å‘ä»¶äººã€æ”¶ä»¶äººã€ä¸»é¢˜ã€æ­£æ–‡
+		//2¡¢´´½¨ÓÊ¼ş£¬´´½¨Message¶ÔÏó£¬×ÓÀà MimeMessage
+		//ÉèÖÃ·¢¼şÈË¡¢ÊÕ¼şÈË¡¢Ö÷Ìâ¡¢ÕıÎÄ
 		Message message=new MimeMessage(session);
 		try {
 			
 			message.setFrom(new InternetAddress(sender));
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-			message.setSubject("æˆ‘çš„é”™è¯¯");
-			message.setText("æ¨ä½³ä¹2018011681+error+é”™è¯¯äº†");
-		//3ã€å‘é€é‚®ä»¶
+			message.setSubject("ÎÒµÄ´íÎó");
+			message.setText("Ñî¼ÑÀÖ2018011681+error+´íÎóÁË");
+		//3¡¢·¢ËÍÓÊ¼ş
 			Transport.send(message);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block

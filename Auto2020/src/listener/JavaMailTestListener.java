@@ -24,26 +24,26 @@ import freemarker.template.TemplateException;
 public class JavaMailTestListener extends TestListenerAdapter {
 	@Override
 	public void onFinish(ITestContext t) {
-		// 1ï¼Œåˆ›å»ºfreeMarkeré…ç½®å®ä¾‹
+		// 1£¬´´½¨freeMarkerÅäÖÃÊµÀı
 		String path = "D:\\eclipse\\practical\\src\\fm";
 		String name ="";
 		String result= "";
 		Configuration configuration = new Configuration();
 		try {
-			// 2,è·å–æ¨¡æ¿è·¯å¾„
+			// 2,»ñÈ¡Ä£°åÂ·¾¶
 			configuration.setDirectoryForTemplateLoading(new File(path));
-			// 3,åŠ è½½æ¨¡æ¿æ–‡ä»¶
+			// 3,¼ÓÔØÄ£°åÎÄ¼ş
 			Template template = configuration.getTemplate("/freemarker.ftl");
-			// 4,å®šä¹‰æ•°æ®
-			// æ‰“å°å‡ºæ‰€æœ‰çš„æµ‹è¯•ç”¨ä¾‹æ•°ç›®
+			// 4,¶¨ÒåÊı¾İ
+			// ´òÓ¡³öËùÓĞµÄ²âÊÔÓÃÀıÊıÄ¿
 			ITestNGMethod[] methods = this.getAllTestMethods();
 			int num1=methods.length;
-			System.out.println("ä¸€å…±æ‰§è¡Œäº†ï¼š" + methods.length);
+			System.out.println("Ò»¹²Ö´ĞĞÁË£º" + methods.length);
 			List<Map> maps=new ArrayList<Map>();
-			// å¤±è´¥çš„æµ‹è¯•ç”¨ä¾‹åç§°å’Œæ•°ç›®
+			// Ê§°ÜµÄ²âÊÔÓÃÀıÃû³ÆºÍÊıÄ¿
 			List<ITestResult> failList = this.getFailedTests();
 			int len = failList.size();
-			System.out.println("å¤±è´¥çš„æµ‹è¯•ç”¨ä¾‹ï¼š" + len);
+			System.out.println("Ê§°ÜµÄ²âÊÔÓÃÀı£º" + len);
 			for (int i = 0; i < len; i++) {
 				ITestResult tr = failList.get(i);
 				name=tr.getName();
@@ -53,10 +53,10 @@ public class JavaMailTestListener extends TestListenerAdapter {
 				p1.put("result",result);
 				maps.add(p1);
 			}
-			// æˆåŠŸçš„æµ‹è¯•ç”¨ä¾‹åç§°å’Œæ•°ç›®
+			// ³É¹¦µÄ²âÊÔÓÃÀıÃû³ÆºÍÊıÄ¿
 			List<ITestResult> passList = this.getPassedTests();
 			int len1 = passList.size();
-			System.out.println("æˆåŠŸçš„æµ‹è¯•ç”¨ä¾‹ï¼š" + len1);
+			System.out.println("³É¹¦µÄ²âÊÔÓÃÀı£º" + len1);
 			for (int i = 0; i < len1; i++) {
 				ITestResult tr1 = passList.get(i);
 				name=tr1.getName();
@@ -72,11 +72,11 @@ public class JavaMailTestListener extends TestListenerAdapter {
 			context.put("len1",len1);
 			context.put("maps", maps);
 	    	context.put("cur_time",new Date().toString());
-	    	context.put("ceshi", "æ¨ä½³ä¹");
-			// 5ï¼Œå®šä¹‰è¾“å‡º
+	    	context.put("ceshi", "Ñî¼ÑÀÖ");
+			// 5£¬¶¨ÒåÊä³ö
 			Writer out = new FileWriter(path + "/freemarker.html");
 			template.process(context, out);
-			System.out.println("è½¬æ¢æˆåŠŸ");
+			System.out.println("×ª»»³É¹¦");
 			try {
 				MailUtil.Mail();
 			} catch (IOException e) {

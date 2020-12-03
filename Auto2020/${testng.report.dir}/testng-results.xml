@@ -1,68 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="20" failed="0" ignored="0" total="20" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="MetInfo" duration-ms="33153" started-at="2020-12-03T10:32:53 CST" finished-at="2020-12-03T10:33:27 CST">
+  <suite name="MetInfo" duration-ms="189" started-at="2020-12-03T11:55:41 CST" finished-at="2020-12-03T11:55:42 CST">
     <groups>
     </groups>
-    <test name="all" duration-ms="33153" started-at="2020-12-03T10:32:53 CST" finished-at="2020-12-03T10:33:27 CST">
+    <test name="all" duration-ms="189" started-at="2020-12-03T11:55:41 CST" finished-at="2020-12-03T11:55:42 CST">
       <class name="test.TestAuto">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:test.TestAuto@20e2cbe0]" name="doBeforeClass" is-config="true" duration-ms="4256" started-at="2020-12-03T10:32:53 CST" finished-at="2020-12-03T10:32:58 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doBeforeClass -->
-        <test-method status="FAIL" signature="yjltest1()[pri:1, instance:test.TestAuto@20e2cbe0]" name="yjltest1" duration-ms="27364" started-at="2020-12-03T10:32:58 CST" finished-at="2020-12-03T10:33:25 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="150" started-at="2020-12-03T11:55:41 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Unable to locate element: //input[@name='para137']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'YH-20191221DGKP', ip: '172.23.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8900, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 835a73a3-6c9b-4c2e-b5e2-588a0f969ed5
-*** Element info: {Using=xpath, value=//input[@name='para137']}]]>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@name='para137']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'YH-20191221DGKP', ip: '172.23.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8900, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 835a73a3-6c9b-4c2e-b5e2-588a0f969ed5
-*** Element info: {Using=xpath, value=//input[@name='para137']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at driver.ElementFinder.findElementByPrefix(Unknown Source)
-at driver.ElementFinder.findElement(Unknown Source)
-at driver.WebDriverEngine.type(Unknown Source)
-at test.TestAuto.yjltest1(Unknown Source)
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -79,14 +59,1286 @@ at org.testng.TestNG.privateMain(TestNG.java:1336)
 at org.testng.TestNG.main(TestNG.java:1304)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest1()[pri:1, instance:test.TestAuto@28feb3fa]" name="yjltest1" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- yjltest1 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:test.TestAuto@20e2cbe0]" name="doAfterMethod" is-config="true" duration-ms="1477" started-at="2020-12-03T10:33:25 CST" finished-at="2020-12-03T10:33:27 CST">
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742053" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742054" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest3()[pri:3, instance:test.TestAuto@28feb3fa]" name="yjltest3" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest3 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742054" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742054" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest2()[pri:2, instance:test.TestAuto@28feb3fa]" name="yjltest2" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest2 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742055" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742055" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest5()[pri:5, instance:test.TestAuto@28feb3fa]" name="yjltest5" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest5 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742055" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest4()[pri:4, instance:test.TestAuto@28feb3fa]" name="yjltest4" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest4 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742055" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742055" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742056" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest7()[pri:7, instance:test.TestAuto@28feb3fa]" name="yjltest7" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest7 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742056" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest6()[pri:6, instance:test.TestAuto@28feb3fa]" name="yjltest6" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest6 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742056" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742056" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest8()[pri:8, instance:test.TestAuto@28feb3fa]" name="yjltest8" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest8 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742057" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742057" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742057" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest9()[pri:9, instance:test.TestAuto@28feb3fa]" name="yjltest9" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest9 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742058" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742058" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742059" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742059" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest11()[pri:11, instance:test.TestAuto@28feb3fa]" name="yjltest11" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest11 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742059" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest10()[pri:10, instance:test.TestAuto@28feb3fa]" name="yjltest10" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest10 -->
+        <test-method status="SKIP" signature="yjltest12()[pri:12, instance:test.TestAuto@28feb3fa]" name="yjltest12" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest12 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742060" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742060" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest14()[pri:14, instance:test.TestAuto@28feb3fa]" name="yjltest14" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest14 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742061" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742061" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest13()[pri:13, instance:test.TestAuto@28feb3fa]" name="yjltest13" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest13 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742061" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742061" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742062" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742062" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest15()[pri:15, instance:test.TestAuto@28feb3fa]" name="yjltest15" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest15 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742062" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742062" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest16()[pri:16, instance:test.TestAuto@28feb3fa]" name="yjltest16" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest16 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742062" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest17()[pri:17, instance:test.TestAuto@28feb3fa]" name="yjltest17" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest17 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742063" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742063" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742063" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742063" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="yjltest18()[pri:18, instance:test.TestAuto@28feb3fa]" name="yjltest18" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest18 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742063" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="yjltest19()[pri:19, instance:test.TestAuto@28feb3fa]" name="yjltest19" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest19 -->
+        <test-method status="SKIP" signature="yjltest20()[pri:20, instance:test.TestAuto@28feb3fa]" name="yjltest20" duration-ms="0" started-at="2020-12-03T11:55:42 CST" finished-at="2020-12-03T11:55:42 CST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at driver.BaseTest.newWebDriver(Unknown Source)
+at driver.BaseTest.doBeforeClass(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yjltest20 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:test.TestAuto@28feb3fa]" name="doAfterMethod" is-config="true" duration-ms="-1606967742064" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:test.TestAuto@28feb3fa]" name="doBeforeClass" is-config="true" duration-ms="-1606967742064" started-at="2020-12-03T11:55:42 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
       </class> <!-- test.TestAuto -->
     </test> <!-- all -->
   </suite> <!-- MetInfo -->
