@@ -10,9 +10,9 @@ import listener.JavaMailTestListener;
 public class TestAuto extends BaseTest {
 	// 进入在线留言界面
 	public void email() throws InterruptedException {
-		webtest.open("http://localhost:99/admin");
-		webtest.type("xpath=//input[@name='login_name']", "root");
-		webtest.type("xpath=//input[@name='login_pass']", "root");
+		webtest.open("http://localhost:8090/admin");
+		webtest.type("xpath=//input[@name='login_name']", "username");
+		webtest.type("xpath=//input[@name='login_pass']", "password");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
