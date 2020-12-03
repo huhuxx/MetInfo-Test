@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.canoo.webtest.WebtestCase;
 
 public class JoinusjianliTest extends BaseTest {
-	
+
 	@BeforeMethod
 	public void before() throws InterruptedException {
 		webtest.click("xpath=//a[text()='内容']");
