@@ -2,9 +2,7 @@ package test;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import driver.BaseTest;
-
 
 //@Listeners(JavaMailTestListener.class)
 public class TestAuto extends BaseTest {
