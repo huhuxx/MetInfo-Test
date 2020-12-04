@@ -1,19 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<<<<<<< HEAD
-<suite name="Suite1" verbose="1">
-	
-	<test name="test5">
-		<classes>
-			<class name="com.bxx.test.JoinusjianliTest"/>
-		</classes>
-=======
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="MetInfo">
+<suite name="MetInfo" verbose="1" parallel="none">
+	<listeners>
+			<listener class-name="com.webtest.core.JavaMailTestListener"></listener>
+	</listeners>
 	<test name="all">
 	    <classes>
-	    	 <class name="test.TestAuto"/>
+	    	 <class name="com.webtest.demo.TopSetting"/>
+	    	 <class name="com.webtest.demo.LanguageSetting"/>
+	    	 <class name="com.webtest.demo.BannerSetting"/>
+	    	 <class name="com.webtest.demo.CustomerServiceSetting"/>
+	    	 <class name="com.webtest.demo.NowPageSetting"/>
+	    	 <class name="com.webtest.demo.PhoneMenuSetting"/>
 	    </classes>
->>>>>>> 743a5ea53d21d34edcba073b7c66b1d3915faa7f
+	    
 	</test>
 	
 </suite>
