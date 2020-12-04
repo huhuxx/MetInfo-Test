@@ -6,7 +6,7 @@ import driver.BaseTest;
 
 //@Listeners(JavaMailTestListener.class)
 public class TestAuto extends BaseTest {
-	// è¿›å…¥åœ¨çº¿ç•™è¨€
+	// ½øÈëÔÚÏßÁôÑÔ
 	public void email() throws InterruptedException {
 		webtest.open("http://localhost:99/admin");
 		webtest.type("xpath=//input[@name='login_name']", "root");
@@ -15,7 +15,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='editable-click']");
 		Thread.sleep(1000);
@@ -24,16 +24,16 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	// æäº¤ç•™è¨€
+	// Ìá½»ÁôÑÔ
 	public void sub() throws InterruptedException {
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='ï¿½á½»ï¿½ï¿½ï¿½ï¿½']");
+		webtest.mouseToElementandClick("xpath=//button[text()='??????']");
 		Thread.sleep(3000);
 	}
 
-	// è¿›å…¥åœ¨çº¿åé¦ˆç•Œé¢
+	// ½øÈëÔÚÏß·´À¡½çÃæ
 	public void email1() throws InterruptedException {
 		WebElement element = null;
 		webtest.open("http://localhost:99/admin/index.php");
@@ -43,26 +43,26 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		element = webtest.back("editable-click").get(36);
 		webtest.click(element);
 		Thread.sleep(1000);
 	}
 
-	//1ï¼ŒæˆåŠŸæ·»åŠ æµ‹è¯•åœ¨çº¿ç•™è¨€
+	//1£¬³É¹¦Ìí¼Ó²âÊÔÔÚÏßÁôÑÔ
 	@Test(priority = 1)
 	public void yjltest1() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -70,7 +70,7 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 2ï¼ŒæˆåŠŸåœ¨å‰å°æ˜¾ç¤ºç•™è¨€
+	// 2£¬³É¹¦ÔÚÇ°Ì¨ÏÔÊ¾ÁôÑÔ
 	@Test(priority = 2)
 	public void yjltest2() throws InterruptedException {
 		webtest.open("http://localhost:99/admin");
@@ -79,39 +79,39 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 //		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
-		webtest.type("xpath=//textarea[@name='useinfo']", "å¥½");
-		webtest.click("xpath=//label[text()='å®¡æ ¸é€šè¿‡å¹¶åœ¨å‰å°æ˜¾ç¤º']");
+		webtest.type("xpath=//textarea[@name='useinfo']", "ºÃ");
+		webtest.click("xpath=//label[text()='ÉóºËÍ¨¹ı²¢ÔÚÇ°Ì¨ÏÔÊ¾']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/message/");
 	}
 
-	// 3ï¼Œæ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼Œæ·»åŠ Emailæ ¼å¼é”™è¯¯
+	// 3£¬Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬Ìí¼ÓEmail¸ñÊ½´íÎó
 	@Test(priority = 3)
 	public void yjltest3() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 4,æ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼Œå§“åä¸ºç©º
+	// 4,Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬ĞÕÃûÎª¿Õ
 	@Test(priority = 4)
 	public void yjltest4() throws InterruptedException {
 		email();
@@ -121,58 +121,58 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 5,æ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥,è”ç³»ç”µè¯æ ¼å¼é”™è¯¯
+	// 5,Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü,ÁªÏµµç»°¸ñÊ½´íÎó
 	@Test(priority = 5)
 	public void yjltest5() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "1");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 6ï¼Œæ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼Œè”ç³»åœ°å€ä¸ºç©º
+	// 6£¬Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬ÁªÏµµØÖ·Îª¿Õ
 	@Test(priority = 6)
 	public void yjltest6() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']","æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']","Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 7,æ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼Œè”ç³»åœ°å€ä¸ºç©º
+	// 7,Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬ÁªÏµµØÖ·Îª¿Õ
 	@Test(priority = 7)
 	public void yjltest7() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
@@ -180,24 +180,24 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para139']", "");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 8,æ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥,ç•™è¨€å†…å®¹ä¸ºç©º
+	// 8,Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü,ÁôÑÔÄÚÈİÎª¿Õ
 	@Test(priority = 8)
 	public void yjltest8() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
 		webtest.type("xpath=//textarea[@name='para140']", "");
 		Thread.sleep(1000);
@@ -206,64 +206,64 @@ public class TestAuto extends BaseTest {
 		sub();
 	}
 
-	// 9,æ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥,Emailæ ¼å¼é”™è¯¯ï¼ˆè¾“å…¥çš„æ˜¯1837519045@qq.com11111ï¼‰
+	// 9,Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü,Email¸ñÊ½´íÎó£¨ÊäÈëµÄÊÇ1837519045@qq.com11111£©
 	@Test(priority = 9)
 	public void yjltest9() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com11111");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 10ï¼Œæ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼ŒéªŒè¯ç ä¸ºç©º
+	// 10£¬Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬ÑéÖ¤ÂëÎª¿Õ
 	@Test(priority = 10)
 	public void yjltest10() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']","æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']","Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 11ï¼Œæ·»åŠ åœ¨çº¿ç•™è¨€å¤±è´¥ï¼ŒéªŒè¯ç é”™è¯¯
+	// 11£¬Ìí¼ÓÔÚÏßÁôÑÔÊ§°Ü£¬ÑéÖ¤Âë´íÎó
 	@Test(priority = 11)
 	public void yjltest11() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "bbbb");
 		Thread.sleep(1000);
 		sub();
 	}
 
-	// 12,ç•™è¨€åœ¨å‰å°ä¸æ˜¾ç¤º
+	// 12,ÁôÑÔÔÚÇ°Ì¨²»ÏÔÊ¾
 	@Test(priority = 12)
 	public void yjltest12() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -272,7 +272,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
@@ -283,7 +283,7 @@ public class TestAuto extends BaseTest {
 		webtest.open("http://localhost:99/message/");
 	}
 
-	// 13,å›å¤ç•™è¨€å¹¶ä¸”ä¸åœ¨å‰å°ç•Œé¢æ˜¾ç¤º
+	// 13,»Ø¸´ÁôÑÔ²¢ÇÒ²»ÔÚÇ°Ì¨½çÃæÏÔÊ¾
 	@Test(priority = 13)
 	public void yjltest13() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -292,19 +292,19 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
-		webtest.type("xpath=//textarea[@name='useinfo']", "å¥½");
+		webtest.type("xpath=//textarea[@name='useinfo']", "ºÃ");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/message/");
 	}
 
-	// 14,åå°æˆåŠŸåˆ é™¤ç•™è¨€
+	// 14,ºóÌ¨³É¹¦É¾³ıÁôÑÔ
 	@Test(priority = 14)
 	public void yjltest14() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -313,7 +313,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
@@ -322,7 +322,7 @@ public class TestAuto extends BaseTest {
 		webtest.open("http://localhost:99/message/");
 	}
 
-	// 15ï¼Œåœ¨çº¿ç•™è¨€æŸ¥çœ‹å·²å®¡æ ¸çš„ç•™è¨€
+	// 15£¬ÔÚÏßÁôÑÔ²é¿´ÒÑÉóºËµÄÁôÑÔ
 	@Test(priority = 15)
 	public void yjltest15() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -331,15 +331,15 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='checkok']");
-		webtest.click("xpath=//option[text()='æ˜¯']");
+		webtest.click("xpath=//option[text()='ÊÇ']");
 	}
 
-	// 16ï¼Œåœ¨çº¿ç•™è¨€ä¸­æŸ¥çœ‹æœªé˜…è¯»ç•™è¨€
+	// 16£¬ÔÚÏßÁôÑÔÖĞ²é¿´Î´ÔÄ¶ÁÁôÑÔ
 	@Test(priority = 16)
 	public void yjltest16() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -348,15 +348,15 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='search_type']");
-		webtest.click("xpath=//option[text()='æœªé˜…è¯»ä¿¡æ¯']");
+		webtest.click("xpath=//option[text()='Î´ÔÄ¶ÁĞÅÏ¢']");
 	}
 
-	// 17,ä¿®æ”¹å‰å°æ˜¾ç¤ºç•™è¨€çš„æ–¹å¼
+	// 17,ĞŞ¸ÄÇ°Ì¨ÏÔÊ¾ÁôÑÔµÄ·½Ê½
 	@Test(priority = 17)
 	public void yjltest17() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -365,7 +365,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='6']");
 		webtest.leaveFrame();
@@ -374,22 +374,22 @@ public class TestAuto extends BaseTest {
 		webtest.open("http://localhost:99/admin/?lang=cn&n=ui_set");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='editable-click']");
 		Thread.sleep(1000);
 		webtest.mouseToElement("xpath=//div[@m-id='message_form']");
 		webtest.down(4);
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para137']","æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']","Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -398,39 +398,39 @@ public class TestAuto extends BaseTest {
 		webtest.open("http://localhost:99/message/");
 	}
 
-	// 18,é˜²åˆ·æ–°æ—¶é—´
+	// 18,·ÀË¢ĞÂÊ±¼ä
 	@Test(priority = 18)
 	public void yjltest18() throws InterruptedException {
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		webtest.click("xpath=//button[@class='btn btn-primary btn-block btn-squared']");
 		webtest.alertAccept();
 		Thread.sleep(2000);
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -438,7 +438,7 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 19,ä¿®æ”¹é˜²åˆ·æ–°æ—¶é—´ä¸º300ç§’
+	// 19,ĞŞ¸Ä·ÀË¢ĞÂÊ±¼äÎª300Ãë
 	@Test(priority = 19)
 	public void yjltest19() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -447,7 +447,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='6']");
 		webtest.leaveFrame();
@@ -455,34 +455,34 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary ']");
 		webtest.open("http://localhost:root/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
 		webtest.click("xpath=//button[@class='btn btn-primary btn-block btn-squared']");
 		webtest.alertAccept();
 		Thread.sleep(2000);
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -490,7 +490,7 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 20ï¼ŒæˆåŠŸæ·»åŠ åœ¨çº¿ç•™è¨€ï¼ˆå‰ç½®æ¡ä»¶ä¸ºç™»å½•ï¼Œåœ¨å‰ç«¯ç™»å½•æ‰§è¡Œï¼‰
+	// 20£¬³É¹¦Ìí¼ÓÔÚÏßÁôÑÔ£¨Ç°ÖÃÌõ¼şÎªµÇÂ¼£¬ÔÚÇ°¶ËµÇÂ¼Ö´ĞĞ£©
 	@Test(priority = 20)
 	public void yjltest20() throws InterruptedException {
 		webtest.open("http://localhost:99/");
@@ -500,19 +500,19 @@ public class TestAuto extends BaseTest {
 		webtest.type("xpath=//input[@name='password']", "password");
 //		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block']");
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para137']", "æ¨ä½³ä¹");
+		webtest.type("xpath=//input[@name='para137']", "Ñî¼ÑÀÖ");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -520,7 +520,7 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 21ï¼ŒæˆåŠŸåœ¨å‰å°æ˜¾ç¤ºç•™è¨€ï¼ˆå‰ç½®æ¡ä»¶ï¼Œå‰ç«¯ç™»å½•ï¼‰
+	// 21£¬³É¹¦ÔÚÇ°Ì¨ÏÔÊ¾ÁôÑÔ£¨Ç°ÖÃÌõ¼ş£¬Ç°¶ËµÇÂ¼£©
 	@Test(priority = 21)
 	public void yjltest21() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -530,15 +530,15 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
-		webtest.type("xpath=//textarea[@name='useinfo']", "å¥½");
-		webtest.click("xpath=//label[text()='å®¡æ ¸é€šè¿‡å¹¶åœ¨å‰å°æ˜¾ç¤º']");
+		webtest.type("xpath=//textarea[@name='useinfo']", "ºÃ");
+		webtest.click("xpath=//label[text()='ÉóºËÍ¨¹ı²¢ÔÚÇ°Ì¨ÏÔÊ¾']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99");
 		Thread.sleep(1000);
@@ -546,13 +546,13 @@ public class TestAuto extends BaseTest {
 		webtest.type("xpath=//input[@name='username']", "user");
 		webtest.type("xpath=//input[@name='password']", "password");
 		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block']");
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 		Thread.sleep(1000);
 	}
 
-	// 22ï¼Œä¿®æ”¹ç•™è¨€çš„å†…å®¹è®¾ç½®ï¼ˆå°†å§“åè®¾ä¸ºéå¿…å¡«é¡¹ï¼‰
+	// 22£¬ĞŞ¸ÄÁôÑÔµÄÄÚÈİÉèÖÃ£¨½«ĞÕÃûÉèÎª·Ç±ØÌîÏî£©
 	@Test(priority = 22)
 	public void yjltest22() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -561,18 +561,18 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 //		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='wr_ok-137']");
-		webtest.click("xpath=//option[text()='ï¿½ï¿½']");
+		webtest.click("xpath=//option[text()='??']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para137']", "");
 		Thread.sleep(1000);
@@ -580,9 +580,9 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para138']", "18732338187");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para139']", "æ²³åŒ—çœ");
+		webtest.type("xpath=//input[@name='para139']", "ºÓ±±Ê¡");
 		Thread.sleep(1000);
-		webtest.type("xpath=//textarea[@name='para140']", "å¥½");
+		webtest.type("xpath=//textarea[@name='para140']", "ºÃ");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@class='form-control input-codeimg']", "aaaa");
 		Thread.sleep(1000);
@@ -590,7 +590,7 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 23ï¼Œä¿®æ”¹å§“åçš„å­—æ®µç±»å‹ä¸ºæ–‡æœ¬
+	// 23£¬ĞŞ¸ÄĞÕÃûµÄ×Ö¶ÎÀàĞÍÎªÎÄ±¾
 	@Test(priority = 23)
 	public void yjltest23() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -599,16 +599,16 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='type-137']");
-		webtest.click("xpath=//option[text()='æ–‡æœ¬']");
-		webtest.click("xpath=//button[text()='ä¿å­˜']");
+		webtest.click("xpath=//option[text()='ÎÄ±¾']");
+		webtest.click("xpath=//button[text()='±£´æ']");
 	}
 
-	// 24ï¼Œä¿®æ”¹å§“åçš„è®¿é—®æƒé™ä¸ºæ™®é€šä¼šå‘˜
+	// 24£¬ĞŞ¸ÄĞÕÃûµÄ·ÃÎÊÈ¨ÏŞÎªÆÕÍ¨»áÔ±
 	@Test(priority = 24)
 	public void yjltest24() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -617,16 +617,16 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='access-137']");
-		webtest.click("xpath=//option[text()='æ™®é€šä¼šå‘˜']");
-		webtest.click("xpath=//button[text()='ä¿å­˜']");
+		webtest.click("xpath=//option[text()='ÆÕÍ¨»áÔ±']");
+		webtest.click("xpath=//button[text()='±£´æ']");
 	}
 
-	// 25,åå°ç•Œé¢åˆ é™¤å§“åè¾“å…¥æ¡†
+	// 25,ºóÌ¨½çÃæÉ¾³ıĞÕÃûÊäÈë¿ò
 	@Test(priority = 25)
 	public void yjltest25() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -635,21 +635,21 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//input[@name='id']");
-		webtest.click("xpath=//button[text()='åˆ é™¤']");
+		webtest.click("xpath=//button[text()='É¾³ı']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 	}
 
-	// 26ï¼Œåå°ç•Œé¢æ·»åŠ å§“åè¾“å…¥æ¡†
+	// 26£¬ºóÌ¨½çÃæÌí¼ÓĞÕÃûÊäÈë¿ò
 	@Test(priority = 26)
 	public void yjltest26() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -658,21 +658,21 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
-		webtest.click("xpath=//button[text()='æ·»åŠ ']");
-		webtest.type("xpath=//input[@name='name-new-0']", "ï¿½ï¿½ï¿½ï¿½");
+		webtest.click("xpath=//button[text()='Ìí¼Ó']");
+		webtest.type("xpath=//input[@name='name-new-0']", "????");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 	}
 
-	// 27ï¼Œå§“åæ·»åŠ æç¤ºæ–‡å­—
+	// 27£¬ĞÕÃûÌí¼ÓÌáÊ¾ÎÄ×Ö
 	@Test(priority = 27)
 	public void yjltest27() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -681,214 +681,214 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
-		webtest.type("xpath=//input[@name='description-195']", "çœŸå®å§“å");
+		webtest.type("xpath=//input[@name='description-195']", "ÕæÊµĞÕÃû");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿ç•™è¨€']");
+		webtest.click("xpath=//a[text()='ÔÚÏßÁôÑÔ']");
 	}
 
-	// 28,æˆåŠŸæ·»åŠ åœ¨çº¿åé¦ˆ
+	// 28,³É¹¦Ìí¼ÓÔÚÏß·´À¡
 	@Test(priority = 28)
 	public void yjltest28() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 29ï¼Œæ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥ï¼ˆä¸é€‰æ‹©åé¦ˆä¸»é¢˜ï¼‰
+	// 29£¬Ìí¼ÓÔÚÏß·´À¡Ê§°Ü£¨²»Ñ¡Ôñ·´À¡Ö÷Ìâ£©
 	@Test(priority = 29)
 	public void yjltest29() throws InterruptedException {
 		email1();
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 	}
 
-	// 30ï¼Œæ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥ï¼ˆEmailè¾“å…¥æ¡†ä¸ºç©ºï¼‰
+	// 30£¬Ìí¼ÓÔÚÏß·´À¡Ê§°Ü£¨EmailÊäÈë¿òÎª¿Õ£©
 	@Test(priority = 30)
 	public void yjltest30() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 	}
 
-	// 31ï¼Œæ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥ï¼ˆEmailæ ¼å¼é”™è¯¯ï¼Œè¾“å…¥â€œ123â€ï¼‰
+	// 31£¬Ìí¼ÓÔÚÏß·´À¡Ê§°Ü£¨Email¸ñÊ½´íÎó£¬ÊäÈë¡°123¡±£©
 	@Test(priority = 31)
 	public void yjltest31() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "123");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 	}
 
-	// 32ï¼Œæ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥ï¼ˆEmailæ ¼å¼è¾“å…¥é”™è¯¯ï¼Œè¾“å…¥â€œ1837519045@qq.com11111â€ï¼‰
+	// 32£¬Ìí¼ÓÔÚÏß·´À¡Ê§°Ü£¨Email¸ñÊ½ÊäÈë´íÎó£¬ÊäÈë¡°1837519045@qq.com11111¡±£©
 	@Test(priority = 32)
 	public void yjltest32() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com11111");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 33,æ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥,éªŒè¯ç ä¸ºç©º
+	// 33,Ìí¼ÓÔÚÏß·´À¡Ê§°Ü,ÑéÖ¤ÂëÎª¿Õ
 	@Test(priority = 33)
 	public void yjltest33() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 	}
 
-	// 34ï¼Œæ·»åŠ åœ¨çº¿åé¦ˆå¤±è´¥ï¼ŒéªŒè¯ç é”™è¯¯
+	// 34£¬Ìí¼ÓÔÚÏß·´À¡Ê§°Ü£¬ÑéÖ¤Âë´íÎó
 	@Test(priority = 34)
 	public void yjltest34() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "bbbb");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.mouseToElementandClick("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 35,é˜²åˆ·æ–°æ—¶é—´
+	// 35,·ÀË¢ĞÂÊ±¼ä
 	@Test(priority = 35)
 	public void yjltest35() throws InterruptedException {
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 		Thread.sleep(1000);
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 36,ä¿®æ”¹é˜²åˆ·æ–°æ—¶é—´ä¸º300ç§’
+	// 36,ĞŞ¸Ä·ÀË¢ĞÂÊ±¼äÎª300Ãë
 	@Test(priority = 36)
 	public void yjltest36() throws InterruptedException {
 		email1();
@@ -898,42 +898,42 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary ']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 		Thread.sleep(1000);
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 37ï¼ŒæˆåŠŸæ·»åŠ åœ¨çº¿åé¦ˆï¼ˆå‰ç½®æ¡ä»¶å‰ç«¯ç™»å½•ï¼‰
+	// 37£¬³É¹¦Ìí¼ÓÔÚÏß·´À¡£¨Ç°ÖÃÌõ¼şÇ°¶ËµÇÂ¼£©
 	@Test(priority = 37)
 	public void yjltest37() throws InterruptedException {
 		webtest.open("http://localhost:99/");
@@ -943,171 +943,171 @@ public class TestAuto extends BaseTest {
 		webtest.type("xpath=//input[@name='password']", "password");
 //		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block']");
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='ç´¢å–èµ„æ–™']");
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.click("xpath=//option[@value='Ë÷È¡×ÊÁÏ']");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 38ï¼Œåå°æˆåŠŸåˆ é™¤åé¦ˆ
+	// 38£¬ºóÌ¨³É¹¦É¾³ı·´À¡
 	@Test(priority = 38)
 	public void yjltest38() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
-		webtest.click("xpath=//a[text()='åé¦ˆä¿¡æ¯ç®¡ç†']");
+		webtest.click("xpath=//a[text()='·´À¡ĞÅÏ¢¹ÜÀí']");
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
-		webtest.click("xpath=//button[text()='åˆ é™¤']");
+		webtest.click("xpath=//button[text()='É¾³ı']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 	}
 
-	// 39,æŸ¥çœ‹åœ¨çº¿åé¦ˆçš„æœªé˜…è¯»çš„ä¿¡æ¯
+	// 39,²é¿´ÔÚÏß·´À¡µÄÎ´ÔÄ¶ÁµÄĞÅÏ¢
 	@Test(priority = 39)
 	public void yjltest39() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
-		webtest.click("xpath=//a[text()='åé¦ˆä¿¡æ¯ç®¡ç†']");
+		webtest.click("xpath=//a[text()='·´À¡ĞÅÏ¢¹ÜÀí']");
 		webtest.click("xpath=//select[@name='search_type']");
-		webtest.click("xpath=//option[text()='æœªé˜…è¯»']");
+		webtest.click("xpath=//option[text()='Î´ÔÄ¶Á']");
 	}
 
-	// 40ï¼ŒæŸ¥çœ‹åé¦ˆä¸»é¢˜ä¸ºæ‰€æœ‰äº§å“çš„åœ¨çº¿åé¦ˆ
+	// 40£¬²é¿´·´À¡Ö÷ÌâÎªËùÓĞ²úÆ·µÄÔÚÏß·´À¡
 	@Test(priority = 40)
 	public void yjltest40() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
-		webtest.click("xpath=//a[text()='åé¦ˆä¿¡æ¯ç®¡ç†']");
+		webtest.click("xpath=//a[text()='·´À¡ĞÅÏ¢¹ÜÀí']");
 		webtest.click("xpath=//select[@name='para_141']");
-		webtest.click("xpath=//option[text()='æ‰€æœ‰äº§å“']");
+		webtest.click("xpath=//option[text()='ËùÓĞ²úÆ·']");
 	}
 
-	// 41ï¼Œä¿®æ”¹åé¦ˆå†…å®¹è®¾ç½®ï¼ˆå°†åé¦ˆä¸»é¢˜è®¾ç½®ä¸ºéå¿…å¡«é¡¹ï¼‰î£©
+	// 41£¬ĞŞ¸Ä·´À¡ÄÚÈİÉèÖÃ£¨½«·´À¡Ö÷ÌâÉèÖÃÎª·Ç±ØÌîÏî£©?
 	@Test(priority = 41)
 	public void yjltest41() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='wr_ok-141']");
-		webtest.click("xpath=//option[text()='å¦']");
+		webtest.click("xpath=//option[text()='·ñ']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para142']", "æ¨ä½³ä¹");
-		webtest.type("xpath=//input[@name='para143']", "æ— ");
+		webtest.type("xpath=//input[@name='para142']", "Ñî¼ÑÀÖ");
+		webtest.type("xpath=//input[@name='para143']", "ÎŞ");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
 		webtest.type("xpath=//input[@name='para176']", "18732338187");
-		webtest.type("xpath=//input[@name='para177']", "æ²³åŒ—å¸ˆèŒƒå¤§å­¦");
-		webtest.type("xpath=//input[@name='para178']", "æ²³åŒ—çœ");
-		webtest.type("xpath=//textarea[@name='para179']", "å¥½");
+		webtest.type("xpath=//input[@name='para177']", "ºÓ±±Ê¦·¶´óÑ§");
+		webtest.type("xpath=//input[@name='para178']", "ºÓ±±Ê¡");
+		webtest.type("xpath=//textarea[@name='para179']", "ºÃ");
 		webtest.socll();
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		webtest.click("xpath=//button[text()='æäº¤ä¿¡æ¯']");
+		webtest.click("xpath=//button[text()='Ìá½»ĞÅÏ¢']");
 		Thread.sleep(1000);
 		webtest.alertAccept();
 	}
 
-	// 42ï¼Œä¿®æ”¹å§“åçš„å­—æ®µç±»å‹ä¸ºæ–‡æœ¬
+	// 42£¬ĞŞ¸ÄĞÕÃûµÄ×Ö¶ÎÀàĞÍÎªÎÄ±¾
 	@Test(priority = 42)
 	public void yjltest42() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='type-142']");
-		webtest.click("xpath=//option[text()='æ–‡æœ¬']");
-		webtest.click("xpath=//button[text()='ä¿å­˜']");
+		webtest.click("xpath=//option[text()='ÎÄ±¾']");
+		webtest.click("xpath=//button[text()='±£´æ']");
 	}
 
-	// 43,ä¿®æ”¹å§“åçš„æ‰€å±æ ç›®ä¸ºåœ¨çº¿åé¦ˆ
+	// 43,ĞŞ¸ÄĞÕÃûµÄËùÊôÀ¸Ä¿ÎªÔÚÏß·´À¡
 	@Test(priority = 43)
 	public void yjltest43() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='class-142']");
-		webtest.click("xpath=//option[text()='åœ¨çº¿åé¦ˆ']");
-		webtest.click("xpath=//button[text()='ä¿å­˜']");
+		webtest.click("xpath=//option[text()='ÔÚÏß·´À¡']");
+		webtest.click("xpath=//button[text()='±£´æ']");
 	}
 
-	// 44,ä¿®æ”¹å§“åçš„è®¿é—®æƒé™ä¸ºæ™®é€šä¼šå‘˜
+	// 44,ĞŞ¸ÄĞÕÃûµÄ·ÃÎÊÈ¨ÏŞÎªÆÕÍ¨»áÔ±
 	@Test(priority = 44)
 	public void yjltest44() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='access-142']");
-		webtest.click("xpath=//option[text()='æ™®é€šä¼šå‘˜']");
-		webtest.click("xpath=//button[text()='ä¿å­˜']");
+		webtest.click("xpath=//option[text()='ÆÕÍ¨»áÔ±']");
+		webtest.click("xpath=//button[text()='±£´æ']");
 	}
 
-	// 45,ä¿®æ”¹åé¦ˆå†…å®¹è®¾ç½®ï¼ˆåˆ é™¤å§“åï¼‰
+	// 45,ĞŞ¸Ä·´À¡ÄÚÈİÉèÖÃ£¨É¾³ıĞÕÃû£©
 	@Test(priority = 45)
 	public void yjltest45() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//input[@value='142']");
-		webtest.click("xpath=//button[text()='åˆ é™¤']");
+		webtest.click("xpath=//button[text()='É¾³ı']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 		Thread.sleep(1000);
 	}
 
-	// 46,ä¿®æ”¹åé¦ˆå†…å®¹è®¾ç½®ï¼ˆæ·»åŠ å§“åï¼‰
+	// 46,ĞŞ¸Ä·´À¡ÄÚÈİÉèÖÃ£¨Ìí¼ÓĞÕÃû£©
 	@Test(priority = 46)
 	public void yjltest46() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
-		webtest.click("xpath=//button[text()='æ·»åŠ ']");
-		webtest.type("xpath=//input[@name='name-new-0']", "å§“å");
+		webtest.click("xpath=//button[text()='Ìí¼Ó']");
+		webtest.type("xpath=//input[@name='name-new-0']", "ĞÕÃû");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 	}
 
-	// 47ï¼ŒèŒåŠ¡æ·»åŠ æç¤ºæ–‡å­—
+	// 47£¬Ö°ÎñÌí¼ÓÌáÊ¾ÎÄ×Ö
 	@Test(priority = 47)
 	public void yjltest47() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
-		webtest.type("xpath=//input[@name='description-143']", "å…·ä½“èŒåŠ¡");
+		webtest.type("xpath=//input[@name='description-143']", "¾ßÌåÖ°Îñ");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='åœ¨çº¿åé¦ˆ']");
+		webtest.click("xpath=//a[text()='ÔÚÏß·´À¡']");
 	}
 
-	// 48ï¼Œä¿®æ”¹å…¬å¸ç®€ä»‹ä¸ºå…¬å¸ä»‹ç»
+	// 48£¬ĞŞ¸Ä¹«Ë¾¼ò½éÎª¹«Ë¾½éÉÜ
 	@Test(priority = 48)
 	public void yjltest48() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -1117,15 +1117,15 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		webtest.mouseToElement("xpath=//a[@met-id='39']");
 		webtest.click("xpath=//button[@data-index='34']");
-		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "å…¬å¸ä»‹ç»");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "¹«Ë¾½éÉÜ");
 		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 	}
 
-	// 49ï¼Œä¿®æ”¹è”ç³»æˆ‘ä»¬çš„èƒŒæ™¯å›¾é¢œè‰²
+	// 49£¬ĞŞ¸ÄÁªÏµÎÒÃÇµÄ±³¾°Í¼ÑÕÉ«
 	@Test(priority = 49)
 	public void yjltest49() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -1135,7 +1135,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@met-id='77']");
 		webtest.click("xpath=//button[@data-index='3']");
@@ -1144,12 +1144,12 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary']");
 		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='è”ç³»æˆ‘ä»¬']");
+		webtest.click("xpath=//a[text()='ÁªÏµÎÒÃÇ']");
 	}
 
-	// 50ï¼Œä¿®æ”¹åœ¨çº¿åé¦ˆçš„èƒŒæ™¯å›¾ä¸­çš„æ–‡å­—ä¸ºåé¦ˆ
+	// 50£¬ĞŞ¸ÄÔÚÏß·´À¡µÄ±³¾°Í¼ÖĞµÄÎÄ×ÖÎª·´À¡
 	@Test(priority = 50)
 	public void yjltest50() throws InterruptedException {
 		webtest.open("http://localhost:99/admin/index.php");
@@ -1159,12 +1159,12 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='å…³äºæˆ‘ä»¬']");
+		webtest.click("xpath=//a[@title='¹ØÓÚÎÒÃÇ']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@met-id='44']");
 		webtest.mouseToElement("xpath=//h3[@class='vertical-align-middle editable-click']");
 		webtest.click("xpath=//button[@data-index='33']");
-		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "åé¦ˆ");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "·´À¡");
 		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 	}
 }
