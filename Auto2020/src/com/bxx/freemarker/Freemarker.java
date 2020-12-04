@@ -30,7 +30,7 @@ public class Freemarker {
 		
 	}
 	public static void finish() {
-		String dir="C:\\Auto2020\\src\\com\\bxx\\freemarker";
+		String dir="D:\\eclipse\\WorkSpace201109\\selenium201109\\src\\com\\bxx\\freemarker";
 		int allTest =  WebTestListener1.all;
 		List<ITestResult> passList = WebTestListener1.passList;
 		int passTest =  passList.size();

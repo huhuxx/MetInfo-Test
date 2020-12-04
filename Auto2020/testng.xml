@@ -4,31 +4,6 @@
 	
 	<test name="test5">
 		<classes>
-			<class name="com.bxx.test.JoinusjobTest"/>
-		</classes>
-	</test>
-	<test name="test2">
-		<classes>
-			<class name="com.bxx.test.kehuanliPageTest"/>
-		</classes>
-	</test>
-	<test name="test3">
-		<classes>
-			<class name="com.bxx.test.JoinuszhaopinTest"/>
-		</classes>
-	</test>
-	<test name="test4">
-		<classes>		
-			<class name="com.bxx.test.KehuanliEditTest"/>
-		</classes>
-	</test>
-	<test name="test">
-		<classes>		
-			<class name="com.bxx.test.JoinuspageTest"/>
-		</classes>
-	</test>
-	<test name="test1">
-		<classes>		
 			<class name="com.bxx.test.JoinusjianliTest"/>
 		</classes>
 =======
@@ -40,4 +15,5 @@
 	    </classes>
 >>>>>>> 743a5ea53d21d34edcba073b7c66b1d3915faa7f
 	</test>
+	
 </suite>
