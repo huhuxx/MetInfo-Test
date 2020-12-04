@@ -1,9 +1,13 @@
 package dataprovide;
 
+import java.io.IOException;
 import java.sql.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class MysqlDataProvider {
 	
@@ -18,12 +22,12 @@ public class MysqlDataProvider {
 			Connection conn = DriverManager
 					.getConnection(url, "root", "123456");
 			if (!conn.isClosed()) {
-				System.out.println("???????????");
+				System.out.println("�������ݿ�ɹ�");
 			}
-			// Statement??????��??????????executeUpdate?????????????o??????
+			// Statement������кܶ෽��������executeUpdate����ʵ�ֲ��룬���º�ɾ����
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
-			//???????????
+			//�õ����ݼ��Ľṹ
 			ResultSetMetaData rsMetaData = rs.getMetaData();
 			int cols = rsMetaData.getColumnCount();
 			System.out.println(cols);
@@ -32,7 +36,7 @@ public class MysqlDataProvider {
 
 				int col=0;
 				for (int i = 0; i < cols; i++) {
-					fields[col] = rs.getString(i+1);//???????????????
+					fields[col] = rs.getString(i+1);//��ȡ��ǰ��ָ������
 					col++;
 				}
 				records.add(fields);
