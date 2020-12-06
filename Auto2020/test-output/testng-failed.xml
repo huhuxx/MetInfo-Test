@@ -6,6 +6,8 @@
       <class name="test.TestDemo">
         <methods>
           <include name="test1"/>
+          <include name="doBeforeClass"/>
+          <include name="doAfterMethod"/>
         </methods>
       </class> <!-- test.TestDemo -->
     </classes>
