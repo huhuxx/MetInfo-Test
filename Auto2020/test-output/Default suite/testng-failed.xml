@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bxx.test.kehuanliPageTest">
+      <class name="com.webtest.demo.DataDownload">
         <methods>
+          <include name="loginTest"/>
+          <include name="dataCopy"/>
+          <include name="addData"/>
+          <include name="deleteData"/>
           <include name="doBeforeClass"/>
-          <include name="testEnter"/>
-          <include name="doAfterMethod"/>
-          <include name="test4"/>
-          <include name="end"/>
-          <include name="addListener"/>
+          <include name="refreshPage"/>
         </methods>
-      </class> <!-- com.bxx.test.kehuanliPageTest -->
+      </class> <!-- com.webtest.demo.DataDownload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
