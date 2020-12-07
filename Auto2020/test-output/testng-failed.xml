@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TestDemo">
+      <class name="com.webtest.demo.TopSetting">
         <methods>
-          <include name="test1"/>
-          <include name="doBeforeClass"/>
+          <include name="mailUtil"/>
+          <include name="setPutDown"/>
+          <include name="editHomePageName"/>
           <include name="doAfterMethod"/>
+          <include name="nationalFlagSetting"/>
+          <include name="languagePosition"/>
+          <include name="doBeforeClass"/>
+          <include name="refreshPage"/>
         </methods>
-      </class> <!-- test.TestDemo -->
+      </class> <!-- com.webtest.demo.TopSetting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
