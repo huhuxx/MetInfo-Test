@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /*
- * Excelæ•°æ®é©±åŠ¨ç±»
+ * ExcelÊı¾İÇı¶¯Àà
  */
 
 public class ExcelDataProvider {
@@ -30,16 +30,16 @@ public class ExcelDataProvider {
 			wbook = new HSSFWorkbook(inputstream);
 		}
 		Sheet sheet = wbook.getSheet(sheetName);
-		// é€šè¿‡sheetNameç”ŸæˆSheetå¯¹è±¡
+		// Í¨¹ısheetNameÉú³ÉSheet¶ÔÏó
 		int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
-		// è·å–å½“å‰sheetè¡Œæ•°ï¼Œè¡Œå·å’Œåˆ—å·éƒ½æ˜¯ä»ï¼å¼€å§‹
+		// »ñÈ¡µ±Ç°sheetĞĞÊı£¬ĞĞºÅºÍÁĞºÅ¶¼ÊÇ´Ó£°¿ªÊ¼
 		List<Object[]> records = new ArrayList<Object[]>();
-		// ä½¿ç”¨åŒå¾ªç¯è·å–excelæ–‡ä»¶çš„æ‰€æœ‰æ•°æ®ï¼ˆç¬¬ä¸€è¡Œé™¤å¤–ï¼‰
+		// Ê¹ÓÃË«Ñ­»·»ñÈ¡excelÎÄ¼şµÄËùÓĞÊı¾İ£¨µÚÒ»ĞĞ³ıÍâ£©
 		for (int i = 1; i < rowCount + 1; i++) {
 			Row row = sheet.getRow(i);
 			String fields[] = new String[row.getLastCellNum()];
 			for (int j = 0; j < row.getLastCellNum(); j++) {
-				// è·å–å•å…ƒæ ¼æ•°æ®
+				// »ñÈ¡µ¥Ôª¸ñÊı¾İ
 				fields[j] = row.getCell(j).getStringCellValue();
 			}
 			records.add(fields);
