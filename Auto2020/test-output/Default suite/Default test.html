@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 06 20:32:45 CST 2020</td>
+<td>Started on:</td><td>Wed Dec 02 14:40:39 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (79 ms)</td>
+<tr><td>Total time:</td><td>419 seconds (419351 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,474 +67,63 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.doBeforeClass()'><b>doBeforeClass</b><br>Test class: com.webtest.demo.TopSetting</td>
-<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1412925683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1412925683'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.webtest.demo.TopSetting.refreshPage()'><b>refreshPage</b><br>Test class: com.webtest.demo.TopSetting</td>
+<td title='com.bxx.test.KehuanliEditTest.testEdit1()'><b>testEdit1</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
 <td></td>
-<td>-1607257965</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td>13</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.refreshPage()'><b>refreshPage</b><br>Test class: com.webtest.demo.TopSetting</td>
+<td title='com.bxx.test.KehuanliEditTest.testEdit2()'><b>testEdit2</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
 <td></td>
-<td>-1607257965</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td>10</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.refreshPage()'><b>refreshPage</b><br>Test class: com.webtest.demo.TopSetting</td>
+<td title='com.bxx.test.KehuanliEditTest.testEdit3()'><b>testEdit3</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
 <td></td>
-<td>-1607257965</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td>20</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.refreshPage()'><b>refreshPage</b><br>Test class: com.webtest.demo.TopSetting</td>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd10()'><b>testEditAdd10</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
 <td></td>
-<td>-1607257965</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td>30</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.doAfterMethod()'><b>doAfterMethod</b><br>Test class: com.webtest.demo.TopSetting</td>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd4()'><b>testEditAdd4</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
 <td></td>
-<td>-1607257965</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>17</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.editHomePageName()'><b>editHomePageName</b><br>Test class: com.webtest.demo.TopSetting</td>
-<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace376416077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace376416077'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd5()'><b>testEditAdd5</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
+<td></td>
+<td>30</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.languagePosition()'><b>languagePosition</b><br>Test class: com.webtest.demo.TopSetting</td>
-<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace19986569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace19986569'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd6()'><b>testEditAdd6</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
+<td></td>
+<td>23</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.nationalFlagSetting()'><b>nationalFlagSetting</b><br>Test class: com.webtest.demo.TopSetting</td>
-<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace793315160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace793315160'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd7()'><b>testEditAdd7</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
+<td></td>
+<td>33</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 <tr>
-<td title='com.webtest.demo.TopSetting.setPutDown()'><b>setPutDown</b><br>Test class: com.webtest.demo.TopSetting</td>
-<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1032000752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1032000752'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
-	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
-	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
-	at java.util.Optional.map(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:58)
-	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.webtest.demo.TopSetting@68bbe345</td></tr>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd8()'><b>testEditAdd8</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
+<td></td>
+<td>32</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
+<tr>
+<td title='com.bxx.test.KehuanliEditTest.testEditAdd9()'><b>testEditAdd9</b><br>Test class: com.bxx.test.KehuanliEditTest</td>
+<td></td>
+<td>30</td>
+<td>com.bxx.test.KehuanliEditTest@27a5f880</td></tr>
 </table><p>
 </body>
 </html>
