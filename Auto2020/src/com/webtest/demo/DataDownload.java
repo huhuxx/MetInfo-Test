@@ -18,7 +18,6 @@ import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
 public class DataDownload extends BaseTest{
 	public void openDataDowmloadSetting() {
 		webtest.click("xpath=//a[text()='内容']");
@@ -130,11 +129,9 @@ public class DataDownload extends BaseTest{
 		//填写下载地址为“https://www.baidu.com/img/flexible/logo/pc/result@2.png”
 		webtest.type("xpath=//input[@name='downloadurl']","https://www.baidu.com/img/flexible/logo/pc/result@2.png" );
 		//保存
-//		List<WebElement> submitBtns=webtest.getElementsList("xpath=//button[text()='保存']");
-//		webtest.click(submitBtns.get(1));
-//		webtest.click(locator);
-
-		Thread.sleep(3000);
+		List<WebElement> submitBtns=webtest.getElementsList("xpath=//button[text()='保存']");
+		webtest.click(submitBtns.get(2));
+		Thread.sleep(5000);
 		webtest.click("xpath=//button[text()='关闭']");
 	
 		//进入前台页面验证
@@ -167,13 +164,5 @@ public class DataDownload extends BaseTest{
 		webtest.leaveFrame();
 		System.out.println("ID213 内容管理-资料下载-删除  成功！");
 	}
-//	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
-	}
+	
 }

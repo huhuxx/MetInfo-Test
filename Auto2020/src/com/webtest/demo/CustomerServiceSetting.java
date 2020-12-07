@@ -212,6 +212,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.leaveFrame();
 		//修改颜色风格为#71f086，风格选择为“风格2”
 		webtest.typeAndClear("xpath=//input[@name='met_online_color']", "#71f086");
+		Thread.sleep(2000);
 		webtest.selectByValue("tag=select", "2");
 		//保存
 		webtest.click("xpath=//button[text()='保存']");
@@ -254,10 +255,9 @@ public class CustomerServiceSetting extends BaseTest{
 		Thread.sleep(2000);
 		String otherInfo=webtest.getElement("xpath=//div[@class='onlinebox-box']/div[last()]").getText();
 		System.out.println("其他设置信息为："+otherInfo);
-		webtest.leaveFrame();
 		System.out.println("ID205 客服设置-客服设置-其它设置 成功！");
+		
 		//界面风格恢复为“风格1”
-		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//div[@id='onlinebox']");
 		Thread.sleep(3000);
 		webtest.click("xpath=//div[@data-mid='online']/button[1]");
@@ -299,7 +299,7 @@ public class CustomerServiceSetting extends BaseTest{
 	@Test(priority = 12)
 	public void deleteColumn() throws InterruptedException {
 		//删除前
-		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
 		boolean beforeDelete_newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
 		System.out.println("删除前'新一级栏目'是否存在："+beforeDelete_newExist);
 		webtest.leaveFrame();
