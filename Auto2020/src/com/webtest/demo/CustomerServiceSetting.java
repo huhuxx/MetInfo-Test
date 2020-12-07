@@ -27,7 +27,7 @@ public class CustomerServiceSetting extends BaseTest{
 	}
 	//CustomerService以CS代称
 	public void openCSList() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
 		webtest.click("xpath=//div[@data-mid='online']/button[2]");
 		Thread.sleep(2000);
@@ -45,7 +45,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		List<WebElement> serviceNames=webtest.getElementsList("xpath=//div[@class='onlinebox_one_list']//p");
 		System.out.println(serviceNames.get(0).getText());
 		Assert.assertEquals(serviceNames.get(0).getText(), "售前客服1");
@@ -64,7 +64,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//p[text()='售后支持']");
 		webtest.switchWidow(0);
 		webtest.leaveFrame();
@@ -81,7 +81,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//p[text()='售前客服1']");
 		webtest.switchWidow(0);
 		webtest.leaveFrame();
@@ -98,7 +98,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		String nowImg=webtest.getValue("xpath=//p[text()='售后支持']//preceding-sibling::i[1]","class");
 		Assert.assertEquals(nowImg, "");
 		webtest.leaveFrame();
@@ -123,7 +123,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		String nowImg=webtest.getValue("xpath=//p[text()='售后支持']//preceding-sibling::i[1]","class");
 		System.out.println(nowImg);
 		Assert.assertEquals(nowImg, "icon fa-phone");
@@ -151,7 +151,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//button[text()='保存']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		String facebookImg=webtest.getValue("xpath=//p[text()='脸书']//preceding-sibling::i[1]","class");
 		System.out.println(facebookImg);
 		webtest.leaveFrame();
@@ -171,7 +171,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.click("xpath=//div[@class='dialog']/div/nav/button[text()='确定']");
 		webtest.click("xpath=//button[text()='关闭']");
 		//删除后，进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		System.out.println("删除后，脸书客服是否存在："+webtest.isElementPresent("xpath=//p[text()='脸书']"));
 		Assert.assertEquals(webtest.isElementPresent("xpath=//p[text()='脸书']"), false);
 		webtest.leaveFrame();
@@ -182,7 +182,7 @@ public class CustomerServiceSetting extends BaseTest{
 	public void editFixedStyle() throws InterruptedException {
 		//进入 客服设置-客服设置 界面
 		Thread.sleep(3000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
 		Thread.sleep(3000);
 		webtest.click("xpath=//div[@data-mid='online']/button[1]");
@@ -203,7 +203,7 @@ public class CustomerServiceSetting extends BaseTest{
 	public void CSstyleSetting() throws InterruptedException {
 		//进入 客服设置-客服设置 界面
 		Thread.sleep(3000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		String beforeEdit_CScolor=webtest.getValue("xpath=//div[@class='onlinebox_one_list']/a[last()]", "style");
 		System.out.println("修改前客服列表的颜色风格为："+beforeEdit_CScolor);
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
@@ -218,7 +218,7 @@ public class CustomerServiceSetting extends BaseTest{
 		//关闭界面
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		Thread.sleep(2000);
 		String afterEdit_CScolor=webtest.getValue("xpath=//div[@class='onlinebox_two_list']/div[1]/a[last()]", "style");
 		System.out.println("修改后客服列表的颜色风格为："+afterEdit_CScolor);
@@ -231,7 +231,7 @@ public class CustomerServiceSetting extends BaseTest{
 	public void otherSetting() throws InterruptedException {
 		//进入 客服设置-客服设置 界面
 		Thread.sleep(3000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//div[@id='onlinebox']");
 		Thread.sleep(3000);
 		webtest.click("xpath=//div[@data-mid='online']/button[1]");
@@ -250,14 +250,14 @@ public class CustomerServiceSetting extends BaseTest{
 		//关闭界面
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		Thread.sleep(2000);
 		String otherInfo=webtest.getElement("xpath=//div[@class='onlinebox-box']/div[last()]").getText();
 		System.out.println("其他设置信息为："+otherInfo);
 		webtest.leaveFrame();
 		System.out.println("ID205 客服设置-客服设置-其它设置 成功！");
 		//界面风格恢复为“风格1”
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//div[@id='onlinebox']");
 		Thread.sleep(3000);
 		webtest.click("xpath=//div[@data-mid='online']/button[1]");
@@ -288,7 +288,7 @@ public class CustomerServiceSetting extends BaseTest{
 		Thread.sleep(3000);
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		boolean newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
 		System.out.println("新添加'新一级栏目'是否存在："+newExist);
 		Assert.assertEquals(newExist, true);
@@ -299,7 +299,7 @@ public class CustomerServiceSetting extends BaseTest{
 	@Test(priority = 12)
 	public void deleteColumn() throws InterruptedException {
 		//删除前
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		boolean beforeDelete_newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
 		System.out.println("删除前'新一级栏目'是否存在："+beforeDelete_newExist);
 		webtest.leaveFrame();
@@ -315,7 +315,7 @@ public class CustomerServiceSetting extends BaseTest{
 		Thread.sleep(3000);
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		boolean afterDelete_newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
 		System.out.println("新添加'新一级栏目'是否存在："+afterDelete_newExist);
 		Assert.assertEquals(afterDelete_newExist, false);

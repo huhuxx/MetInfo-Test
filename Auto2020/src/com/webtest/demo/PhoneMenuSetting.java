@@ -29,7 +29,8 @@ public class PhoneMenuSetting extends BaseTest{
 	public void editPhoneBtnText() throws InterruptedException {
 //		打开“手机菜单”设置界面方法一：
 //		鼠标移动到 手机菜单 div上，点击“内容”按钮
-//		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+//		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
+
 //		webtest.mouseToElement("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']");
 //		webtest.click("xpath=//button[@data-type='menu']");
 //		webtest.leaveFrame();
@@ -41,7 +42,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//返回前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		System.out.println("手机首页 是否存在："+webtest.isElementPresent("xpath=//span[text()='手机首页']"));
 		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='手机首页']"), true);
 		webtest.leaveFrame();
@@ -66,7 +67,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='联系']");
 		Thread.sleep(5000);
 		boolean status= webtest.isElementPresent("xpath=//div[text()='百度热榜']");
@@ -87,7 +88,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		WebElement newsImgElement=webtest.getElement
 				("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
 		Assert.assertEquals(newsImgElement.getText(), "");
@@ -111,7 +112,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		WebElement newsImgElement=webtest.getElement
 				("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
 		Assert.assertEquals(webtest.getValue(newsImgElement, "class"),"icon wb-grid-9");
@@ -130,7 +131,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		WebElement productBtnDiv=webtest.getElement
 				("xpath=//span[text()='产品']/preceding-sibling::i[1]/../..");
 		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"),"background-color: rgb(27, 219, 81);");
@@ -148,7 +149,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		WebElement productBtnDiv=webtest.getElement
 				("xpath=//span[text()='联系']/preceding-sibling::i[1]/..");
 		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"),"color: rgb(27, 219, 81);");
@@ -167,7 +168,7 @@ public class PhoneMenuSetting extends BaseTest{
 			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 			webtest.click("xpath=//span[text()='×']");
 			//进入前台页面验证修改
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+			webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 			System.out.println("新闻按钮是否已启用："+webtest.isElementPresent("xpath=//span[text()='新闻']"));
 			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"),false);
 			webtest.leaveFrame();
@@ -179,7 +180,7 @@ public class PhoneMenuSetting extends BaseTest{
 			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 			webtest.click("xpath=//span[text()='×']");
 			//进入前台页面验证修改
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+			webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 			System.out.println("新闻按钮是否已启用："+webtest.isElementPresent("xpath=//span[text()='新闻']"));
 			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"),true);
 			webtest.leaveFrame();
@@ -212,7 +213,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		//验证拖拽是否对前台页面起作用
 		List<WebElement> afterDrag_btnText=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
 		System.out.println(afterDrag_btnText.size());
@@ -239,7 +240,7 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新按钮']"), true);
 		webtest.leaveFrame();
 		System.out.println("ID192 手机菜单-新按钮添加成功！");
@@ -256,7 +257,7 @@ public class PhoneMenuSetting extends BaseTest{
 		//关闭
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		Thread.sleep(2000);
 		if (!webtest.isElementPresent("xpath=//span[text()='新按钮']")) {
 			System.out.println("ID192 手机菜单-新按钮删除成功！");

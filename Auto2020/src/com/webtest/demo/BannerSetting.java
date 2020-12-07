@@ -27,7 +27,7 @@ public class BannerSetting extends BaseTest {
 	}
 
 	public int getImgsNum() {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		List<WebElement> items = webtest.getElementsList("xpath=//div[@role='listbox']/child::div");
 		System.out.println(items.size());
 		webtest.leaveFrame();
@@ -151,7 +151,7 @@ public class BannerSetting extends BaseTest {
 		webtest.click(closeBtns.get(1));
 		webtest.click(closeBtns.get(0));
 //		进入前台页面，点击新添加的按钮“百度”
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//a[text()='百度']");
 //		切换窗口，获取title为“百度一下，你就知道”
 		webtest.switchWidow(1);
@@ -197,7 +197,7 @@ public class BannerSetting extends BaseTest {
 	@Test(priority = 7)
 	public void deleteBtn() {
 		// 删除“百度”按钮前
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
 		boolean btnStatus0 = webtest.isElementPresent("xpath=//a[text()='百度']");
 		System.out.println("删除前，百度按钮是否存在：" + btnStatus0);
 		webtest.leaveFrame();
@@ -211,7 +211,7 @@ public class BannerSetting extends BaseTest {
 		webtest.click(closeBtns.get(1));
 		webtest.click(closeBtns.get(0));
 		// 删除“百度”按钮后
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
 		boolean btnStatus1 = webtest.isElementPresent("xpath=//a[text()='百度']");
 		System.out.println("删除后，百度按钮是否存在：" + btnStatus1);
 		webtest.leaveFrame();
@@ -244,7 +244,7 @@ public class BannerSetting extends BaseTest {
 		webtest.click(closeBtns.get(1));
 		webtest.click(closeBtns.get(0));
 		// 进入前台页面
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		List<WebElement> afterDrag_btnText = webtest.getElementsList("xpath=//h3[text()='米拓企业建站系统syj']/..//a[@*]");
 
 		// 验证拖拽是否对前台页面起作用

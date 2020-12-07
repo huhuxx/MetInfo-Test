@@ -39,7 +39,7 @@ public class DataDownload extends BaseTest{
 		Thread.sleep(3000);
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='产品使用说明书syj']"),true );
 		webtest.leaveFrame();
@@ -73,7 +73,7 @@ public class DataDownload extends BaseTest{
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面，点击“资料下载”，再点击“产品使用说明书syj”
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//span[text()='产品使用说明书']");
@@ -91,7 +91,7 @@ public class DataDownload extends BaseTest{
 	@Test(priority = 3)
 	public void dataCopy() throws InterruptedException {
 		//复制前
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		List<WebElement> beforeCopy_dataList=webtest.getElementsList("xpath=//span[text()='产品使用说明书']");
 		System.out.println("复制前，产品使用说明书的数量为："+beforeCopy_dataList.size());
@@ -109,7 +109,7 @@ public class DataDownload extends BaseTest{
 		//关闭当前页面
 		webtest.click("xpath=//button[text()='关闭']");
 		//复制后，进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		Thread.sleep(2000);
 		List<WebElement> afterCopy_dataList=webtest.getElementsList("xpath=//span[text()='产品使用说明书']");
@@ -138,7 +138,7 @@ public class DataDownload extends BaseTest{
 		webtest.click("xpath=//button[text()='关闭']");
 	
 		//进入前台页面验证
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		Thread.sleep(2000);
 		boolean imgData=webtest.isElementPresent("xpath=//span[text()='图片资料']");
@@ -158,7 +158,7 @@ public class DataDownload extends BaseTest{
 		//关闭当前页面
 		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.click("xpath=//span[text()='资料下载']");
 		Thread.sleep(2000);
 		boolean imgData=webtest.isElementPresent("xpath=//span[text()='图片资料']");

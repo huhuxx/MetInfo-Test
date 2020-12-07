@@ -80,7 +80,7 @@ public class LanguageSetting extends BaseTest{
 			this.switchLanguage("一般以链接形式显示在前台右上角");
 			Thread.sleep(2000);
 			//再次获取元素
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+			webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 			boolean result2=webtest.isElementPresent("xpath=//a[@class='met-lang-other']");
 			Assert.assertEquals(result2, false);
 			result="ID25:语言切换的关闭操作成功！";
@@ -104,7 +104,7 @@ public class LanguageSetting extends BaseTest{
 			this.switchLanguage("仅适用用于中文前台语言（语言标识为cn或zh时生效），浏览者可以在简繁体之间切换。");
 			Thread.sleep(2000);
 			//再次获取元素
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+			webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 			boolean result2=webtest.isElementPresent("xpath=//div[text()='繁體']");
 			Assert.assertEquals(result2, false);
 			result="ID26:繁简体自动切换的关闭操作成功！";

@@ -135,7 +135,7 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面，验证修改是否成功
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
 		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
 		for (int i = 0; i < 3; i++) {
@@ -163,7 +163,7 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面，验证修改是否成功
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
 		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
 		System.out.println("修改后的其他信息为"+bottomInfoList.get(3).getText());
@@ -187,7 +187,7 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-primary']");	
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面，验证修改是否成功
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
 		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
 		System.out.println("修改后的的系统版权文字风格为："+bottomInfoList.get(bottomInfoList.size()-2).getText());

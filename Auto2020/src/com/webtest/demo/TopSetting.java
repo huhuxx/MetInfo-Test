@@ -25,7 +25,7 @@ public class TopSetting extends BaseTest {
 		webtest.refresh();
 	}
 	public void openTopSetting() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 //		List<WebElement> setElements=webtest.getElementsList("xpath=//button[@data-mid='met-head']");
 		webtest.mouseToElement("xpath=//ul[@class='nav navbar-nav navlist']");
 		webtest.click("xpath=//button[@data-mid='met_head']");
@@ -73,7 +73,7 @@ public class TopSetting extends BaseTest {
 	@Test(priority = 2)
 	public void languagePosition() throws InterruptedException {
 //		this.openTopSetting();
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 //		List<WebElement> setElements=webtest.getElementsList("xpath=//button[@data-mid='met-head']");
 		webtest.mouseToElement("xpath=//ul[@class='nav navbar-nav navlist']");
 		webtest.click("xpath=//button[@data-mid='met_head']");
@@ -98,7 +98,7 @@ public class TopSetting extends BaseTest {
 //13、	ID103 修改“网站首页”内容
 	@Test(priority = 4)
 	public void editHomePageName() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='"+ReadProperties.getPropertyValue("iframe_src")+"']");
 		webtest.mouseToElement("xpath=//a[text()='网站首页']");
 		webtest.click("xpath=//button[@data-index='3']");
 		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "首页syj");
