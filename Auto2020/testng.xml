@@ -3,7 +3,7 @@
 <suite name="MetInfo">
 	<test name="all">
 	    <classes>
-	    	 <class name="test.TestAuto"/>
+	    	 <class name="test.TestDemo"/>
 	    </classes>
 	</test>
 </suite>
