@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="MetInfo" verbose="1" parallel="none">
+<suite name="MetInfoTest" verbose="1" parallel="none">
 	<listeners>
 			<listener class-name="com.webtest.core.JavaMailTestListener"></listener>
 	</listeners>
