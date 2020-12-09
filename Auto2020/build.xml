@@ -17,7 +17,9 @@
     <!-- 编译 src目录 -->
     <target name="compile"  depends ="clean">
         <mkdir dir ="${dest}"/>
-    	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" encoding="GBK" ></javac>
+    	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" >
+    	  	<compilerarg line="-encoding GBK "></compilerarg>
+    	  	</javac>
     </target>
     <!-- 运行 -->
     <target name="run"  depends ="compile">
