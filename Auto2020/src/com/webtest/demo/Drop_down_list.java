@@ -14,77 +14,77 @@ import com.webtest.utils.ReadProperties;
 public class Drop_down_list extends BaseTest{
 	@Test(priority = 3)
 	public void DropdownList_Show() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
-		webtest.mouseToElement("xpath=//span[text()='ï¿½ï¿½ï¿½Å¶ï¿½Ì¬']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/index.php?lang=cn&pageset=1']");
+		webtest.mouseToElement("xpath=//span[text()='ÐÂÎÅ¶¯Ì¬']");
 		Thread.sleep(2000);
-		webtest.click("xpath=//span[text()='ï¿½ï¿½ï¿½Å¶ï¿½Ì¬']");
+		webtest.click("xpath=//span[text()='ÐÂÎÅ¶¯Ì¬']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3");
+		System.out.println("²âÊÔÓÃÀý3");
 		webtest.leaveFrame();
 	}
 	
 	@Test(priority = 4)
 	public void DropdownList_MediaEdit() throws InterruptedException {
 		webtest.leaveFrame();
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit = webtest.findElements("xpath=//input[@class=' form-control']");
-		webtest.typeAndClear(elementEdit.get(3), "ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½1");
+		webtest.typeAndClear(elementEdit.get(3), "ÐÜ-±¨µÀ1");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4");
+		System.out.println("²âÊÔÓÃÀý4");
 	}
 	
 	@Test(priority = 5)
 	public void DropdownList_IndustryEdit() throws InterruptedException {
 		List<WebElement> elementEdit = webtest.findElements("xpath=//input[@class=' form-control']");
-		webtest.typeAndClear(elementEdit.get(4), "ï¿½ï¿½-ï¿½ï¿½Ñ¶2");
+		webtest.typeAndClear(elementEdit.get(4), "ÐÜ-×ÊÑ¶2");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5");
+		System.out.println("²âÊÔÓÃÀý5");
 	}
 	
 	@Test(priority = 6)
 	public void DropdownList_CorporateEdit() throws InterruptedException {
 		List<WebElement> elementEdit = webtest.findElements("xpath=//input[@class=' form-control']");
-		webtest.typeAndClear(elementEdit.get(5), "ï¿½ï¿½-ï¿½ï¿½Òµ3");
+		webtest.typeAndClear(elementEdit.get(5), "ÐÜ-ÆóÒµ3");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½6");
+		System.out.println("²âÊÔÓÃÀý6");
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		//¹ö¶¯Ìõµ½×îÏÂ·½
 		js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		Thread.sleep(3000);
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½']");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		webtest.click("xpath=//button[text()='±£´æ']");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 		Thread.sleep(2000);
 	}
 	
 	@Test(priority = 7)
 	public void DropdownList_MediaNavigation_Head() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_Head = webtest.findElements("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
-		System.out.println("'ï¿½ï¿½ï¿½ï¿½'ï¿½Ä°ï¿½Å¥Ò»ï¿½ï¿½ï¿½ï¿½"+elementEdit_Head.size());
+		System.out.println("'ÉèÖÃ'µÄ°´Å¥Ò»¹²ÓÐ"+elementEdit_Head.size()+'¸ö');
 		elementEdit_Head.get(3).click();
 		Thread.sleep(2000);
 		List<WebElement> elementNavigation= webtest.findElements("xpath=//input[@class='custom-control-input']");
 		elementNavigation.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		System.out.println("'ï¿½ï¿½ï¿½ï¿½'ï¿½Ä°ï¿½Å¥Ò»ï¿½ï¿½ï¿½ï¿½"+elementSave.size()+"ï¿½ï¿½");
+		System.out.println("'±£´æ'µÄ°´Å¥Ò»¹²ÓÐ"+elementSave.size()+"¸ö");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½7");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý7");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 8)
 	public void DropdownList_CorporateNavigation_Head() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -96,21 +96,21 @@ public class Drop_down_list extends BaseTest{
 		elementNavigation.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		//System.out.println("'ï¿½ï¿½ï¿½ï¿½'ï¿½Ä°ï¿½Å¥Ò»ï¿½ï¿½ï¿½ï¿½"+elementSave.size()+"ï¿½ï¿½");
+		//System.out.println("'±£´æ'µÄ°´Å¥Ò»¹²ÓÐ"+elementSave.size()+"¸ö");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½8");
+		System.out.println("²âÊÔÓÃÀý8");
 		//JavascriptExecutor js=(JavascriptExecutor)driver;
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		//¹ö¶¯Ìõµ½×îÏÂ·½
 		//js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		//Thread.sleep(3000);
-		//webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½']");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		//webtest.click("xpath=//button[text()='±£´æ']");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 9)
 	public void DropdownList_IndustryNavigation_Head() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -122,21 +122,21 @@ public class Drop_down_list extends BaseTest{
 		elementNavigation.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		//System.out.println("'ï¿½ï¿½ï¿½ï¿½'ï¿½Ä°ï¿½Å¥Ò»ï¿½ï¿½ï¿½ï¿½"+elementSave.size()+"ï¿½ï¿½");
+		//System.out.println("'±£´æ'µÄ°´Å¥Ò»¹²ÓÐ"+elementSave.size()+"¸ö");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½9");
+		System.out.println("²âÊÔÓÃÀý9");
 		//JavascriptExecutor js=(JavascriptExecutor)driver;
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		//¹ö¶¯Ìõµ½×îÏÂ·½
 		//js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		//Thread.sleep(3000);
-		//webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½']");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		//webtest.click("xpath=//button[text()='±£´æ']");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 10)
 	public void DropdownList_MediaNavigation_Bottom() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -150,13 +150,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý10");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 11)
 	public void DropdownList_CorporateNavigation_Bottom() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -170,13 +170,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½11");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý11");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 12)
 	public void DropdownList_IndustryNavigation_Bottom() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -190,13 +190,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½12");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý12");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 13)
 	public void DropdownList_MediaNavigation_All() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -210,13 +210,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½13");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý13");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 14)
 	public void DropdownList_CorporateNavigation_All() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -230,13 +230,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½14");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý14");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 15)
 	public void DropdownList_IndustryNavigation_All() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -250,13 +250,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½15");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý15");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 16)
 	public void DropdownList_MediaNewOpen() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -270,14 +270,14 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½16");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý16");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 		
 	}
 	
 	@Test(priority = 17)
 	public void DropdownList_CorporateNewOpen() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -291,13 +291,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½17");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý17");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 18)
 	public void DropdownList_IndustryNewOpen() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -311,13 +311,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½18");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý18");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 19)
 	public void DropdownList_MediaOrder() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -332,14 +332,14 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½19");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý19");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 		
 	}
 	
 	@Test(priority = 20)
 	public void DropdownList_CorporateOrder() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -353,13 +353,13 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½20");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý20");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 21)
 	public void DropdownList_IndustryOrder() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -373,36 +373,36 @@ public class Drop_down_list extends BaseTest{
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½21");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý21");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 22)
 	public void DropdownList_AddChild() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_More = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default dropdown-toggle']");
-		System.out.println("Ò»ï¿½ï¿½ï¿½ï¿½'ï¿½ï¿½ï¿½ï¿½'ï¿½ï¿½Å¥"+elementEdit_More.size()+"ï¿½ï¿½");
+		System.out.println("Ò»¹²ÓÐ'¸ü¶à'°´Å¥"+elementEdit_More.size()+"¸ö");
 		elementEdit_More.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_add = webtest.findElements("xpath=//a[@class='dropdown-item btn-add-subcolumn']");
-		System.out.println("Ò»ï¿½ï¿½ï¿½ï¿½'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿'ï¿½ï¿½Å¥"+elementEdit_add.size()+"ï¿½ï¿½");
+		System.out.println("Ò»¹²ÓÐ'Ìí¼Ó×ÓÀ¸Ä¿'°´Å¥"+elementEdit_add.size()+"¸ö");
 		elementEdit_add.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_addtext = webtest.findElements("xpath=//input[@class=' form-control']");
-		webtest.typeAndClear(elementEdit_addtext.get(6), "ï¿½ï¿½-ï¿½ï¿½ï¿½4");
+		webtest.typeAndClear(elementEdit_addtext.get(6), "ÐÜ-Ìí¼Ó4");
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(4).click();
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿");
+		System.out.println("Ìí¼Ó×ÓÀ¸Ä¿");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½22");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý22");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 23)
 	public void DropdownList_AddChild1() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_More = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default dropdown-toggle']");
 		elementEdit_More.get(2).click();
@@ -411,19 +411,19 @@ public class Drop_down_list extends BaseTest{
 		elementEdit_add.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_addtext = webtest.findElements("xpath=//input[@class=' form-control']");
-		webtest.typeAndClear(elementEdit_addtext.get(6), "ï¿½ï¿½-ï¿½ï¿½ï¿½5");
+		webtest.typeAndClear(elementEdit_addtext.get(6), "ÐÜ-Ìí¼Ó5");
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(4).click();
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿");
+		System.out.println("Ìí¼Ó×ÓÀ¸Ä¿");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½23");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý23");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 24)
 	public void DropdownList_AddChild_child() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -436,19 +436,19 @@ public class Drop_down_list extends BaseTest{
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_addtext = webtest.findElements("xpath=//input[@class=' form-control']");
 		System.out.println(elementEdit_addtext.size());
-		webtest.typeAndClear(elementEdit_addtext.get(11), "ï¿½ï¿½-ï¿½ï¿½ï¿½6");
+		webtest.typeAndClear(elementEdit_addtext.get(11), "ÐÜ-Ìí¼Ó6");
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(4).click();
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿");
+		System.out.println("Ìí¼Ó×ÓÀ¸Ä¿");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½24");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý24");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
 	@Test(priority = 25)
 	public void DropdownList_up() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(3).click();
@@ -457,222 +457,222 @@ public class Drop_down_list extends BaseTest{
 		elementEdit_More.get(4).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_move = webtest.findElements("xpath=//a[@class='dropdown-item dropdown-toggle btn-move-column']");
-		//System.out.println("ï¿½Æ¶ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½"+elementEdit_move.size());
+		//System.out.println("ÒÆ¶¯°´Å¥¹²ÓÐ"+elementEdit_move.size());
 		elementEdit_move.get(2).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_moveUp = webtest.findElements("xpath=//a[@class='dropdown-item px-3']");
-		//System.out.println("ï¿½ï¿½ÎªÒ»ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½"+elementEdit_moveUp.size()+"ï¿½ï¿½");
+		//System.out.println("ÉýÎªÒ»¼¶À¸Ä¿¹²ÓÐ"+elementEdit_moveUp.size()+"¸ö");
 		elementEdit_moveUp.get(9).click();
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_addtext = webtest.findElements("xpath=//input[@class='form-control mt-2 mb-0']");
 		webtest.typeAndClear(elementEdit_addtext.get(0), "add1");
 		Thread.sleep(2000);
 		List<WebElement> elementSave= webtest.findElements("xpath=//button[@class='ok btn btn-primary']");
-		//System.out.println("È·ï¿½ï¿½ï¿½ï¿½Å¥Ò»ï¿½ï¿½ï¿½ï¿½"+elementSave.size()+"ï¿½ï¿½");
+		//System.out.println("È·¶¨°´Å¥Ò»¹²ÓÐ"+elementSave.size()+"¸ö");
 		elementSave.get(0).click();
-		System.out.println("ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("À¸Ä¿Éý¼¶");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½25");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý25");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶ÔÏÂÀ­ÁÐ±í¿òÍ¬¼¶¼ä½øÐÐ¡°ÒÆ¶¯¡±µÄÉèÖÃ
 	@Test(priority = 26)
 	public void DropdownList_Move() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
+		//ÕÒµ½¡°ÐÂÎÅ¶¯Ì¬¡±£¬²¢´ò¿ªÏÂÀ­ÁÐ±í
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(4).click();
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡±ï¿½ï¿½Å¥
+		//µã»÷¡°¸ü¶à¡±°´Å¥
 		List<WebElement> elementEdit_More = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default dropdown-toggle']");
 		elementEdit_More.get(4).click();
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½
+		//ÕÒµ½¡°ÒÆ¶¯¡±
 		List<WebElement> elementEdit_move = webtest.findElements("xpath=//a[@class='dropdown-item dropdown-toggle btn-move-column']");
-		System.out.println("ï¿½Æ¶ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½"+elementEdit_move.size());
+		System.out.println("ÒÆ¶¯°´Å¥¹²ÓÐ"+elementEdit_move.size());
 		elementEdit_move.get(3).click();
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Ñ¶2ï¿½ï¿½
+		//ÕÒµ½¡°ÐÜ-×ÊÑ¶2¡±
 		List<WebElement> elementEdit_moveUp = webtest.findElements("xpath=//a[@class='dropdown-item px-3']");
-		System.out.println("ï¿½Æ¶ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½"+elementEdit_moveUp.size()+"ï¿½ï¿½");
+		System.out.println("ÒÆ¶¯À¸Ä¿¹²ÓÐ"+elementEdit_moveUp.size()+"¸ö");
 		elementEdit_moveUp.get(19).click();
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½26");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý26");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
-	//27ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//27¡¢²âÊÔ¶ÔÏÂÀ­ÁÐ±í¿ò½øÐÐ¡°É¾³ý¡±µÄÉèÖÃ
 	@Test(priority = 27)
 	public void DropdownList_Delete() throws InterruptedException {
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
+		//ÕÒµ½¡°ÐÜ-Ìí¼Ó4¡±£¬²¢´ò¿ªÏÂÀ­ÁÐ±í
 		List<WebElement> elementDown= webtest.findElements("xpath=//i[@class='fa-angle-down h5 mb-0']");
 		elementDown.get(1).click();
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡±ï¿½ï¿½Å¥
+		//µã»÷¡°¸ü¶à¡±°´Å¥
 		List<WebElement> elementEdit_More = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default dropdown-toggle']");
 		elementEdit_More.get(1).click();
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½
+		//ÕÒµ½¡°É¾³ý¡±
 		List<WebElement> elementEdit_move = webtest.findElements("xpath=//button[@class='dropdown-item btn-del-column']");
-		System.out.println("É¾ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½"+elementEdit_move.size());
+		System.out.println("É¾³ý°´Å¥¹²ÓÐ"+elementEdit_move.size());
 		elementEdit_move.get(1).click();
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½
+		//ÕÒµ½¡°È·¶¨¡±
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½27");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý27");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 	}
 	
-	//28ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½é¡°È«ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ð±à¼­
+	//28¡¢²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿é¡°È«²¿¡±Ñ¡Ïî½øÐÐ±à¼­
 	@Test(priority = 28)
 	public void DropdownList_EditAll() throws InterruptedException {
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½']");
+		//ÕÒµ½¡°·ç¸ñ¡±
+		webtest.click("xpath=//button[text()='·ç¸ñ']");
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
-		webtest.click("xpath=//a[text()='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½']");
+		//µã»÷¡°·ç¸ñÉèÖÃ¡±
+		webtest.click("xpath=//a[text()='·ç¸ñÉèÖÃ']");
 		Thread.sleep(2000);
-		//ï¿½Òµï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ÕÒµ½Ò³ÃæÎÄ×Ö
 		List<WebElement> elementEdit_yes = webtest.findElements("xpath=//input[@class=' form-control']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+elementEdit_yes.size());
-		webtest.typeAndClear(elementEdit_yes.get(9), "ï¿½ï¿½-È«ï¿½ï¿½");
+		System.out.println("ÊäÈë¿ò¹²ÓÐ"+elementEdit_yes.size());
+		webtest.typeAndClear(elementEdit_yes.get(9), "ÐÜ-È«²¿");
 		Thread.sleep(2000);
 		webtest.leaveFrame();
-		//ï¿½ï¿½ï¿½ï¿½
+		//±£´æ
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		//¹ö¶¯Ìõµ½×îÏÂ·½
 		js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_Save = webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		System.out.println("ï¿½ï¿½ï¿½æ°´Å¥ï¿½ï¿½ï¿½ï¿½"+elementEdit_Save.size());
+		System.out.println("±£´æ°´Å¥¹²ÓÐ"+elementEdit_Save.size());
 		elementEdit_Save.get(5).click();
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½28");
+		System.out.println("²âÊÔÓÃÀý28");
 		Thread.sleep(2000);
 	}
 	
 	
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½é¡°Ã½ï¿½å±¨ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð±à¼­
+	// ²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿é¡°Ã½Ìå±¨µÀ¡±Ñ¡ÏîÎÄ×Ö½øÐÐ±à¼­
 	@Test(priority = 29)
 	public void DropdownList_EditMedia() throws InterruptedException {
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÕÒµ½¡°ÐÜ-±¨µÀ1¡±²¢µã»÷
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[2]/a");
 		Thread.sleep(2000);
 		webtest.click("xpath=//i[@class='icon wb-pencil']");
 		Thread.sleep(2000);
-		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ï¿½ï¿½-Ã½ï¿½å±¨ï¿½ï¿½");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ÐÜ-Ã½Ìå±¨µÀ");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½29");
+		System.out.println("²âÊÔÓÃÀý29");
 		Thread.sleep(2000);
 	}
 
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½é¡°ï¿½ï¿½Òµï¿½ï¿½Ñ¶ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð±à¼­
+	// ²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿é¡°ÐÐÒµ×ÊÑ¶¡±Ñ¡ÏîÎÄ×Ö½øÐÐ±à¼­
 	@Test(priority = 30)
 	public void DropdownList_EditIndustry() throws InterruptedException {
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Ñ¶2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÕÒµ½¡°ÐÜ-×ÊÑ¶2¡±²¢µã»÷
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[3]/a");
 		Thread.sleep(2000);
 		webtest.click("xpath=//i[@class='icon wb-pencil']");
 		Thread.sleep(2000);
-		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ï¿½ï¿½-ï¿½ï¿½Òµï¿½ï¿½Ñ¶");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ÐÜ-ÐÐÒµ×ÊÑ¶");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½30");
+		System.out.println("²âÊÔÓÃÀý30");
 		Thread.sleep(2000);
 	}
 
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½é¡°ï¿½ï¿½Òµï¿½ï¿½Ñ¶ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð±à¼­
+	// ²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿é¡°ÐÐÒµ×ÊÑ¶¡±Ñ¡ÏîÎÄ×Ö½øÐÐ±à¼­
 	@Test(priority = 31)
 	public void DropdownList_EditCorporate() throws InterruptedException {
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Òµ3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÕÒµ½¡°ÐÜ-ÆóÒµ3¡±²¢µã»÷
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[4]/a");
 		Thread.sleep(2000);
 		webtest.click("xpath=//i[@class='icon wb-pencil']");
 		Thread.sleep(2000);
-		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ï¿½ï¿½-ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "ÐÜ-ÆóÒµÐÂÎÅ");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½31");
+		System.out.println("²âÊÔÓÃÀý31");
 		webtest.leaveFrame();
 		Thread.sleep(2000);
 	}
 		
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð±à¼­ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+	//²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿éÑ¡ÏîÎÄ×Ö½øÐÐ±à¼­ºó£¬Í·²¿Ö÷µ¼º½À¸ÖÐÏÂÀ­¿òµÄÎÄ×ÖÄÚÈÝÏÔÊ¾
 	@Test(priority = 32)
 	public void DropdownList_Show2() throws InterruptedException {
 		//webtest.leaveFrame();
 		//Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/index.php?lang=cn&pageset=1']");
 		webtest.refresh();
-		webtest.click("xpath=//span[text()='ï¿½ï¿½ï¿½Å¶ï¿½Ì¬']");
+		webtest.click("xpath=//span[text()='ÐÂÎÅ¶¯Ì¬']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½32");
+		System.out.println("²âÊÔÓÃÀý32");
 		webtest.leaveFrame();
 	}
 
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿éËÑË÷À¸½øÐÐ¹Ø¼ü×ÖËÑË÷
 	@Test(priority = 33)
 	public void Search_Engines() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
-		//ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		//ÕÒµ½ËÑË÷¿ò
 		webtest.typeAndClear("xpath=//input[@class='form-control input-lg']", "Parallels");
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//µã»÷ËÑË÷
 		webtest.click("xpath=//button[@class='input-search-btn']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½33"); 
+		System.out.println("¹Ø¼ü×ÖËÑË÷");
+		System.out.println("²âÊÔÓÃÀý33"); 
 		webtest.leaveFrame();
 	}
 	
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+	// ²âÊÔ¶Ô×ÓÀ¸Ä¿Çø¿éËÑË÷À¸½øÐÐËÑË÷·½Ê½ÉèÖÃ
 	@Test(priority = 34)
 	public void Search_EnginesSet() throws InterruptedException, IOException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		// ÕÒµ½ÉèÖÃ
 		webtest.mouseToElement("xpath=//input[@class='form-control input-lg']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@data-index='5']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½ï¿½"
+		// µã»÷"±êÌâ"
 		webtest.leaveFrame();
 		Thread.sleep(2000);
-		webtest.click("xpath=//label[text()='ï¿½ï¿½ï¿½ï¿½']");
+		webtest.click("xpath=//label[text()='±êÌâ']");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_Save = webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		System.out.println("ï¿½ï¿½ï¿½æ°´Å¥ï¿½ï¿½ï¿½ï¿½" + elementEdit_Save.size());
+		System.out.println("±£´æ°´Å¥¹²ÓÐ" + elementEdit_Save.size());
 		elementEdit_Save.get(0).click();
-		System.out.println("ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½34");
+		System.out.println("¹Ø¼ü×ÖËÑË÷·½Ê½ÉèÖÃ");
+		System.out.println("²âÊÔÓÃÀý34");
 	}
 
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½
+	// ²âÊÔ¶ÔÄÚÈÝ½øÐÐÍÆ¼ö
 	@Test(priority = 35)
 	public void Search_Recommend() throws InterruptedException {
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		// ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
@@ -682,298 +682,298 @@ public class Drop_down_list extends BaseTest{
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		//ï¿½Æ¼ï¿½
-		webtest.click("xpath=//a[text()='ï¿½Æ¼ï¿½']");
+		//ÍÆ¼ö
+		webtest.click("xpath=//a[text()='ÍÆ¼ö']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½Æ¼ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½35");
+		System.out.println("ÍÆ¼öÄÚÈÝ");
+		System.out.println("²âÊÔÓÃÀý35");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Æ¼ï¿½
+	//²âÊÔ¶ÔÄÚÈÝÈ¡ÏûÍÆ¼ö
 	@Test(priority = 36)
 	public void Search_CancelRecommend() throws InterruptedException {
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		//È¡ï¿½ï¿½ï¿½Æ¼ï¿½
-		webtest.click("xpath=//a[text()='È¡ï¿½ï¿½ï¿½Æ¼ï¿½']");
+		//È¡ÏûÍÆ¼ö
+		webtest.click("xpath=//a[text()='È¡ÏûÍÆ¼ö']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½Æ¼ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½36");
+		System.out.println("ÍÆ¼öÄÚÈÝ");
+		System.out.println("²âÊÔÓÃÀý36");
 	}
 
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½
+	//²âÊÔ¶ÔÄÚÈÝÖÃ¶¥
 	@Test(priority = 37)
 	public void Search_Topping() throws InterruptedException {
 		/*
 		 * webtest.refresh(); Thread.sleep(2000); webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
-		 * ); // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * ); // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½Ú¶ï¿½ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // ¹´Ñ¡µÚ¶þ¸ö webtest.leaveFrame();
 		 */
 		List<WebElement> elementEdit_article = webtest.findElements("xpath=//input[@class='checkall-item custom-control-input']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + elementEdit_article.size());
+		System.out.println("¹²ÓÐÎÄÕÂ" + elementEdit_article.size());
 		elementEdit_article.get(1).click();
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½×´Ì¬ï¿½Þ¸ï¿½
+		//µã»÷×´Ì¬ÐÞ¸Ä
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		//ï¿½Ã¶ï¿½
-		webtest.click("xpath=//a[text()='ï¿½Ã¶ï¿½']");
+		//ÖÃ¶¥
+		webtest.click("xpath=//a[text()='ÖÃ¶¥']");
 		Thread.sleep(2000);
 		//Thread.sleep(2000);
-		System.out.println("ï¿½Ã¶ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½37");
+		System.out.println("ÖÃ¶¥");
+		System.out.println("²âÊÔÓÃÀý37");
 	}
 
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ã¶ï¿½
+	// ²âÊÔ¶ÔÄÚÈÝÈ¡ÏûÖÃ¶¥
 	@Test(priority = 38)
 	public void Search_CancelTopping() throws InterruptedException {
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½×´Ì¬ï¿½Þ¸ï¿½
+		// µã»÷×´Ì¬ÐÞ¸Ä
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		// ï¿½Ã¶ï¿½
-		webtest.click("xpath=//a[text()='È¡ï¿½ï¿½ï¿½Ã¶ï¿½']");
+		// ÖÃ¶¥
+		webtest.click("xpath=//a[text()='È¡ÏûÖÃ¶¥']");
 		Thread.sleep(2000);
 		Thread.sleep(2000);
-		System.out.println("ï¿½Ã¶ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½38");
+		System.out.println("ÖÃ¶¥");
+		System.out.println("²âÊÔÓÃÀý38");
 	}
 
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ì¨ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶ÔÄÚÈÝÇ°Ì¨Òþ²Ø
 	@Test(priority = 39)
 	public void Search_Hide() throws InterruptedException {
 		
 		webtest.click("xpath=//input[@class='checkall-all custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½×´Ì¬ï¿½Þ¸ï¿½
+		// µã»÷×´Ì¬ÐÞ¸Ä
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		// Ç°Ì¨ï¿½ï¿½ï¿½ï¿½
-		webtest.click("xpath=//a[text()='Ç°Ì¨ï¿½ï¿½ï¿½ï¿½']");
+		// Ç°Ì¨Òþ²Ø
+		webtest.click("xpath=//a[text()='Ç°Ì¨Òþ²Ø']");
 		Thread.sleep(2000);
 //		webtest.click("xpath=//button[@class='btn btn-default mr-1']");
 		Thread.sleep(2000);
-		System.out.println("Ç°Ì¨ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½39");
+		System.out.println("Ç°Ì¨Òþ²Ø");
+		System.out.println("²âÊÔÓÃÀý39");
 	}
 
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ì¨ï¿½ï¿½Ê¾
+	// ²âÊÔ¶ÔÄÚÈÝÇ°Ì¨ÏÔÊ¾
 	@Test(priority = 40)
 	public void Search_CancelHide() throws InterruptedException {
 		/*
 		 * //webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
-		 * ); // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * ); // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // ¹´Ñ¡ËùÓÐ webtest.leaveFrame();
 		 */
 		webtest.click("xpath=//input[@class='checkall-all custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½×´Ì¬ï¿½Þ¸ï¿½
+		// µã»÷×´Ì¬ÐÞ¸Ä
 		webtest.click("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		Thread.sleep(2000);
-		// Ç°Ì¨ï¿½ï¿½ï¿½ï¿½
-		webtest.click("xpath=//a[text()='Ç°Ì¨ï¿½ï¿½Ê¾']");
+		// Ç°Ì¨Òþ²Ø
+		webtest.click("xpath=//a[text()='Ç°Ì¨ÏÔÊ¾']");
 		Thread.sleep(2000);
 //		webtest.click("xpath=//button[@class='btn btn-default mr-1']");
 		Thread.sleep(2000);
-		System.out.println("Ç°Ì¨ï¿½ï¿½Ê¾");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½40");
+		System.out.println("Ç°Ì¨ÏÔÊ¾");
+		System.out.println("²âÊÔÓÃÀý40");
 	}
 	
-	// ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ²âÊÔ²âÊÔ¶ÔÄÚÈÝ½øÐÐ¡°¼òÌåÖÐÎÄ¡±¸´ÖÆ
 	@Test(priority = 41)
 	public void Search_Copy() throws InterruptedException {
 		/*
 		 * //webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
-		 * ); // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * ); // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // ¹´Ñ¡µÚÒ»Ïî webtest.leaveFrame();
 		 */
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// µã»÷¸´ÖÆ
 		List<WebElement> elementEdit_Copy = webtest.findElements("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		elementEdit_Copy.get(2).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		webtest.click("xpath=//a[text()='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½']");
+		// µã»÷¼òÌåÖÐÎÄ
+		webtest.click("xpath=//a[text()='¼òÌåÖÐÎÄ']");
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶ï¿½Ì¬
-		webtest.doubleClick("xpath=//button[text()='ï¿½ï¿½ï¿½Æµï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ä¿']");
+		//µã»÷ÐÂÎÅ¶¯Ì¬
+		webtest.doubleClick("xpath=//button[text()='¸´ÖÆµ½Ö¸¶¨À¸Ä¿']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//*[@id=\"news-list\"]/tfoot/tr/th[2]/div[5]/div/div/a[text()='ï¿½ï¿½ï¿½Å¶ï¿½Ì¬']");
+		webtest.click("xpath=//*[@id=\"news-list\"]/tfoot/tr/th[2]/div[5]/div/div/a[text()='ÐÂÎÅ¶¯Ì¬']");
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Ñ¶2
+		//µã»÷ÐÜ-×ÊÑ¶2
 		webtest.mouseToElement("xpath=//div[@class='dropdown-menu show']");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_Choose = webtest.findElements("xpath=//div[@class='dropdown dropright dropdown-submenu']");
 		System.out.println(elementEdit_Choose.size());
 		elementEdit_Choose.get(2).click();
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½5
-		webtest.click("xpath=//*[@id=\"news-list\"]/tfoot/tr/th[2]/div[5]/div/div/div/div/div/a[text()='ï¿½ï¿½-ï¿½ï¿½ï¿½5']");
+		//µã»÷ÐÜ-Ìí¼Ó5
+		webtest.click("xpath=//*[@id=\"news-list\"]/tfoot/tr/th[2]/div[5]/div/div/div/div/div/a[text()='ÐÜ-Ìí¼Ó5']");
 		Thread.sleep(2000);
 //		webtest.click("xpath=//button[@class='btn btn-default mr-1']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½41");
+		System.out.println("¡°¼òÌåÖÐÎÄ¡±¸´ÖÆ");
+		System.out.println("²âÊÔÓÃÀý41");
 	}
 	
 	
-	// ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð¡ï¿½Englishï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ²âÊÔ²âÊÔ¶ÔÄÚÈÝ½øÐÐ¡°English¡±¸´ÖÆ
 	@Test(priority = 42)
 	public void Search_CopyEnglish() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // ¹´Ñ¡µÚÒ»Ïî webtest.leaveFrame();
 		 */
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// µã»÷¸´ÖÆ
 		List<WebElement> elementEdit_Copy = webtest
 				.findElements("xpath=//button[@class='btn btn-default dropdown-toggle']");
 		elementEdit_Copy.get(2).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½English
+		// µã»÷English
 		webtest.click("xpath=//a[text()='English']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½News
+		// µã»÷News
 		List<WebElement> elementEdit_Choose = webtest
 				.findElements("xpath=//div[@class='dropdown dropright dropdown-submenu']");
 		elementEdit_Choose.get(1).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½5
+		// µã»÷ÐÜ-Ìí¼Ó5
 		webtest.click("xpath=//a[text()='Industry information']");
 		Thread.sleep(2000);
 //		webtest.click("xpath=//button[@class='btn btn-default mr-1']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½Englishï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½42");
+		System.out.println("¡°English¡±¸´ÖÆ");
+		System.out.println("²âÊÔÓÃÀý42");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½É¾ï¿½ï¿½
+	//²âÊÔ¶ÔÄÚÈÝ½øÐÐ¡°·ÅÈë»ØÊÕÕ¾¡±É¾³ý
 	@Test(priority = 43)
 	public void Search_RecycleBin() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // ¹´Ñ¡µÚÒ»Ïî webtest.leaveFrame();
 		 */
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½É¾ï¿½ï¿½
+		// µã»÷É¾³ý
 		List<WebElement> elementEdit_Delete = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default']");
 		System.out.println(elementEdit_Delete.size());
 		elementEdit_Delete.get(0).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾']");
+		// µã»÷·ÅÈë»ØÊÕÕ¾
+		webtest.click("xpath=//button[text()='·ÅÈë»ØÊÕÕ¾']");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½É¾ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½43");
+		System.out.println("¡°·ÅÈë»ØÊÕÕ¾¡±É¾³ý");
+		System.out.println("²âÊÔÓÃÀý43");
 	}
 
-	// BUG ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½Ô­
+	// BUG ²âÊÔ¶ÔÄÚÈÝ½øÐÐ¡°·ÅÈë»ØÊÕÕ¾¡±»¹Ô­
 	@Test(priority = 44)
 	public void Search_RecycleBin_Reduction() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ webtest.leaveFrame();
+		 * Thread.sleep(2000); // µã»÷»ØÊÕÕ¾ webtest.leaveFrame();
 		 */
 		webtest.mouseToElement("xpath=//div[@class='py-2 d-flex align-items-center justify-content-between']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//a[@class='btn-content-recycle text-content']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// µã»÷È«²¿ÎÄÕÂ
 		List<WebElement> elementEdit_all = webtest
 				.findElements("xpath=//input[@class='checkall-all custom-control-input']");
 		System.out.println(elementEdit_all.size());
 		elementEdit_all.get(2).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½Ô­
-		webtest.click("xpath=//button[text()='ï¿½ï¿½Ô­']");
+		// µã»÷»¹Ô­
+		webtest.click("xpath=//button[text()='»¹Ô­']");
 		Thread.sleep(2000);
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½É¾ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½44");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("¡°·ÅÈë»ØÊÕÕ¾¡±É¾³ý");
+		System.out.println("²âÊÔÓÃÀý44");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½É¾ï¿½ï¿½
+	//²âÊÔ¶ÔÄÚÈÝ½øÐÐ³¹µ×É¾³ý
 	@Test(priority = 45)
 	public void Search_Delete_completely() throws InterruptedException {
 		webtest.refresh(); 
 		Thread.sleep(2000); 
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
 		Thread.sleep(2000);
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		// ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		Thread.sleep(2000); // ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ 
+		Thread.sleep(2000); // ¹´Ñ¡µÚÒ»Ïî 
 		webtest.leaveFrame();
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½É¾ï¿½ï¿½
+		// µã»÷É¾³ý
 		List<WebElement> elementEdit_Delete = webtest.findElements("xpath=//button[@class='btn btn-sm btn-default']");
 		System.out.println(elementEdit_Delete.size());
 		elementEdit_Delete.get(0).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½']");
+		// µã»÷·ÅÈë»ØÊÕÕ¾
+		webtest.click("xpath=//button[text()='³¹µ×É¾³ý']");
 		Thread.sleep(2000);
-//		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½É¾ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½45");
+//		webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("¡°·ÅÈë»ØÊÕÕ¾¡±É¾³ý");
+		System.out.println("²âÊÔÓÃÀý45");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶ÔÄÚÈÝ½øÐÐ´¿ÎÄ×ÖÌí¼Ó
 	@Test(priority = 46)
 	public void Search_AddWord() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ webtest.leaveFrame();
+		 * Thread.sleep(2000); // µã»÷Ìí¼ÓÄÚÈÝ webtest.leaveFrame();
 		 */
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½']");
+		webtest.click("xpath=//button[text()='Ìí¼ÓÄÚÈÝ']");
 		Thread.sleep(2000);
-		// Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+		// Ñ¡ÔñËùÊôÀ¸Ä¿
 		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']");
 		Thread.sleep(2000);
-		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']/option[text()='ï¿½ï¿½-ï¿½ï¿½ï¿½4']");
+		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']/option[text()='ÐÜ-Ìí¼Ó4']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½
+		// ÊäÈëÎÄÕÂ±êÌâ
 		List<WebElement> elementEdit_add = webtest.findElements("xpath=//input[@class='form-control']");
 		System.out.println(elementEdit_add.size());
-		webtest.typeAndClear(elementEdit_add.get(1), "ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ÓµÄµï¿½Ò»Æªï¿½ï¿½ï¿½ï¿½");
+		webtest.typeAndClear(elementEdit_add.get(1), "ÕâÊÇÐ¡ÐÜÌí¼ÓµÄµÚÒ»ÆªÎÄÕÂ");
 		Thread.sleep(2000);		
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÊäÈëÎÄÕÂÄÚÈÝ
 		webtest.enterFrame("ueditor_0");
-		webtest.type("xpath=//body[@class='view']", "ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ÓµÄµï¿½Ò»Æªï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Å¼ï¿½òµ¥µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		webtest.type("xpath=//body[@class='view']", "ÕâÊÇÐ¡ÐÜÌí¼ÓµÄµÚÒ»ÆªÎÄÕÂ£¬ÓÐ×Å¼ò¼òµ¥µ¥µÄÄÚÈÝ");
 		Thread.sleep(2000);
 		webtest.leaveFrame();
 		Thread.sleep(2000);
@@ -981,51 +981,51 @@ public class Drop_down_list extends BaseTest{
 		System.out.println(elementEdit_Save.size());
 		elementEdit_Save.get(1).click();
 		Thread.sleep(2000);
-//		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½46");
+//		webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("´¿ÎÄ×ÖÌí¼ÓÄÚÈÝ");
+		System.out.println("²âÊÔÓÃÀý46");
 	}
 	
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶ÔÄÚÈÝ½øÐÐº¬·âÃæÍ¼Æ¬µÄÌí¼Ó
 	@Test(priority = 49)
 	public void Search_AddPicture() throws InterruptedException {
 		webtest.refresh();
 		Thread.sleep(2000);
-		// ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		// ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		Thread.sleep(2000); webtest.
 		click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
 		Thread.sleep(2000); 
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+		// µã»÷Ìí¼ÓÄÚÈÝ 
 		
-		webtest.click("xpath=//button[text()='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½']"); 
+		webtest.click("xpath=//button[text()='Ìí¼ÓÄÚÈÝ']"); 
 		Thread.sleep(2000);
 		webtest.leaveFrame();
-		// Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+		// Ñ¡ÔñËùÊôÀ¸Ä¿
 		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']");
 		Thread.sleep(2000);
-		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']/option[text()='ï¿½ï¿½-ï¿½ï¿½ï¿½4']");
+		webtest.click("xpath=//select[@class='form-control mr-1 w-a prov']/option[text()='ÐÜ-Ìí¼Ó4']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½
+		// ÊäÈëÎÄÕÂ±êÌâ
 		List<WebElement> elementEdit_add = webtest.findElements("xpath=//input[@class='form-control']");
 		System.out.println(elementEdit_add.size());
-		webtest.typeAndClear(elementEdit_add.get(1), "ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ÓµÄµï¿½Ò»Æªï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		webtest.typeAndClear(elementEdit_add.get(1), "ÕâÊÇÐ¡ÐÜÌí¼ÓµÄµÚÒ»ÆªÓÐÍ¼Æ¬µÄÎÄÕÂ");
 		webtest.leaveFrame();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ÊäÈëÎÄÕÂÄÚÈÝ
 		
 		webtest.enterFrame("ueditor_0]");
-		webtest.type("xpath=//body[@class='view']", "ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ÓµÄµï¿½Ò»Æªï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Å¼ï¿½òµ¥µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		webtest.type("xpath=//body[@class='view']", "ÕâÊÇÐ¡ÐÜÌí¼ÓµÄµÚÒ»Æª´øÍ¼Æ¬µÄÎÄÕÂ£¬ÓÐ×Å¼ò¼òµ¥µ¥µÄÄÚÈÝ");
 		Thread.sleep(2000);
 		webtest.leaveFrame();
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½
+		//Ìí¼ÓÎÄÕÂ·âÃæ
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		//¹ö¶¯Ìõµ½×îÏÂ·½
 		js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		Thread.sleep(3000);
-		//ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ñ¡ï¿½ï¿½
-		webtest.click("xpath=//button[text()='ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ñ¡ï¿½ï¿½']");
+		//µã»÷´ÓÍ¼Æ¬¿âÑ¡Ôñ
+		webtest.click("xpath=//button[text()='´ÓÍ¼Æ¬¿âÑ¡Ôñ']");
 		Thread.sleep(2000);
 		webtest.doubleClick("xpath=//a[@data-path='/upload/201801']");
 		Thread.sleep(2000);
@@ -1039,95 +1039,95 @@ public class Drop_down_list extends BaseTest{
 		System.out.println(elementEdit_Save.size());
 		elementEdit_Save.get(1).click();
 		Thread.sleep(2000);
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½49");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("º¬·âÃæÍ¼Æ¬Ìí¼ÓÄÚÈÝ");
+		System.out.println("²âÊÔÓÃÀý49");
 	}
 	
-	// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ð±à¼­
+	// ²âÊÔ¶ÔÄÚÈÝ½øÐÐº¬·âÃæÍ¼Æ¬ÎÄÕÂ½øÐÐ±à¼­
 	@Test(priority = 47)
 	public void Search_EditPicture() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶ï¿½Ì¬ webtest.leaveFrame();
+		 * Thread.sleep(2000); // µã»÷ÐÂÎÅ¶¯Ì¬ webtest.leaveFrame();
 		 */
-		webtest.click("xpath=//span[text()='ï¿½ï¿½ï¿½Å¶ï¿½Ì¬']");
+		webtest.click("xpath=//span[text()='ÐÂÎÅ¶¯Ì¬']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½
+		// ¹´Ñ¡µÚÒ»Ïî
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½à¼­
+		// µã»÷±à¼­
 		List<WebElement> elementEdit_Delete = webtest.findElements("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		elementEdit_Delete.get(0).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½
+		// Ìí¼ÓÎÄÕÂ·âÃæ
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		// ¹ö¶¯Ìõµ½×îÏÂ·½
 		js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		Thread.sleep(3000);
-		// ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ï´ï¿½
+		// µã»÷ÎÄ¼þÉÏ´«
 		webtest.type("xpath=//input[@data-plugin='fileinput']", "E:\\workspace\\img\\01.png");
 		Thread.sleep(2000);
-		//ï¿½ï¿½ï¿½ï¿½
+		//±£´æ
 		List<WebElement> elementEdit_Save0 = webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½"+elementEdit_Save0.size());
+		System.out.println("±£´æ"+elementEdit_Save0.size());
 		elementEdit_Save0.get(2).click();
 		Thread.sleep(2000);
-//		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½à¼­");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½47");
+//		webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("º¬·âÃæÍ¼Æ¬ÎÄÕÂ½øÐÐÍ¼Æ¬±à¼­");
+		System.out.println("²âÊÔÓÃÀý47");
 	}
 	
-	// ï¿½ï¿½ï¿½Ô¶Ôºï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
+	// ²âÊÔ¶Ôº¬·âÃæÍ¼Æ¬µÄÄÚÈÝ½øÐÐ·âÃæµÄÉ¾³ý
 	@Test(priority = 48)
 	public void Search_EditPicture_Delete() throws InterruptedException {
 		/*
-		 * // ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		 * // ÕÒµ½ÎÄÕÂÄ£¿éµÄ¡°ÄÚÈÝ¡±
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
 		 * click("xpath=//button[@class='btn btn-xs btn-warning pageset-content']");
-		 * Thread.sleep(2000); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶ï¿½Ì¬ webtest.leaveFrame();
+		 * Thread.sleep(2000); // µã»÷ÐÂÎÅ¶¯Ì¬ webtest.leaveFrame();
 		 */
-		// ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½
+		// ¹´Ñ¡µÚÒ»Ïî
 		webtest.click("xpath=//input[@class='checkall-item custom-control-input']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½à¼­
+		// µã»÷±à¼­
 		List<WebElement> elementEdit_Delete = webtest
 				.findElements("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		elementEdit_Delete.get(0).click();
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½
+		// Ìí¼ÓÎÄÕÂ·âÃæ
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
+		// ¹ö¶¯Ìõµ½×îÏÂ·½
 		js.executeScript("window.scroll(0,document.body.scrollHeight)");
 		Thread.sleep(3000);
-		// ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ï´ï¿½
+		// µã»÷ÎÄ¼þÉÏ´«
 		webtest.click("xpath=//i[@class='glyphicon glyphicon-trash text-grey']");
 		Thread.sleep(2000);
-		// ï¿½ï¿½ï¿½ï¿½
+		// ±£´æ
 		List<WebElement> elementEdit_Save0 = webtest.findElements("xpath=//button[@class='btn btn-primary']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½" + elementEdit_Save0.size());
+		System.out.println("±£´æ" + elementEdit_Save0.size());
 		elementEdit_Save0.get(2).click();
 		Thread.sleep(2000);
-		//webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½à¼­");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½48");
+		//webtest.click("xpath=//button[text()='¹Ø±Õ']");
+		System.out.println("º¬·âÃæÍ¼Æ¬ÎÄÕÂ½øÐÐÍ¼Æ¬±à¼­");
+		System.out.println("²âÊÔÓÃÀý48");
 	}
 
-	//ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//²âÊÔ¶ÔÏÂÀ­ÁÐ±í¿ò½øÐÐ¡°Ìí¼ÓÓ¢ÎÄ×ÓÀ¸Ä¿¡±µÄÉèÖÃ
 	@Test(priority = 50)
 	public void DropdownList_English() throws InterruptedException {
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
 		webtest.click("xpath=//span[text()='English']");
 		Thread.sleep(2000);
 		webtest.leaveFrame();
 		Thread.sleep(2000);
-		webtest.click("xpath=//a[text()='ï¿½ï¿½Ä¿']");
+		webtest.click("xpath=//a[text()='À¸Ä¿']");
 		Thread.sleep(2000);
 		List<WebElement> elementEdit_More = webtest
 				.findElements("xpath=//button[@class='btn btn-sm btn-default dropdown-toggle']");
@@ -1142,10 +1142,10 @@ public class Drop_down_list extends BaseTest{
 		Thread.sleep(2000);
 		List<WebElement> elementSave = webtest.findElements("xpath=//button[@class='btn btn-primary']");
 		elementSave.get(3).click();
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿");
+		System.out.println("Ìí¼Ó×ÓÀ¸Ä¿");
 		Thread.sleep(2000);
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½50");
-		webtest.click("xpath=//button[text()='ï¿½Ø±ï¿½']");
+		System.out.println("²âÊÔÓÃÀý50");
+		webtest.click("xpath=//button[text()='¹Ø±Õ']");
 		Thread.sleep(2000);
 	}
 	

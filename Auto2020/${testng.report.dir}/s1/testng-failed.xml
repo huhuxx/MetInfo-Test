@@ -8,19 +8,10 @@
     <classes>
       <class name="com.webtest.demo.Drop_down_list">
         <methods>
-          <include name="DropdownList_EditAll"/>
-          <include name="DropdownList_AddChild"/>
           <include name="doAfterMethod"/>
-          <include name="DropdownList_Move"/>
-          <include name="Search_RecycleBin"/>
-          <include name="DropdownList_AddChild1"/>
-          <include name="DropdownList_AddChild_child"/>
-          <include name="Search_RecycleBin_Reduction"/>
           <include name="Search_AddPicture"/>
-          <include name="DropdownList_Delete"/>
-          <include name="DropdownList_up"/>
           <include name="DropdownList_Show2"/>
-          <include name="Search_Copy"/>
+          <include name="Search_EditPicture_Delete"/>
           <include name="doBeforeClass"/>
         </methods>
       </class> <!-- com.webtest.demo.Drop_down_list -->

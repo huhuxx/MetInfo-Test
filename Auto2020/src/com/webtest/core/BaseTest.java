@@ -81,7 +81,7 @@ public class BaseTest {
 	
 	@Test(priority = 2)
 	public void testLogin() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/index.php?lang=cn&pageset=1']");
 		webtest.click("xpath=//a[text()='µÇÂ¼']");
 		Thread.sleep(2000);
 		webtest.type("name=username", "xjy1");
