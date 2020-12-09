@@ -12,7 +12,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import com.webtest.utils.ReadProperties;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class MailUtil {
 	
 	public void SendMail(String send) throws IOException {

@@ -4,7 +4,10 @@ import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class NSDataProvider {
 
 	

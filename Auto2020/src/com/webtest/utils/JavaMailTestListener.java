@@ -8,7 +8,10 @@ import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class JavaMailTestListener extends TestListenerAdapter{
 	private static String detailResult;
 	@Override

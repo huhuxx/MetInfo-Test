@@ -10,7 +10,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.google.common.io.Files;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class SeleniumScreenShot {
     public WebDriver driver;
  

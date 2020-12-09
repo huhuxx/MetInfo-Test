@@ -10,7 +10,10 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.utils.ReadProperties;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class Drop_down_list extends BaseTest{
 	@Test(priority = 3)
 	public void DropdownList_Show() throws InterruptedException {

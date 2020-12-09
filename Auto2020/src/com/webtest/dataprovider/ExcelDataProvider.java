@@ -17,6 +17,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 /*
  * Excel数据驱动类
+ * 
+ * author:XiongJingyi
+ *
  */
 
 public class ExcelDataProvider {

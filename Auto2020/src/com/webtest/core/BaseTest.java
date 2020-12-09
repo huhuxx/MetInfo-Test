@@ -14,7 +14,7 @@ import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
 /**
- * author:lihuanzhen
+ * author:XiongJingyi
  *
  */
 

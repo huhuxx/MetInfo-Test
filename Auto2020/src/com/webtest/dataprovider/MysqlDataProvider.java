@@ -8,7 +8,10 @@ import java.util.List;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+/**
+ * author:XiongJingyi
+ *
+ */
 public class MysqlDataProvider {
 	
 

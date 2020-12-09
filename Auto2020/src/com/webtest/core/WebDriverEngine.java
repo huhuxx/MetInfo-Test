@@ -13,8 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.webtest.utils.Log;
 /**
- * author:lihuanzhen
- 
+ * author:XiongJingyi
+ *
  */
 public class WebDriverEngine {
 
