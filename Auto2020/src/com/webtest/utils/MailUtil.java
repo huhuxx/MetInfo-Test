@@ -28,6 +28,9 @@ public class MailUtil {
 			props.put("mail.transport.protocol", "smtp");
 			props.put("mail.smtp.host", "smtp.126.com");
 			props.put("mail.smtp.port", "465");
+			props.put("mail.smtp.socketFactory.port", "465");
+		    props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+		    props.put("mail.smtp.socketFactory.fallback", "false");
 			props.put("mail.smtp.auth", true);
 			//1、构造Session对象(邮件会话对象)，设置服务器，授权码，需要Properties对象
 			Session session = Session.getInstance(props,new Authenticator() {
