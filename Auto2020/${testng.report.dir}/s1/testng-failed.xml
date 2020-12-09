@@ -8,11 +8,46 @@
     <classes>
       <class name="com.webtest.demo.Drop_down_list">
         <methods>
-          <include name="doAfterMethod"/>
-          <include name="Search_AddPicture"/>
-          <include name="DropdownList_Show2"/>
+          <include name="DropdownList_IndustryNavigation_All"/>
+          <include name="Search_Engines"/>
+          <include name="DropdownList_IndustryNewOpen"/>
+          <include name="DropdownList_EditAll"/>
+          <include name="DropdownList_AddChild"/>
+          <include name="DropdownList_Move"/>
+          <include name="Search_AddWord"/>
+          <include name="DropdownList_AddChild1"/>
+          <include name="DropdownList_EditIndustry"/>
+          <include name="Search_Topping"/>
+          <include name="DropdownList_EditCorporate"/>
+          <include name="DropdownList_English"/>
+          <include name="DropdownList_IndustryOrder"/>
           <include name="Search_EditPicture_Delete"/>
           <include name="doBeforeClass"/>
+          <include name="DropdownList_CorporateNewOpen"/>
+          <include name="Search_Recommend"/>
+          <include name="Search_Delete_completely"/>
+          <include name="Search_EnginesSet"/>
+          <include name="doAfterMethod"/>
+          <include name="DropdownList_CorporateNavigation_All"/>
+          <include name="DropdownList_MediaNavigation_All"/>
+          <include name="Search_EditPicture"/>
+          <include name="Search_RecycleBin"/>
+          <include name="DropdownList_IndustryNavigation_Head"/>
+          <include name="DropdownList_CorporateNavigation_Bottom"/>
+          <include name="DropdownList_CorporateOrder"/>
+          <include name="DropdownList_MediaNavigation_Bottom"/>
+          <include name="DropdownList_AddChild_child"/>
+          <include name="Search_RecycleBin_Reduction"/>
+          <include name="DropdownList_MediaOrder"/>
+          <include name="Search_CopyEnglish"/>
+          <include name="Search_AddPicture"/>
+          <include name="DropdownList_Delete"/>
+          <include name="DropdownList_up"/>
+          <include name="DropdownList_EditMedia"/>
+          <include name="DropdownList_MediaNewOpen"/>
+          <include name="DropdownList_Show2"/>
+          <include name="Search_Copy"/>
+          <include name="DropdownList_IndustryNavigation_Bottom"/>
         </methods>
       </class> <!-- com.webtest.demo.Drop_down_list -->
     </classes>

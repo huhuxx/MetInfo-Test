@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>t2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>47/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/38/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 09 12:21:29 CST 2020</td>
+<td>Started on:</td><td>Wed Dec 09 13:51:41 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>886 seconds (886877 ms)</td>
+<tr><td>Total time:</td><td>207 seconds (207224 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,12 +68,1083 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.doAfterMethod()'><b>doAfterMethod</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at com.webtest.core.BaseTest.doAfterMethod(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609389093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609389093'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at com.webtest.core.BaseTest.doAfterMethod(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild()'><b>DropdownList_AddChild</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541046463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541046463'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild1()'><b>DropdownList_AddChild1</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild1(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878991463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878991463'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild_child()'><b>DropdownList_AddChild_child</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild_child(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17600354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17600354'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_AddChild_child(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_All()'><b>DropdownList_CorporateNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_All(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace166536076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166536076'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_All(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Bottom()'><b>DropdownList_CorporateNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Bottom(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275009283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275009283'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Bottom(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNewOpen()'><b>DropdownList_CorporateNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNewOpen(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1190566357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1190566357'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNewOpen(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateOrder()'><b>DropdownList_CorporateOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateOrder(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1276544608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276544608'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateOrder(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_Delete()'><b>DropdownList_Delete</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_Delete(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139168000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139168000'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_Delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_EditAll()'><b>DropdownList_EditAll</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_EditAll(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174881426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174881426'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_EditAll(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>4</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_EditCorporate()'><b>DropdownList_EditCorporate</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditCorporate(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048102341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2048102341'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditCorporate(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_EditIndustry()'><b>DropdownList_EditIndustry</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditIndustry(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791408866'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditIndustry(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_EditMedia()'><b>DropdownList_EditMedia</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditMedia(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509713998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509713998'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_EditMedia(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_English()'><b>DropdownList_English</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_English(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438123546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438123546'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.DropdownList_English(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_All()'><b>DropdownList_IndustryNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_All(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace119112899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace119112899'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_All(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Bottom()'><b>DropdownList_IndustryNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Bottom(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398260359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398260359'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Bottom(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Head()'><b>DropdownList_IndustryNavigation_Head</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Head(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace231725600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace231725600'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Head(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNewOpen()'><b>DropdownList_IndustryNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNewOpen(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883380345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883380345'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryNewOpen(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryOrder()'><b>DropdownList_IndustryOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryOrder(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629353699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629353699'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_IndustryOrder(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_All()'><b>DropdownList_MediaNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_All(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1648582256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648582256'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_All(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Bottom()'><b>DropdownList_MediaNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Bottom(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037955032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037955032'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Bottom(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNewOpen()'><b>DropdownList_MediaNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNewOpen(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061440682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061440682'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNewOpen(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaOrder()'><b>DropdownList_MediaOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaOrder(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1068445309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1068445309'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaOrder(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_Move()'><b>DropdownList_Move</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_Move(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace862025017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace862025017'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_Move(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_Show2()'><b>DropdownList_Show2</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td><div><pre>java.lang.NullPointerException: null value in entry: id=null
@@ -85,8 +1156,8 @@ function toggleAllBoxes() {
 	at com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
 	at com.webtest.demo.Drop_down_list.DropdownList_Show2(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783141366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace783141366'><pre>java.lang.NullPointerException: null value in entry: id=null
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948960194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948960194'><pre>java.lang.NullPointerException: null value in entry: id=null
 	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
 	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
 	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
@@ -125,19 +1196,391 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
+<td title='com.webtest.demo.Drop_down_list.DropdownList_up()'><b>DropdownList_up</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_up(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908781622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908781622'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_up(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
 <td title='com.webtest.demo.Drop_down_list.Search_AddPicture()'><b>Search_AddPicture</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td><div><pre>java.lang.IllegalArgumentException: Must provide a location for a move action.
-	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:37)
-	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
-	at com.webtest.core.WebDriverEngine.mouseToElement(Unknown Source)
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
 	at com.webtest.demo.Drop_down_list.Search_AddPicture(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890160784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace890160784'><pre>java.lang.IllegalArgumentException: Must provide a location for a move action.
-	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:37)
-	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
-	at com.webtest.core.WebDriverEngine.mouseToElement(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412656257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412656257'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
 	at com.webtest.demo.Drop_down_list.Search_AddPicture(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_AddWord()'><b>Search_AddWord</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_AddWord(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724028528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724028528'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_AddWord(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>6</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_Copy()'><b>Search_Copy</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_Copy(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1144897090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1144897090'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_Copy(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_CopyEnglish()'><b>Search_CopyEnglish</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_CopyEnglish(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443502884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443502884'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_CopyEnglish(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_Delete_completely()'><b>Search_Delete_completely</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Delete_completely(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace52487168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52487168'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Delete_completely(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_EditPicture()'><b>Search_EditPicture</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_EditPicture(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace687501326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace687501326'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_EditPicture(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>4</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_EditPicture_Delete()'><b>Search_EditPicture_Delete</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_EditPicture_Delete(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050275256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050275256'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_EditPicture_Delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_Engines()'><b>Search_Engines</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
+	at com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Engines(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113243119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113243119'><pre>java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
+	at com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Engines(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,33 +1612,82 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
-<td title='com.webtest.demo.Drop_down_list.Search_EditPicture_Delete()'><b>Search_EditPicture_Delete</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input class=&quot;checkall-item custom-control-input&quot; name=&quot;id&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (277,197) because another element &lt;label class=&quot;form-control-label&quot;&gt; obscures it
+<td title='com.webtest.demo.Drop_down_list.Search_EnginesSet()'><b>Search_EnginesSet</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
+	at com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_EnginesSet(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642973315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1642973315'><pre>java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
+	at com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_EnginesSet(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>3</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_Recommend()'><b>Search_Recommend</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.43.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.webtest.core.WebDriverEngine.click(Unknown Source)
-	at com.webtest.demo.Drop_down_list.Search_EditPicture_Delete(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Recommend(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619621481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace619621481'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input class=&quot;checkall-item custom-control-input&quot; name=&quot;id&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (277,197) because another element &lt;label class=&quot;form-control-label&quot;&gt; obscures it
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1521204009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1521204009'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.43.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -204,10 +1696,130 @@ Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.webtest.core.WebDriverEngine.click(Unknown Source)
-	at com.webtest.demo.Drop_down_list.Search_EditPicture_Delete(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.webtest.core.WebDriverEngine.refresh(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_Recommend(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_RecycleBin()'><b>Search_RecycleBin</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_RecycleBin(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1167327028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1167327028'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_RecycleBin(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>2</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_RecycleBin_Reduction()'><b>Search_RecycleBin_Reduction</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.IllegalArgumentException: Must provide a location for a move action.
+	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:37)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
+	at com.webtest.core.WebDriverEngine.mouseToElement(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_RecycleBin_Reduction(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456785282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456785282'><pre>java.lang.IllegalArgumentException: Must provide a location for a move action.
+	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:37)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
+	at com.webtest.core.WebDriverEngine.mouseToElement(Unknown Source)
+	at com.webtest.demo.Drop_down_list.Search_RecycleBin_Reduction(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.TestNG.privateMain(TestNG.java:1371)
+	at org.testng.TestNG.main(TestNG.java:1335)
+</pre></div></td>
+<td>0</td>
+<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
+<tr>
+<td title='com.webtest.demo.Drop_down_list.Search_Topping()'><b>Search_Topping</b><br>Test class: com.webtest.demo.Drop_down_list</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_Topping(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038820134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038820134'><pre>java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.Search_Topping(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -247,34 +1859,9 @@ Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild()'><b>DropdownList_AddChild</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild1()'><b>DropdownList_AddChild1</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_AddChild_child()'><b>DropdownList_AddChild_child</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>19</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateEdit()'><b>DropdownList_CorporateEdit</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
 <td>13</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_All()'><b>DropdownList_CorporateNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Bottom()'><b>DropdownList_CorporateNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Head()'><b>DropdownList_CorporateNavigation_Head</b><br>Test class: com.webtest.demo.Drop_down_list</td>
@@ -282,74 +1869,9 @@ Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
 <td>17</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateNewOpen()'><b>DropdownList_CorporateNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_CorporateOrder()'><b>DropdownList_CorporateOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_Delete()'><b>DropdownList_Delete</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>20</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_EditAll()'><b>DropdownList_EditAll</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>16</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_EditCorporate()'><b>DropdownList_EditCorporate</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>25</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_EditIndustry()'><b>DropdownList_EditIndustry</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>25</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_EditMedia()'><b>DropdownList_EditMedia</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>25</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_English()'><b>DropdownList_English</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>33</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryEdit()'><b>DropdownList_IndustryEdit</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
 <td>2</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_All()'><b>DropdownList_IndustryNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Bottom()'><b>DropdownList_IndustryNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNavigation_Head()'><b>DropdownList_IndustryNavigation_Head</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryNewOpen()'><b>DropdownList_IndustryNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_IndustryOrder()'><b>DropdownList_IndustryOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_MediaEdit()'><b>DropdownList_MediaEdit</b><br>Test class: com.webtest.demo.Drop_down_list</td>
@@ -357,119 +1879,34 @@ Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
 <td>9</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_All()'><b>DropdownList_MediaNavigation_All</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Bottom()'><b>DropdownList_MediaNavigation_Bottom</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Head()'><b>DropdownList_MediaNavigation_Head</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaNewOpen()'><b>DropdownList_MediaNewOpen</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_MediaOrder()'><b>DropdownList_MediaOrder</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_Move()'><b>DropdownList_Move</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
 <td>17</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.DropdownList_Show()'><b>DropdownList_Show</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>11</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.DropdownList_up()'><b>DropdownList_up</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>22</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_AddWord()'><b>Search_AddWord</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>27</td>
+<td>10</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.Search_CancelHide()'><b>Search_CancelHide</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>17</td>
+<td>8</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.Search_CancelRecommend()'><b>Search_CancelRecommend</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>15</td>
+<td>6</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.Search_CancelTopping()'><b>Search_CancelTopping</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_Copy()'><b>Search_Copy</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>30</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_CopyEnglish()'><b>Search_CopyEnglish</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>22</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_Delete_completely()'><b>Search_Delete_completely</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>28</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_EditPicture()'><b>Search_EditPicture</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>20</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_Engines()'><b>Search_Engines</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>10</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_EnginesSet()'><b>Search_EnginesSet</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>17</td>
+<td>8</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.Search_Hide()'><b>Search_Hide</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>17</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_Recommend()'><b>Search_Recommend</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>29</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_RecycleBin()'><b>Search_RecycleBin</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>12</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_RecycleBin_Reduction()'><b>Search_RecycleBin_Reduction</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>18</td>
-<td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
-<tr>
-<td title='com.webtest.demo.Drop_down_list.Search_Topping()'><b>Search_Topping</b><br>Test class: com.webtest.demo.Drop_down_list</td>
-<td></td>
-<td>12</td>
+<td>8</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 <tr>
 <td title='com.webtest.demo.Drop_down_list.testBackLogin()'><b>testBackLogin</b><br>Test class: com.webtest.demo.Drop_down_list</td>
@@ -479,7 +1916,7 @@ Session ID: 265b75ea-554c-4c3b-8f12-9658d0f4fe06
 <tr>
 <td title='com.webtest.demo.Drop_down_list.testLogin()'><b>testLogin</b><br>Test class: com.webtest.demo.Drop_down_list</td>
 <td></td>
-<td>17</td>
+<td>16</td>
 <td>com.webtest.demo.Drop_down_list@1efbd816</td></tr>
 </table><p>
 </body>
