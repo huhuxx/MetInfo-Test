@@ -18,7 +18,7 @@
     <target name="compile"  depends ="clean">
         <mkdir dir ="${dest}"/>
     	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" >
-    	  	<compilerarg line="-encoding GBK "></compilerarg>
+    	  	<compilerarg line="-encoding UTF-8 "></compilerarg>
     	  	</javac>
     </target>
     <!-- 运行 -->
