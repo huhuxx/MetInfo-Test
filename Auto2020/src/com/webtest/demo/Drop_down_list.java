@@ -17,7 +17,7 @@ import com.webtest.utils.ReadProperties;
 public class Drop_down_list extends BaseTest{
 	@Test(priority = 3)
 	public void DropdownList_Show() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
 		webtest.mouseToElement("xpath=//span[text()='新闻动态']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//span[text()='新闻动态']");
@@ -565,7 +565,7 @@ public class Drop_down_list extends BaseTest{
 		// 找到“熊-报道1”并点击
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[2]/a");
 		Thread.sleep(2000);
@@ -585,7 +585,7 @@ public class Drop_down_list extends BaseTest{
 		// 找到“熊-资讯2”并点击
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[3]/a");
 		Thread.sleep(2000);
@@ -605,7 +605,7 @@ public class Drop_down_list extends BaseTest{
 		// 找到“熊-企业3”并点击
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
 		Thread.sleep(2000);
 		webtest.mouseToElement("xpath=//ul[@class='clearfix met-column-nav-ul text-xs-center']/li[4]/a");
 		Thread.sleep(2000);
@@ -625,7 +625,7 @@ public class Drop_down_list extends BaseTest{
 	public void DropdownList_Show2() throws InterruptedException {
 		//webtest.leaveFrame();
 		//Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/index.php?lang=cn&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
 		webtest.refresh();
 		webtest.click("xpath=//span[text()='新闻动态']");
 		Thread.sleep(2000);
@@ -636,7 +636,7 @@ public class Drop_down_list extends BaseTest{
 	//测试对子栏目区块搜索栏进行关键字搜索
 	@Test(priority = 33)
 	public void Search_Engines() throws InterruptedException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
 		//找到搜索框
 		webtest.typeAndClear("xpath=//input[@class='form-control input-lg']", "Parallels");
 		Thread.sleep(2000);
@@ -651,7 +651,7 @@ public class Drop_down_list extends BaseTest{
 	// 测试对子栏目区块搜索栏进行搜索方式设置
 	@Test(priority = 34)
 	public void Search_EnginesSet() throws InterruptedException, IOException {
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/?pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/?pageset=1']");
 		// 找到设置
 		webtest.mouseToElement("xpath=//input[@class='form-control input-lg']");
 		Thread.sleep(2000);
@@ -674,7 +674,7 @@ public class Drop_down_list extends BaseTest{
 	public void Search_Recommend() throws InterruptedException {
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
 		// 找到文章模块的“内容”
 		webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		Thread.sleep(2000);
@@ -712,7 +712,7 @@ public class Drop_down_list extends BaseTest{
 	public void Search_Topping() throws InterruptedException {
 		/*
 		 * webtest.refresh(); Thread.sleep(2000); webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
 		 * ); // 找到文章模块的“内容”
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
@@ -774,7 +774,7 @@ public class Drop_down_list extends BaseTest{
 	public void Search_CancelHide() throws InterruptedException {
 		/*
 		 * //webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
 		 * ); // 找到文章模块的“内容”
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
@@ -800,7 +800,7 @@ public class Drop_down_list extends BaseTest{
 	public void Search_Copy() throws InterruptedException {
 		/*
 		 * //webtest.enterFrame1(
-		 * "xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
+		 * "xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']"
 		 * ); // 找到文章模块的“内容”
 		 * webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
 		 * Thread.sleep(2000); webtest.
@@ -929,7 +929,7 @@ public class Drop_down_list extends BaseTest{
 	public void Search_Delete_completely() throws InterruptedException {
 		webtest.refresh(); 
 		Thread.sleep(2000); 
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
 		Thread.sleep(2000);
 		// 找到文章模块的“内容”
 		webtest.mouseToElement("xpath=//div[@class='met-news-list set']");
@@ -1125,7 +1125,7 @@ public class Drop_down_list extends BaseTest{
 	public void DropdownList_English() throws InterruptedException {
 		webtest.refresh();
 		Thread.sleep(2000);
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:8070/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/news/index.php?lang=cn&stype=1&search=search&class1=3&content=Parallels&pageset=1']");
 		webtest.click("xpath=//span[text()='English']");
 		Thread.sleep(2000);
 		webtest.leaveFrame();
