@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 38 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 40 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">50 methods, 38 failed,   12 passed</span>
+                    <span class="method-stats">50 methods, 40 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -125,6 +125,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_CorporateNavigation_Bottom">DropdownList_CorporateNavigation_Bottom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_CorporateNavigation_Head">DropdownList_CorporateNavigation_Head</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -200,6 +205,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_MediaNavigation_Bottom">DropdownList_MediaNavigation_Bottom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_MediaNavigation_Head">DropdownList_MediaNavigation_Head</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -308,22 +318,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_CorporateNavigation_Head">DropdownList_CorporateNavigation_Head</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_IndustryEdit">DropdownList_IndustryEdit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_MediaEdit">DropdownList_MediaEdit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.demo.Drop_down_list" hash-for-method="DropdownList_MediaNavigation_Head">DropdownList_MediaNavigation_Head</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -441,6 +441,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="DropdownList_CorporateNavigation_Head">
+                  </a> <!-- DropdownList_CorporateNavigation_Head -->
+                  <span class="method-name">DropdownList_CorporateNavigation_Head</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Head(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="DropdownList_CorporateNewOpen">
                   </a> <!-- DropdownList_CorporateNewOpen -->
                   <span class="method-name">DropdownList_CorporateNewOpen</span>
@@ -496,8 +508,8 @@
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -522,8 +534,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -548,8 +560,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -574,8 +586,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -677,6 +689,18 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="DropdownList_MediaNavigation_Head">
+                  </a> <!-- DropdownList_MediaNavigation_Head -->
+                  <span class="method-name">DropdownList_MediaNavigation_Head</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Head(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="DropdownList_MediaNewOpen">
                   </a> <!-- DropdownList_MediaNewOpen -->
                   <span class="method-name">DropdownList_MediaNewOpen</span>
@@ -750,8 +774,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -812,8 +836,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -898,8 +922,8 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;XIONGBEAUTY&apos;, ip: &apos;192.168.137.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -971,13 +995,6 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="DropdownList_CorporateNavigation_Head">
-                  </a> <!-- DropdownList_CorporateNavigation_Head -->
-                  <span class="method-name">DropdownList_CorporateNavigation_Head</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="DropdownList_IndustryEdit">
                   </a> <!-- DropdownList_IndustryEdit -->
                   <span class="method-name">DropdownList_IndustryEdit</span>
@@ -988,13 +1005,6 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
                   <a name="DropdownList_MediaEdit">
                   </a> <!-- DropdownList_MediaEdit -->
                   <span class="method-name">DropdownList_MediaEdit</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="DropdownList_MediaNavigation_Head">
-                  </a> <!-- DropdownList_MediaNavigation_Head -->
-                  <span class="method-name">DropdownList_MediaNavigation_Head</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -1057,7 +1067,7 @@ Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;s1&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;s1&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.webtest.core.JavaMailTestListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -1105,210 +1115,210 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(50);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DropdownList_CorporateNavigation_Head')
+data.setCell(0, 1, 'testLogin')
 data.setCell(0, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(0, 3, 17716);
+data.setCell(0, 3, 16727);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'DropdownList_MediaNavigation_Head')
+data.setCell(1, 1, 'testBackLogin')
 data.setCell(1, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(1, 3, 17654);
+data.setCell(1, 3, 13040);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogin')
+data.setCell(2, 1, 'DropdownList_Show')
 data.setCell(2, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(2, 3, 16517);
+data.setCell(2, 3, 10808);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'DropdownList_CorporateEdit')
 data.setCell(3, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(3, 3, 13616);
+data.setCell(3, 3, 10518);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testBackLogin')
+data.setCell(4, 1, 'DropdownList_MediaEdit')
 data.setCell(4, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(4, 3, 13032);
+data.setCell(4, 3, 9699);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DropdownList_Show')
+data.setCell(5, 1, 'Search_CancelHide')
 data.setCell(5, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(5, 3, 10578);
+data.setCell(5, 3, 8012);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'DropdownList_MediaEdit')
+data.setCell(6, 1, 'Search_Hide')
 data.setCell(6, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(6, 3, 9653);
+data.setCell(6, 3, 8011);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Search_Hide')
+data.setCell(7, 1, 'Search_CancelTopping')
 data.setCell(7, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(7, 3, 8015);
+data.setCell(7, 3, 8009);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Search_CancelTopping')
+data.setCell(8, 1, 'Search_AddWord')
 data.setCell(8, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(8, 3, 8012);
+data.setCell(8, 3, 6015);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Search_CancelHide')
+data.setCell(9, 1, 'Search_CancelRecommend')
 data.setCell(9, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(9, 3, 8010);
+data.setCell(9, 3, 6013);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Search_CancelRecommend')
+data.setCell(10, 1, 'Search_EditPicture')
 data.setCell(10, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(10, 3, 6011);
+data.setCell(10, 3, 4012);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Search_AddWord')
+data.setCell(11, 1, 'DropdownList_EditAll')
 data.setCell(11, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(11, 3, 6010);
+data.setCell(11, 3, 4011);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'DropdownList_EditAll')
+data.setCell(12, 1, 'Search_Engines')
 data.setCell(12, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(12, 3, 4012);
+data.setCell(12, 3, 3003);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Search_EditPicture')
+data.setCell(13, 1, 'Search_EnginesSet')
 data.setCell(13, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(13, 3, 4012);
+data.setCell(13, 3, 3003);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'Search_Engines')
+data.setCell(14, 1, 'DropdownList_Show2')
 data.setCell(14, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(14, 3, 3006);
+data.setCell(14, 3, 3003);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'DropdownList_Show2')
+data.setCell(15, 1, 'DropdownList_IndustryEdit')
 data.setCell(15, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(15, 3, 3004);
+data.setCell(15, 3, 2059);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'Search_EnginesSet')
+data.setCell(16, 1, 'DropdownList_IndustryOrder')
 data.setCell(16, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(16, 3, 3004);
+data.setCell(16, 3, 2024);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'DropdownList_IndustryNavigation_Head')
+data.setCell(17, 1, 'DropdownList_IndustryNewOpen')
 data.setCell(17, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(17, 3, 2162);
+data.setCell(17, 3, 2022);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'DropdownList_IndustryEdit')
+data.setCell(18, 1, 'DropdownList_CorporateNavigation_Head')
 data.setCell(18, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(18, 3, 2061);
+data.setCell(18, 3, 2017);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'DropdownList_IndustryNavigation_Bottom')
+data.setCell(19, 1, 'DropdownList_MediaOrder')
 data.setCell(19, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(19, 3, 2013);
+data.setCell(19, 3, 2016);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'DropdownList_MediaNavigation_All')
+data.setCell(20, 1, 'DropdownList_IndustryNavigation_All')
 data.setCell(20, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(20, 3, 2011);
+data.setCell(20, 3, 2016);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'DropdownList_IndustryNavigation_All')
+data.setCell(21, 1, 'DropdownList_CorporateOrder')
 data.setCell(21, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(21, 3, 2010);
+data.setCell(21, 3, 2012);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'DropdownList_CorporateNavigation_Bottom')
+data.setCell(22, 1, 'DropdownList_MediaNewOpen')
 data.setCell(22, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(22, 3, 2010);
+data.setCell(22, 3, 2012);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'DropdownList_MediaNavigation_Bottom')
 data.setCell(23, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(23, 3, 2009);
+data.setCell(23, 3, 2011);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'Search_EditPicture_Delete')
+data.setCell(24, 1, 'DropdownList_CorporateNewOpen')
 data.setCell(24, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(24, 3, 2009);
+data.setCell(24, 3, 2010);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'DropdownList_Move')
+data.setCell(25, 1, 'DropdownList_MediaNavigation_Head')
 data.setCell(25, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(25, 3, 2009);
+data.setCell(25, 3, 2010);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'DropdownList_IndustryNewOpen')
+data.setCell(26, 1, 'Search_EditPicture_Delete')
 data.setCell(26, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(26, 3, 2009);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'DropdownList_CorporateNewOpen')
+data.setCell(27, 1, 'DropdownList_AddChild')
 data.setCell(27, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(27, 3, 2009);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'Search_RecycleBin')
+data.setCell(28, 1, 'DropdownList_CorporateNavigation_All')
 data.setCell(28, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(28, 3, 2009);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'DropdownList_CorporateNavigation_All')
+data.setCell(29, 1, 'DropdownList_up')
 data.setCell(29, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(29, 3, 2008);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'DropdownList_AddChild')
+data.setCell(30, 1, 'DropdownList_MediaNavigation_All')
 data.setCell(30, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(30, 3, 2008);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'DropdownList_AddChild_child')
+data.setCell(31, 1, 'DropdownList_IndustryNavigation_Bottom')
 data.setCell(31, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(31, 3, 2008);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'DropdownList_MediaNewOpen')
+data.setCell(32, 1, 'DropdownList_Move')
 data.setCell(32, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(32, 3, 2008);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'Search_Copy')
 data.setCell(33, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(33, 3, 2008);
+data.setCell(33, 3, 2007);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'DropdownList_AddChild1')
+data.setCell(34, 1, 'DropdownList_CorporateNavigation_Bottom')
 data.setCell(34, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(34, 3, 2007);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'DropdownList_MediaOrder')
+data.setCell(35, 1, 'Search_CopyEnglish')
 data.setCell(35, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(35, 3, 2007);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'DropdownList_CorporateOrder')
+data.setCell(36, 1, 'Search_RecycleBin')
 data.setCell(36, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(36, 3, 2007);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'DropdownList_IndustryOrder')
+data.setCell(37, 1, 'DropdownList_Delete')
 data.setCell(37, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(37, 3, 2007);
+data.setCell(37, 3, 2006);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'DropdownList_Delete')
+data.setCell(38, 1, 'DropdownList_AddChild1')
 data.setCell(38, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(38, 3, 2006);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'Search_CopyEnglish')
+data.setCell(39, 1, 'DropdownList_IndustryNavigation_Head')
 data.setCell(39, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(39, 3, 2006);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'DropdownList_up')
+data.setCell(40, 1, 'DropdownList_AddChild_child')
 data.setCell(40, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(40, 3, 2006);
+data.setCell(40, 3, 2005);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'Search_Topping')
+data.setCell(41, 1, 'DropdownList_English')
 data.setCell(41, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(41, 3, 7);
+data.setCell(41, 3, 6);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'Search_AddPicture')
+data.setCell(42, 1, 'Search_Recommend')
 data.setCell(42, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(42, 3, 6);
+data.setCell(42, 3, 5);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'Search_Recommend')
+data.setCell(43, 1, 'DropdownList_EditMedia')
 data.setCell(43, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(43, 3, 4);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'DropdownList_EditMedia')
+data.setCell(44, 1, 'Search_RecycleBin_Reduction')
 data.setCell(44, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(44, 3, 4);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'Search_RecycleBin_Reduction')
+data.setCell(45, 1, 'Search_Topping')
 data.setCell(45, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(45, 3, 4);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'DropdownList_English')
+data.setCell(46, 1, 'Search_AddPicture')
 data.setCell(46, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(46, 3, 3);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'DropdownList_EditIndustry')
+data.setCell(47, 1, 'DropdownList_EditCorporate')
 data.setCell(47, 2, 'com.webtest.demo.Drop_down_list')
-data.setCell(47, 3, 2);
+data.setCell(47, 3, 3);
 data.setCell(48, 0, 48)
 data.setCell(48, 1, 'Search_Delete_completely')
 data.setCell(48, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(48, 3, 2);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'DropdownList_EditCorporate')
+data.setCell(49, 1, 'DropdownList_EditIndustry')
 data.setCell(49, 2, 'com.webtest.demo.Drop_down_list')
 data.setCell(49, 3, 1);
 window.suiteTableData['s1']= { tableData: data, tableDiv: 'times-div-s1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-s1">
               </div> <!-- times-div-s1 -->
             </div> <!-- times-div -->
@@ -1341,285 +1351,289 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBackLogin</span>
-                <span class="method-start">6826 ms</span>
+                <span class="method-start">5676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogin</span>
-                <span class="method-start">19860 ms</span>
+                <span class="method-start">18721 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DropdownList_Show</span>
-                <span class="method-start">36377 ms</span>
+                <span class="method-start">35449 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DropdownList_MediaEdit</span>
-                <span class="method-start">46956 ms</span>
+                <span class="method-start">46258 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DropdownList_IndustryEdit</span>
-                <span class="method-start">56609 ms</span>
+                <span class="method-start">55957 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DropdownList_CorporateEdit</span>
-                <span class="method-start">58670 ms</span>
+                <span class="method-start">58016 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">DropdownList_MediaNavigation_Head</span>
-                <span class="method-start">72286 ms</span>
+                <span class="method-start">68534 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">DropdownList_CorporateNavigation_Head</span>
-                <span class="method-start">89940 ms</span>
+                <span class="method-start">70550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_IndustryNavigation_Head</span>
-                <span class="method-start">107656 ms</span>
+                <span class="method-start">72567 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_MediaNavigation_Bottom</span>
-                <span class="method-start">109819 ms</span>
+                <span class="method-start">74574 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_CorporateNavigation_Bottom</span>
-                <span class="method-start">111828 ms</span>
+                <span class="method-start">76585 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_IndustryNavigation_Bottom</span>
-                <span class="method-start">113838 ms</span>
+                <span class="method-start">78593 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_MediaNavigation_All</span>
-                <span class="method-start">115854 ms</span>
+                <span class="method-start">80601 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_CorporateNavigation_All</span>
-                <span class="method-start">117866 ms</span>
+                <span class="method-start">82609 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_IndustryNavigation_All</span>
-                <span class="method-start">119875 ms</span>
+                <span class="method-start">84619 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_MediaNewOpen</span>
-                <span class="method-start">121885 ms</span>
+                <span class="method-start">86636 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_CorporateNewOpen</span>
-                <span class="method-start">123893 ms</span>
+                <span class="method-start">88648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_IndustryNewOpen</span>
-                <span class="method-start">125902 ms</span>
+                <span class="method-start">90659 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_MediaOrder</span>
-                <span class="method-start">127912 ms</span>
+                <span class="method-start">92682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_CorporateOrder</span>
-                <span class="method-start">129920 ms</span>
+                <span class="method-start">94699 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_IndustryOrder</span>
-                <span class="method-start">131927 ms</span>
+                <span class="method-start">96712 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_AddChild</span>
-                <span class="method-start">133934 ms</span>
+                <span class="method-start">98736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_AddChild1</span>
-                <span class="method-start">135942 ms</span>
+                <span class="method-start">100746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_AddChild_child</span>
-                <span class="method-start">137949 ms</span>
+                <span class="method-start">102752 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_up</span>
-                <span class="method-start">139958 ms</span>
+                <span class="method-start">104757 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_Move</span>
-                <span class="method-start">141964 ms</span>
+                <span class="method-start">106765 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_Delete</span>
-                <span class="method-start">143973 ms</span>
+                <span class="method-start">108773 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_EditAll</span>
-                <span class="method-start">145980 ms</span>
+                <span class="method-start">110779 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_EditMedia</span>
-                <span class="method-start">149992 ms</span>
+                <span class="method-start">114791 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_EditIndustry</span>
-                <span class="method-start">149996 ms</span>
+                <span class="method-start">114795 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_EditCorporate</span>
-                <span class="method-start">149999 ms</span>
+                <span class="method-start">114797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_Show2</span>
-                <span class="method-start">150001 ms</span>
+                <span class="method-start">114800 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_Engines</span>
-                <span class="method-start">153005 ms</span>
+                <span class="method-start">117803 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_EnginesSet</span>
-                <span class="method-start">156012 ms</span>
+                <span class="method-start">120806 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_Recommend</span>
-                <span class="method-start">159016 ms</span>
+                <span class="method-start">123809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Search_CancelRecommend</span>
-                <span class="method-start">159020 ms</span>
+                <span class="method-start">123815 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_Topping</span>
-                <span class="method-start">165031 ms</span>
+                <span class="method-start">129828 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Search_CancelTopping</span>
-                <span class="method-start">165038 ms</span>
+                <span class="method-start">129833 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Search_Hide</span>
-                <span class="method-start">173051 ms</span>
+                <span class="method-start">137842 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Search_CancelHide</span>
-                <span class="method-start">181066 ms</span>
+                <span class="method-start">145853 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_Copy</span>
-                <span class="method-start">189077 ms</span>
+                <span class="method-start">153865 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_CopyEnglish</span>
-                <span class="method-start">191085 ms</span>
+                <span class="method-start">155872 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_RecycleBin</span>
-                <span class="method-start">193091 ms</span>
+                <span class="method-start">157879 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_RecycleBin_Reduction</span>
-                <span class="method-start">195100 ms</span>
+                <span class="method-start">159887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_Delete_completely</span>
-                <span class="method-start">195104 ms</span>
+                <span class="method-start">159891 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_AddWord</span>
-                <span class="method-start">195107 ms</span>
+                <span class="method-start">159893 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_EditPicture</span>
-                <span class="method-start">201117 ms</span>
+                <span class="method-start">165908 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_EditPicture_Delete</span>
-                <span class="method-start">205129 ms</span>
+                <span class="method-start">169921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Search_AddPicture</span>
-                <span class="method-start">207139 ms</span>
+                <span class="method-start">171931 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DropdownList_English</span>
-                <span class="method-start">207146 ms</span>
+                <span class="method-start">171934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">doAfterMethod</span>
-                <span class="method-start">207150 ms</span>
+                <span class="method-start">171941 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

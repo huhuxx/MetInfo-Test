@@ -1,49 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="38" ignored="0" total="50" passed="12">
+<testng-results skipped="0" failed="40" ignored="0" total="50" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="s1" duration-ms="207224" started-at="2020-12-09T13:51:41 CST" finished-at="2020-12-09T13:55:09 CST">
+  <suite name="s1" duration-ms="172006" started-at="2020-12-09T14:10:37 CST" finished-at="2020-12-09T14:13:29 CST">
     <groups>
     </groups>
-    <test name="t2" duration-ms="207224" started-at="2020-12-09T13:51:41 CST" finished-at="2020-12-09T13:55:09 CST">
+    <test name="t2" duration-ms="172006" started-at="2020-12-09T14:10:37 CST" finished-at="2020-12-09T14:13:29 CST">
       <class name="com.webtest.demo.Drop_down_list">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="doBeforeClass" is-config="true" duration-ms="6816" started-at="2020-12-09T13:51:41 CST" finished-at="2020-12-09T13:51:48 CST">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="doBeforeClass" is-config="true" duration-ms="5666" started-at="2020-12-09T14:10:37 CST" finished-at="2020-12-09T14:10:43 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="testBackLogin()[pri:1, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="testBackLogin" duration-ms="13032" started-at="2020-12-09T13:51:48 CST" finished-at="2020-12-09T13:52:01 CST">
+        <test-method status="PASS" signature="testBackLogin()[pri:1, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="testBackLogin" duration-ms="13040" started-at="2020-12-09T14:10:43 CST" finished-at="2020-12-09T14:10:56 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBackLogin -->
-        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="testLogin" duration-ms="16517" started-at="2020-12-09T13:52:01 CST" finished-at="2020-12-09T13:52:18 CST">
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="testLogin" duration-ms="16727" started-at="2020-12-09T14:10:56 CST" finished-at="2020-12-09T14:11:12 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="DropdownList_Show()[pri:3, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_Show" duration-ms="10578" started-at="2020-12-09T13:52:18 CST" finished-at="2020-12-09T13:52:28 CST">
+        <test-method status="PASS" signature="DropdownList_Show()[pri:3, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_Show" duration-ms="10808" started-at="2020-12-09T14:11:12 CST" finished-at="2020-12-09T14:11:23 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_Show -->
-        <test-method status="PASS" signature="DropdownList_MediaEdit()[pri:4, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaEdit" duration-ms="9653" started-at="2020-12-09T13:52:28 CST" finished-at="2020-12-09T13:52:38 CST">
+        <test-method status="PASS" signature="DropdownList_MediaEdit()[pri:4, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaEdit" duration-ms="9699" started-at="2020-12-09T14:11:23 CST" finished-at="2020-12-09T14:11:33 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaEdit -->
-        <test-method status="PASS" signature="DropdownList_IndustryEdit()[pri:5, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryEdit" duration-ms="2061" started-at="2020-12-09T13:52:38 CST" finished-at="2020-12-09T13:52:40 CST">
+        <test-method status="PASS" signature="DropdownList_IndustryEdit()[pri:5, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryEdit" duration-ms="2059" started-at="2020-12-09T14:11:33 CST" finished-at="2020-12-09T14:11:35 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryEdit -->
-        <test-method status="PASS" signature="DropdownList_CorporateEdit()[pri:6, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateEdit" duration-ms="13616" started-at="2020-12-09T13:52:40 CST" finished-at="2020-12-09T13:52:54 CST">
+        <test-method status="PASS" signature="DropdownList_CorporateEdit()[pri:6, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateEdit" duration-ms="10518" started-at="2020-12-09T14:11:35 CST" finished-at="2020-12-09T14:11:45 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateEdit -->
-        <test-method status="PASS" signature="DropdownList_MediaNavigation_Head()[pri:7, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaNavigation_Head" duration-ms="17654" started-at="2020-12-09T13:52:54 CST" finished-at="2020-12-09T13:53:11 CST">
+        <test-method status="FAIL" signature="DropdownList_MediaNavigation_Head()[pri:7, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaNavigation_Head" duration-ms="2010" started-at="2020-12-09T14:11:45 CST" finished-at="2020-12-09T14:11:47 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.webtest.demo.Drop_down_list.DropdownList_MediaNavigation_Head(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.TestNG.privateMain(TestNG.java:1371)
+at org.testng.TestNG.main(TestNG.java:1335)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaNavigation_Head -->
-        <test-method status="PASS" signature="DropdownList_CorporateNavigation_Head()[pri:8, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateNavigation_Head" duration-ms="17716" started-at="2020-12-09T13:53:11 CST" finished-at="2020-12-09T13:53:29 CST">
+        <test-method status="FAIL" signature="DropdownList_CorporateNavigation_Head()[pri:8, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateNavigation_Head" duration-ms="2017" started-at="2020-12-09T14:11:47 CST" finished-at="2020-12-09T14:11:49 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.webtest.demo.Drop_down_list.DropdownList_CorporateNavigation_Head(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.TestNG.privateMain(TestNG.java:1371)
+at org.testng.TestNG.main(TestNG.java:1335)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateNavigation_Head -->
-        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_Head()[pri:9, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryNavigation_Head" duration-ms="2162" started-at="2020-12-09T13:53:29 CST" finished-at="2020-12-09T13:53:31 CST">
+        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_Head()[pri:9, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryNavigation_Head" duration-ms="2006" started-at="2020-12-09T14:11:49 CST" finished-at="2020-12-09T14:11:51 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -81,7 +149,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryNavigation_Head -->
-        <test-method status="FAIL" signature="DropdownList_MediaNavigation_Bottom()[pri:10, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaNavigation_Bottom" duration-ms="2009" started-at="2020-12-09T13:53:31 CST" finished-at="2020-12-09T13:53:33 CST">
+        <test-method status="FAIL" signature="DropdownList_MediaNavigation_Bottom()[pri:10, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaNavigation_Bottom" duration-ms="2011" started-at="2020-12-09T14:11:51 CST" finished-at="2020-12-09T14:11:53 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -119,7 +187,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaNavigation_Bottom -->
-        <test-method status="FAIL" signature="DropdownList_CorporateNavigation_Bottom()[pri:11, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateNavigation_Bottom" duration-ms="2010" started-at="2020-12-09T13:53:33 CST" finished-at="2020-12-09T13:53:35 CST">
+        <test-method status="FAIL" signature="DropdownList_CorporateNavigation_Bottom()[pri:11, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateNavigation_Bottom" duration-ms="2007" started-at="2020-12-09T14:11:53 CST" finished-at="2020-12-09T14:11:55 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -157,7 +225,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateNavigation_Bottom -->
-        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_Bottom()[pri:12, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryNavigation_Bottom" duration-ms="2013" started-at="2020-12-09T13:53:35 CST" finished-at="2020-12-09T13:53:37 CST">
+        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_Bottom()[pri:12, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryNavigation_Bottom" duration-ms="2008" started-at="2020-12-09T14:11:55 CST" finished-at="2020-12-09T14:11:57 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -195,7 +263,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryNavigation_Bottom -->
-        <test-method status="FAIL" signature="DropdownList_MediaNavigation_All()[pri:13, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaNavigation_All" duration-ms="2011" started-at="2020-12-09T13:53:37 CST" finished-at="2020-12-09T13:53:39 CST">
+        <test-method status="FAIL" signature="DropdownList_MediaNavigation_All()[pri:13, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaNavigation_All" duration-ms="2008" started-at="2020-12-09T14:11:57 CST" finished-at="2020-12-09T14:12:00 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -233,7 +301,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaNavigation_All -->
-        <test-method status="FAIL" signature="DropdownList_CorporateNavigation_All()[pri:14, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateNavigation_All" duration-ms="2008" started-at="2020-12-09T13:53:39 CST" finished-at="2020-12-09T13:53:41 CST">
+        <test-method status="FAIL" signature="DropdownList_CorporateNavigation_All()[pri:14, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateNavigation_All" duration-ms="2009" started-at="2020-12-09T14:12:00 CST" finished-at="2020-12-09T14:12:02 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -271,7 +339,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateNavigation_All -->
-        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_All()[pri:15, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryNavigation_All" duration-ms="2010" started-at="2020-12-09T13:53:41 CST" finished-at="2020-12-09T13:53:43 CST">
+        <test-method status="FAIL" signature="DropdownList_IndustryNavigation_All()[pri:15, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryNavigation_All" duration-ms="2016" started-at="2020-12-09T14:12:02 CST" finished-at="2020-12-09T14:12:04 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -309,7 +377,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryNavigation_All -->
-        <test-method status="FAIL" signature="DropdownList_MediaNewOpen()[pri:16, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaNewOpen" duration-ms="2008" started-at="2020-12-09T13:53:43 CST" finished-at="2020-12-09T13:53:45 CST">
+        <test-method status="FAIL" signature="DropdownList_MediaNewOpen()[pri:16, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaNewOpen" duration-ms="2012" started-at="2020-12-09T14:12:04 CST" finished-at="2020-12-09T14:12:06 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -347,7 +415,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaNewOpen -->
-        <test-method status="FAIL" signature="DropdownList_CorporateNewOpen()[pri:17, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateNewOpen" duration-ms="2009" started-at="2020-12-09T13:53:45 CST" finished-at="2020-12-09T13:53:47 CST">
+        <test-method status="FAIL" signature="DropdownList_CorporateNewOpen()[pri:17, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateNewOpen" duration-ms="2010" started-at="2020-12-09T14:12:06 CST" finished-at="2020-12-09T14:12:08 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -385,7 +453,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateNewOpen -->
-        <test-method status="FAIL" signature="DropdownList_IndustryNewOpen()[pri:18, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryNewOpen" duration-ms="2009" started-at="2020-12-09T13:53:47 CST" finished-at="2020-12-09T13:53:49 CST">
+        <test-method status="FAIL" signature="DropdownList_IndustryNewOpen()[pri:18, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryNewOpen" duration-ms="2022" started-at="2020-12-09T14:12:08 CST" finished-at="2020-12-09T14:12:10 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -423,7 +491,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryNewOpen -->
-        <test-method status="FAIL" signature="DropdownList_MediaOrder()[pri:19, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_MediaOrder" duration-ms="2007" started-at="2020-12-09T13:53:49 CST" finished-at="2020-12-09T13:53:51 CST">
+        <test-method status="FAIL" signature="DropdownList_MediaOrder()[pri:19, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_MediaOrder" duration-ms="2016" started-at="2020-12-09T14:12:10 CST" finished-at="2020-12-09T14:12:12 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -461,7 +529,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_MediaOrder -->
-        <test-method status="FAIL" signature="DropdownList_CorporateOrder()[pri:20, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_CorporateOrder" duration-ms="2007" started-at="2020-12-09T13:53:51 CST" finished-at="2020-12-09T13:53:53 CST">
+        <test-method status="FAIL" signature="DropdownList_CorporateOrder()[pri:20, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_CorporateOrder" duration-ms="2012" started-at="2020-12-09T14:12:12 CST" finished-at="2020-12-09T14:12:14 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -499,7 +567,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_CorporateOrder -->
-        <test-method status="FAIL" signature="DropdownList_IndustryOrder()[pri:21, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_IndustryOrder" duration-ms="2007" started-at="2020-12-09T13:53:53 CST" finished-at="2020-12-09T13:53:55 CST">
+        <test-method status="FAIL" signature="DropdownList_IndustryOrder()[pri:21, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_IndustryOrder" duration-ms="2024" started-at="2020-12-09T14:12:14 CST" finished-at="2020-12-09T14:12:16 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -537,7 +605,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_IndustryOrder -->
-        <test-method status="FAIL" signature="DropdownList_AddChild()[pri:22, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_AddChild" duration-ms="2008" started-at="2020-12-09T13:53:55 CST" finished-at="2020-12-09T13:53:57 CST">
+        <test-method status="FAIL" signature="DropdownList_AddChild()[pri:22, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_AddChild" duration-ms="2009" started-at="2020-12-09T14:12:16 CST" finished-at="2020-12-09T14:12:18 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -575,7 +643,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_AddChild -->
-        <test-method status="FAIL" signature="DropdownList_AddChild1()[pri:23, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_AddChild1" duration-ms="2007" started-at="2020-12-09T13:53:57 CST" finished-at="2020-12-09T13:53:59 CST">
+        <test-method status="FAIL" signature="DropdownList_AddChild1()[pri:23, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_AddChild1" duration-ms="2006" started-at="2020-12-09T14:12:18 CST" finished-at="2020-12-09T14:12:20 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -613,7 +681,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_AddChild1 -->
-        <test-method status="FAIL" signature="DropdownList_AddChild_child()[pri:24, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_AddChild_child" duration-ms="2008" started-at="2020-12-09T13:53:59 CST" finished-at="2020-12-09T13:54:01 CST">
+        <test-method status="FAIL" signature="DropdownList_AddChild_child()[pri:24, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_AddChild_child" duration-ms="2005" started-at="2020-12-09T14:12:20 CST" finished-at="2020-12-09T14:12:22 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -651,7 +719,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_AddChild_child -->
-        <test-method status="FAIL" signature="DropdownList_up()[pri:25, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_up" duration-ms="2006" started-at="2020-12-09T13:54:01 CST" finished-at="2020-12-09T13:54:03 CST">
+        <test-method status="FAIL" signature="DropdownList_up()[pri:25, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_up" duration-ms="2008" started-at="2020-12-09T14:12:22 CST" finished-at="2020-12-09T14:12:24 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -689,7 +757,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_up -->
-        <test-method status="FAIL" signature="DropdownList_Move()[pri:26, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_Move" duration-ms="2009" started-at="2020-12-09T13:54:03 CST" finished-at="2020-12-09T13:54:05 CST">
+        <test-method status="FAIL" signature="DropdownList_Move()[pri:26, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_Move" duration-ms="2008" started-at="2020-12-09T14:12:24 CST" finished-at="2020-12-09T14:12:26 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -727,7 +795,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_Move -->
-        <test-method status="FAIL" signature="DropdownList_Delete()[pri:27, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_Delete" duration-ms="2006" started-at="2020-12-09T13:54:05 CST" finished-at="2020-12-09T13:54:07 CST">
+        <test-method status="FAIL" signature="DropdownList_Delete()[pri:27, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_Delete" duration-ms="2006" started-at="2020-12-09T14:12:26 CST" finished-at="2020-12-09T14:12:28 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -765,7 +833,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_Delete -->
-        <test-method status="FAIL" signature="DropdownList_EditAll()[pri:28, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_EditAll" duration-ms="4012" started-at="2020-12-09T13:54:07 CST" finished-at="2020-12-09T13:54:11 CST">
+        <test-method status="FAIL" signature="DropdownList_EditAll()[pri:28, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_EditAll" duration-ms="4011" started-at="2020-12-09T14:12:28 CST" finished-at="2020-12-09T14:12:32 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -803,23 +871,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_EditAll -->
-        <test-method status="FAIL" signature="DropdownList_EditMedia()[pri:29, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_EditMedia" duration-ms="4" started-at="2020-12-09T13:54:11 CST" finished-at="2020-12-09T13:54:11 CST">
+        <test-method status="FAIL" signature="DropdownList_EditMedia()[pri:29, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_EditMedia" duration-ms="4" started-at="2020-12-09T14:12:32 CST" finished-at="2020-12-09T14:12:32 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -866,23 +934,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_EditMedia -->
-        <test-method status="FAIL" signature="DropdownList_EditIndustry()[pri:30, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_EditIndustry" duration-ms="2" started-at="2020-12-09T13:54:11 CST" finished-at="2020-12-09T13:54:11 CST">
+        <test-method status="FAIL" signature="DropdownList_EditIndustry()[pri:30, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_EditIndustry" duration-ms="1" started-at="2020-12-09T14:12:32 CST" finished-at="2020-12-09T14:12:32 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -929,23 +997,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_EditIndustry -->
-        <test-method status="FAIL" signature="DropdownList_EditCorporate()[pri:31, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_EditCorporate" duration-ms="1" started-at="2020-12-09T13:54:11 CST" finished-at="2020-12-09T13:54:11 CST">
+        <test-method status="FAIL" signature="DropdownList_EditCorporate()[pri:31, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_EditCorporate" duration-ms="3" started-at="2020-12-09T14:12:32 CST" finished-at="2020-12-09T14:12:32 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -992,7 +1060,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_EditCorporate -->
-        <test-method status="FAIL" signature="DropdownList_Show2()[pri:32, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_Show2" duration-ms="3004" started-at="2020-12-09T13:54:11 CST" finished-at="2020-12-09T13:54:14 CST">
+        <test-method status="FAIL" signature="DropdownList_Show2()[pri:32, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_Show2" duration-ms="3003" started-at="2020-12-09T14:12:32 CST" finished-at="2020-12-09T14:12:35 CST">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: id=null]]>
@@ -1039,7 +1107,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_Show2 -->
-        <test-method status="FAIL" signature="Search_Engines()[pri:33, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Engines" duration-ms="3006" started-at="2020-12-09T13:54:14 CST" finished-at="2020-12-09T13:54:17 CST">
+        <test-method status="FAIL" signature="Search_Engines()[pri:33, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Engines" duration-ms="3003" started-at="2020-12-09T14:12:35 CST" finished-at="2020-12-09T14:12:38 CST">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: id=null]]>
@@ -1086,7 +1154,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Engines -->
-        <test-method status="FAIL" signature="Search_EnginesSet()[pri:34, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_EnginesSet" duration-ms="3004" started-at="2020-12-09T13:54:17 CST" finished-at="2020-12-09T13:54:20 CST">
+        <test-method status="FAIL" signature="Search_EnginesSet()[pri:34, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_EnginesSet" duration-ms="3003" started-at="2020-12-09T14:12:38 CST" finished-at="2020-12-09T14:12:41 CST">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: id=null]]>
@@ -1133,23 +1201,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_EnginesSet -->
-        <test-method status="FAIL" signature="Search_Recommend()[pri:35, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Recommend" duration-ms="4" started-at="2020-12-09T13:54:20 CST" finished-at="2020-12-09T13:54:20 CST">
+        <test-method status="FAIL" signature="Search_Recommend()[pri:35, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Recommend" duration-ms="5" started-at="2020-12-09T14:12:41 CST" finished-at="2020-12-09T14:12:41 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -1196,11 +1264,11 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Recommend -->
-        <test-method status="PASS" signature="Search_CancelRecommend()[pri:36, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_CancelRecommend" duration-ms="6011" started-at="2020-12-09T13:54:20 CST" finished-at="2020-12-09T13:54:26 CST">
+        <test-method status="PASS" signature="Search_CancelRecommend()[pri:36, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_CancelRecommend" duration-ms="6013" started-at="2020-12-09T14:12:41 CST" finished-at="2020-12-09T14:12:47 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_CancelRecommend -->
-        <test-method status="FAIL" signature="Search_Topping()[pri:37, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Topping" duration-ms="7" started-at="2020-12-09T13:54:26 CST" finished-at="2020-12-09T13:54:26 CST">
+        <test-method status="FAIL" signature="Search_Topping()[pri:37, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Topping" duration-ms="4" started-at="2020-12-09T14:12:47 CST" finished-at="2020-12-09T14:12:47 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1238,19 +1306,19 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Topping -->
-        <test-method status="PASS" signature="Search_CancelTopping()[pri:38, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_CancelTopping" duration-ms="8012" started-at="2020-12-09T13:54:26 CST" finished-at="2020-12-09T13:54:34 CST">
+        <test-method status="PASS" signature="Search_CancelTopping()[pri:38, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_CancelTopping" duration-ms="8009" started-at="2020-12-09T14:12:47 CST" finished-at="2020-12-09T14:12:55 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_CancelTopping -->
-        <test-method status="PASS" signature="Search_Hide()[pri:39, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Hide" duration-ms="8015" started-at="2020-12-09T13:54:34 CST" finished-at="2020-12-09T13:54:42 CST">
+        <test-method status="PASS" signature="Search_Hide()[pri:39, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Hide" duration-ms="8011" started-at="2020-12-09T14:12:55 CST" finished-at="2020-12-09T14:13:03 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Hide -->
-        <test-method status="PASS" signature="Search_CancelHide()[pri:40, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_CancelHide" duration-ms="8010" started-at="2020-12-09T13:54:42 CST" finished-at="2020-12-09T13:54:50 CST">
+        <test-method status="PASS" signature="Search_CancelHide()[pri:40, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_CancelHide" duration-ms="8012" started-at="2020-12-09T14:13:03 CST" finished-at="2020-12-09T14:13:11 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_CancelHide -->
-        <test-method status="FAIL" signature="Search_Copy()[pri:41, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Copy" duration-ms="2008" started-at="2020-12-09T13:54:50 CST" finished-at="2020-12-09T13:54:52 CST">
+        <test-method status="FAIL" signature="Search_Copy()[pri:41, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Copy" duration-ms="2007" started-at="2020-12-09T14:13:11 CST" finished-at="2020-12-09T14:13:13 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1288,7 +1356,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Copy -->
-        <test-method status="FAIL" signature="Search_CopyEnglish()[pri:42, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_CopyEnglish" duration-ms="2006" started-at="2020-12-09T13:54:52 CST" finished-at="2020-12-09T13:54:54 CST">
+        <test-method status="FAIL" signature="Search_CopyEnglish()[pri:42, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_CopyEnglish" duration-ms="2007" started-at="2020-12-09T14:13:13 CST" finished-at="2020-12-09T14:13:15 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1326,7 +1394,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_CopyEnglish -->
-        <test-method status="FAIL" signature="Search_RecycleBin()[pri:43, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_RecycleBin" duration-ms="2009" started-at="2020-12-09T13:54:54 CST" finished-at="2020-12-09T13:54:56 CST">
+        <test-method status="FAIL" signature="Search_RecycleBin()[pri:43, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_RecycleBin" duration-ms="2007" started-at="2020-12-09T14:13:15 CST" finished-at="2020-12-09T14:13:17 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1364,7 +1432,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_RecycleBin -->
-        <test-method status="FAIL" signature="Search_RecycleBin_Reduction()[pri:44, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_RecycleBin_Reduction" duration-ms="4" started-at="2020-12-09T13:54:56 CST" finished-at="2020-12-09T13:54:56 CST">
+        <test-method status="FAIL" signature="Search_RecycleBin_Reduction()[pri:44, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_RecycleBin_Reduction" duration-ms="4" started-at="2020-12-09T14:13:17 CST" finished-at="2020-12-09T14:13:17 CST">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Must provide a location for a move action.]]>
@@ -1408,23 +1476,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_RecycleBin_Reduction -->
-        <test-method status="FAIL" signature="Search_Delete_completely()[pri:45, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_Delete_completely" duration-ms="2" started-at="2020-12-09T13:54:56 CST" finished-at="2020-12-09T13:54:56 CST">
+        <test-method status="FAIL" signature="Search_Delete_completely()[pri:45, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_Delete_completely" duration-ms="2" started-at="2020-12-09T14:13:17 CST" finished-at="2020-12-09T14:13:17 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -1471,7 +1539,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Delete_completely -->
-        <test-method status="FAIL" signature="Search_AddWord()[pri:46, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_AddWord" duration-ms="6010" started-at="2020-12-09T13:54:56 CST" finished-at="2020-12-09T13:55:02 CST">
+        <test-method status="FAIL" signature="Search_AddWord()[pri:46, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_AddWord" duration-ms="6015" started-at="2020-12-09T14:13:17 CST" finished-at="2020-12-09T14:13:23 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1509,7 +1577,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_AddWord -->
-        <test-method status="FAIL" signature="Search_EditPicture()[pri:47, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_EditPicture" duration-ms="4012" started-at="2020-12-09T13:55:02 CST" finished-at="2020-12-09T13:55:07 CST">
+        <test-method status="FAIL" signature="Search_EditPicture()[pri:47, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_EditPicture" duration-ms="4012" started-at="2020-12-09T14:13:23 CST" finished-at="2020-12-09T14:13:27 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1547,7 +1615,7 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_EditPicture -->
-        <test-method status="FAIL" signature="Search_EditPicture_Delete()[pri:48, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_EditPicture_Delete" duration-ms="2009" started-at="2020-12-09T13:55:07 CST" finished-at="2020-12-09T13:55:09 CST">
+        <test-method status="FAIL" signature="Search_EditPicture_Delete()[pri:48, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_EditPicture_Delete" duration-ms="2009" started-at="2020-12-09T14:13:27 CST" finished-at="2020-12-09T14:13:29 CST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1585,23 +1653,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_EditPicture_Delete -->
-        <test-method status="FAIL" signature="Search_AddPicture()[pri:49, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="Search_AddPicture" duration-ms="6" started-at="2020-12-09T13:55:09 CST" finished-at="2020-12-09T13:55:09 CST">
+        <test-method status="FAIL" signature="Search_AddPicture()[pri:49, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="Search_AddPicture" duration-ms="3" started-at="2020-12-09T14:13:29 CST" finished-at="2020-12-09T14:13:29 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -1648,23 +1716,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_AddPicture -->
-        <test-method status="FAIL" signature="DropdownList_English()[pri:50, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="DropdownList_English" duration-ms="3" started-at="2020-12-09T13:55:09 CST" finished-at="2020-12-09T13:55:09 CST">
+        <test-method status="FAIL" signature="DropdownList_English()[pri:50, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="DropdownList_English" duration-ms="6" started-at="2020-12-09T14:13:29 CST" finished-at="2020-12-09T14:13:29 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -1711,23 +1779,23 @@ at org.testng.TestNG.main(TestNG.java:1335)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownList_English -->
-        <test-method status="FAIL" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Drop_down_list@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="55" started-at="2020-12-09T13:55:09 CST" finished-at="2020-12-09T13:55:09 CST">
+        <test-method status="FAIL" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Drop_down_list@3c756e4d]" name="doAfterMethod" is-config="true" duration-ms="53" started-at="2020-12-09T14:13:29 CST" finished-at="2020-12-09T14:13:29 CST">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'XIONGBEAUTY', ip: '192.168.137.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 14592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c614ddbe-bff2-4be2-9af2-ce66321780ca
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5aeb37dc-030b-4130-acc3-3453317a7659
 at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
