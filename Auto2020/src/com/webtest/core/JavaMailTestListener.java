@@ -1,92 +1,139 @@
 package com.webtest.core;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import com.webtest.utils.TestMethods;
-
+import com.webtest.utils.Log;
+import com.webtest.utils.ReadProperties;
+/**
+ * author:xiongjingyi
+ * 
+ */
 public class JavaMailTestListener extends TestListenerAdapter{
-	public static String content="failed testcase"; 
-	public static int caseSize=0;
-	public static int successSize=0;
-	public static int failSize=0;
-	public static int skipSize=0;
-	public static List<TestMethods> testMethodsList=new ArrayList<>();
 	
-	@Override
-	public void onFinish(ITestContext testContext) {
-		// TODO Auto-generated method stub
-//		super.onFinish(testContext);
+	FreemarkerTemplateEngine ft=new FreemarkerTemplateEngine();
 	
-		ITestNGMethod[] methods= this.getAllTestMethods();
-		System.out.println("all cases number:"+methods.length);
-		caseSize=methods.length;
-		
-		//classNames and methods of failed testcase
-		List<ITestResult> failList=this.getFailedTests();
-		failSize=failList.size();
-		System.out.println("failed testcases number is:"+failSize);
-		
-		for (int i = 0; i < failSize; i++) {
-			ITestResult trFail=failList.get(i);
-			
-			TestMethods testMethod=new TestMethods();
-			testMethod.setIndex(i+1);
-			testMethod.setMethodName(trFail.getName());
-			testMethod.setMehthodClassName(trFail.getInstanceName());
-			testMethod.setStatus("Failed");
-			
-			testMethodsList.add(testMethod);
-			String text="className:"+trFail.getInstanceName()+"methodName:"+trFail.getName()+";";
-			content=content+text+" ";
-			System.out.println(text);
-		}
-		System.out.println("*******");
-		System.out.println(content);
-		
-		//"passed testcases
-		List<ITestResult> successList=this.getPassedTests();
-		successSize=successList.size();
-		System.out.println("passed testcases number is:"+successSize);
-		
-		for (int i = 0; i < successSize; i++) {
-			ITestResult trSuccess=successList.get(i);
-				
-			TestMethods testMethod=new TestMethods();
-			testMethod.setIndex(i+1);
-			testMethod.setMethodName(trSuccess.getName());
-			testMethod.setMehthodClassName(trSuccess.getInstanceName());
-			testMethod.setStatus("Passed");
-			testMethodsList.add(testMethod);
-		}	
-		
-		//skipped testcases
-		List<ITestResult> skipList=this.getSkippedTests();
-		skipSize=skipList.size();
-		System.out.println("skipped testcases number is:"+skipSize);
-		
-		for (int i = 0; i < skipSize; i++) {
-			ITestResult trSkip=skipList.get(i);
-				
-			TestMethods testMethod=new TestMethods();
-			testMethod.setIndex(i+1);
-			testMethod.setMethodName(trSkip.getName());
-			testMethod.setMehthodClassName(trSkip.getInstanceName());
-			testMethod.setStatus("Skipped");
-			testMethodsList.add(testMethod);
-		}	
-	
-	
-
-		
-		
+	public JavaMailTestListener() {
+		super();
 	}
 	
-}
+	@SuppressWarnings("unchecked")
+	private String writeResultToMailTemplate()
+	{
+		ITestNGMethod method[]=this.getAllTestMethods();
+		List<?> failedList=this.getFailedTests();
+		List<?> passedList=this.getPassedTests();
+		List<ITestResult> failedList1=new ArrayList<ITestResult>();
+		List<ITestResult> passedList1=new ArrayList<ITestResult>();
+		for(int j=0;j<failedList.size();j++)
+		{
+			ITestResult tr=(ITestResult) failedList.get(j);
+			for(int i=0;i<method.length;i++)
+			{
+				if(tr.getMethod().getMethodName().equals(method[i].getMethodName()))
+				{
+					if(method[i].getDescription()!=null)
+					{
+						tr.setAttribute("name", method[i].getDescription());
+					}
+					else
+					{
+						tr.setAttribute("name", "");
+					}
+					break;
+				}
+			}
+			failedList1.add(tr);
+		}
+		for(int j=0;j<passedList.size();j++)
+		{
+			ITestResult tr=(ITestResult) passedList.get(j);
+			for(int i=0;i<method.length;i++)
+			{
+				if(tr.getMethod().getMethodName().equals(method[i].getMethodName()))
+				{
+					if(method[i].getDescription()!=null)
+					{
+						tr.setAttribute("name", method[i].getDescription());
+					}
+					else
+					{
+						tr.setAttribute("name", "");
+					}
+					break;
+				}
+			}
+			passedList1.add(tr);
+		}
+		@SuppressWarnings("rawtypes")
+		Map context=new HashMap();
+    	context.put("date", new Date());
+        context.put("failedList",failedList);   
+        context.put("passedList",passedList1); 
+        context.put("casesize",passedList.size()+failedList.size()); 
+        context.put("failcasesize",failedList.size());
+        try {
+			String content=ft.run(context);
+			return content;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 
+	
+	@Override
+	public void onFinish(ITestContext testContext){
+		// TODO Auto-generated method stub
+		super.onFinish(testContext);
+		if(System.getProperty("os.name").contains("dow"))
+		{
+			//return;
+		}
+		try {
+			if(ReadProperties.getPropertyValue("enable_email").equals("true"))
+			{
+				String emailContent=this.writeResultToMailTemplate();
+				String emailTitle=ReadProperties.getPropertyValue("mail_title")+"----"+this.getTime();
+				String toMail=ReadProperties.getPropertyValue("to_mail");
+				try {
+					if(this.getFailedTests()!=null&&this.getFailedTests().size()>0)
+					{
+						MailUtil.SendMail(toMail,emailTitle, emailContent);
+						Log.info("email send to "+toMail+" success");
+					}else
+					{
+						MailUtil.SendMail(ReadProperties.getPropertyValue("success_to_mail"),emailTitle, emailContent);
+						Log.info("email send to "+ReadProperties.getPropertyValue("success_to_mail")+" success");
+					}
+				} catch (UnsupportedEncodingException e) {
+					// TODO Auto-generated catch block
+					Log.fatal("email send fail :"+e.getMessage());
+				}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+	}
+	
+  public String getTime()
+    {
+    	java.util.Calendar c=java.util.Calendar.getInstance();    
+        java.text.SimpleDateFormat f=new java.text.SimpleDateFormat("yyyy-MM-dd  hh:mm:ss");    
+       	return  f.format(c.getTime());    
+    }
+	
+}

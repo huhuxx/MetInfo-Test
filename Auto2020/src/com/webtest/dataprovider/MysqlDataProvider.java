@@ -22,7 +22,7 @@ public class MysqlDataProvider {
 			Connection conn = DriverManager
 					.getConnection(url, "root", "123456");
 			if (!conn.isClosed()) {
-				System.out.println("connect success");
+				System.out.println("*********");
 			}
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);

@@ -1,52 +1,32 @@
 package com.webtest.core;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Properties;
 
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestContext;
-import org.testng.TestRunner;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
-import com.webtest.utils.FreeMarker;
 import com.webtest.utils.Log;
-import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
-import freemarker.template.TemplateException;
-
+/**
+ * author:lihuanzhen
+ *
+ */
 
 
 public class BaseTest {
 
 	public  WebDriverEngine webtest;
-	private WebDriver driver;
+	protected WebDriver driver;
 	public String driverType;
 
 	
-	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
-	}
+	
 
 	private WebDriver newWebDriver(String driverType) throws IOException {
 		WebDriver driver = null;
@@ -78,20 +58,39 @@ public class BaseTest {
 
 	@BeforeClass
 	public void doBeforeClass() throws Exception {
-		//open driver
+
 		driverType=ReadProperties.getPropertyValue("driverType");
 		driver = this.newWebDriver(driverType);
 		driver.manage().window().maximize();
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);
-		//login
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
+	
+	
+	
+	}
+	
+	@Test(priority = 1)
+	public void testBackLogin() throws InterruptedException, IOException {
+		webtest.open(ReadProperties.getPropertyValue("url"));
 		webtest.type("name=login_name", ReadProperties.getPropertyValue("username"));
+		Thread.sleep(2000);
 		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		Thread.sleep(2000);
+	}
 	
-	
-	
+	@Test(priority = 2)
+	public void testLogin() throws InterruptedException {
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:99/index.php?lang=cn&pageset=1']");
+		webtest.click("xpath=//a[text()='µ«¬º']");
+		Thread.sleep(2000);
+		webtest.type("name=username", "xjy1");
+		Thread.sleep(2000);
+		webtest.type("name=password", "xjy123456");
+		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block editable-click']");
+		Thread.sleep(2000);
+		System.out.println("≤‚ ‘”√¿˝2");
+		webtest.leaveFrame();
 	}
 
 

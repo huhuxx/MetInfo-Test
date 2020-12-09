@@ -3,18 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.demo.TopSetting">
+      <class name="com.webtest.demo.Drop_down_list">
         <methods>
-          <include name="mailUtil"/>
-          <include name="setPutDown"/>
-          <include name="editHomePageName"/>
+          <include name="DropdownList_EditAll"/>
+          <include name="DropdownList_AddChild"/>
           <include name="doAfterMethod"/>
-          <include name="nationalFlagSetting"/>
-          <include name="languagePosition"/>
+          <include name="DropdownList_Move"/>
+          <include name="Search_RecycleBin"/>
+          <include name="DropdownList_AddChild1"/>
+          <include name="DropdownList_AddChild_child"/>
+          <include name="Search_RecycleBin_Reduction"/>
+          <include name="Search_AddPicture"/>
+          <include name="DropdownList_Delete"/>
+          <include name="DropdownList_up"/>
+          <include name="Search_Copy"/>
           <include name="doBeforeClass"/>
-          <include name="refreshPage"/>
         </methods>
-      </class> <!-- com.webtest.demo.TopSetting -->
+      </class> <!-- com.webtest.demo.Drop_down_list -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

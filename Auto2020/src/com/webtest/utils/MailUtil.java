@@ -1,89 +1,58 @@
 package com.webtest.utils;
 
-
-import java.text.SimpleDateFormat;
+import java.io.IOException;
 import java.util.Properties;
 
-import javax.activation.DataHandler;
-import javax.activation.FileDataSource;
 import javax.mail.Authenticator;
-import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 
-public class MailUtil extends FreeMarker{
-	
-	// sender
-	public String sender = ReadProperties.getPropertyValue("sender");
+import com.webtest.utils.ReadProperties;
 
-	// auth code
-	public String auth_code = ReadProperties.getPropertyValue("auth_code");
-	// tomail
-	public String to = ReadProperties.getPropertyValue("tomail");
+public class MailUtil {
 	
-	// protocol
-	public String pro1 = ReadProperties.getPropertyValue("pro1");
-	public String pro2 = ReadProperties.getPropertyValue("pro2");
-	public String pro3 = ReadProperties.getPropertyValue("pro3");
-	public String value1 = ReadProperties.getPropertyValue("value1");
-	public String value2 = ReadProperties.getPropertyValue("value2");
-	
-	public String dir=ReadProperties.getPropertyValue("dir");
-	public Properties props;
-	
-	public MailUtil() {
-		props = new Properties();
-		props.put(pro1, value1);
-		props.put(pro2, value2);
-		props.put(pro3,true);
+	public void SendMail(String send) throws IOException {
+		String sender = "xiongjingyigirl@126.com";
+		String auth_code = "PDOIJZPIAZHBUFOB";
+		String tomail_receiver = ReadProperties.getPropertyValue("tomail");
+		String[] address = tomail_receiver.split(",");
+		for(String emailaddress: address) {
+			Properties props = new Properties();
+			props.put("mail.transport.protocol", "smtp");
+			props.put("mail.smtp.host", "smtp.126.com");
+			props.put("mail.smtp.auth", true);
+			//1、构造Session对象(邮件会话对象)，设置服务器，授权码，需要Properties对象
+			Session session = Session.getInstance(props,new Authenticator() {
+
+				@Override
+				protected PasswordAuthentication getPasswordAuthentication() {
+					// TODO Auto-generated method stub
+					return new PasswordAuthentication(sender,auth_code);
+				}
+				
+			});
+			
+			//2、创建邮件，创建Message对象，子类MimeMessage
+			//设置发件人、收件人、主题、正文
+			javax.mail.Message message = new MimeMessage(session);
+			try {
+				message.setFrom(new InternetAddress(sender));
+				message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(emailaddress));
+				message.setSubject("hello,我是熊静祎");
+				//发送文本
+				message.setText(send);
+				//3、发送邮件
+				Transport.send(message);
+			} catch (MessagingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 	}
-
-	public void sendMail() {
-		Session session = Session.getInstance(props, new Authenticator() {
-
-			@Override
-			protected PasswordAuthentication getPasswordAuthentication() {
-				// TODO Auto-generated method stub
-				return new PasswordAuthentication(sender, auth_code);
-			}
-
-		});
-		// set sender-receiver-theme-body
-		Message message = new MimeMessage(session);
-		try {
-			
-			message.setFrom(new InternetAddress(sender));
-			String toArray[]=to.split(",");
-			for (int i = 0; i < toArray.length; i++) {
-				message.addRecipient(Message.RecipientType.TO, new InternetAddress(toArray[i]));
-			}
-//			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-//			set title
-			message.setSubject("send testReport --sunyingjiao");
-//			message.setText(content);
-			
-			MimeMultipart mimeMultipart =new MimeMultipart();
-			MimeBodyPart file=new MimeBodyPart();
-			SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
-			DataHandler dataHandler1 = new DataHandler(new FileDataSource(dir +"/report"+ft.format(date)+".html"));
-	        file.setDataHandler(dataHandler1);
-	        
-	        mimeMultipart.addBodyPart(file);
-	        message.setContent(mimeMultipart);
-					
-
-			// send email
-			Transport.send(message);
-		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	
 }

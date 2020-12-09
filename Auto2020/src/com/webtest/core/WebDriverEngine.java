@@ -1,83 +1,73 @@
 package com.webtest.core;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.webtest.utils.Log;
-import com.webtest.utils.ReadProperties;
-
 /**
  * author:lihuanzhen
- * 
+ 
  */
 public class WebDriverEngine {
 
 	WebDriver driver = null;
 	ElementFinder finder = null;
-	Actions action = null;
+	Actions action  =null;
 
 	public WebDriverEngine(WebDriver driver) {
-
+		
 		this.driver = driver;
 		driver.manage().window().maximize();
 		finder = new ElementFinder(driver);
 		action = new Actions(driver);
 	}
-
 	public String[] getAllWindowTitles() {
 		// TODO Auto-generated method stub
-		String current = driver.getWindowHandle();
+	    String current = driver.getWindowHandle();
 
-		List<String> attributes = new ArrayList<String>();
-		for (String handle : driver.getWindowHandles()) {
-			driver.switchTo().window(handle);
-			attributes.add(driver.getTitle());
-		}
+	    List<String> attributes = new ArrayList<String>();
+	    for (String handle : driver.getWindowHandles()) {
+	      driver.switchTo().window(handle);
+	      attributes.add(driver.getTitle());
+	    }
 
-		driver.switchTo().window(current);
+	    driver.switchTo().window(current);
 
-		return attributes.toArray(new String[attributes.size()]);
+	    return attributes.toArray(new String[attributes.size()]);
 	}
-
+	
+	
+	
+	public void refresh() {
+		driver.navigate().refresh();
+	}
+	
 	public void enterFrame(String frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
 		Log.info("Entered iframe " + frameID);
 	}
-
 	public void enterFrame(int frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
 		Log.info("Entered iframe " + frameID);
 	}
-
+	
 	public void enterFrame1(String locator) {
 		WebElement element = finder.findElement(locator);
 		this.pause(3000);
 		driver.switchTo().frame(element);
 		Log.info("Entered iframe " + element);
 	}
-	
+
 
 	public void leaveFrame() {
 		driver.switchTo().defaultContent();
@@ -91,6 +81,7 @@ public class WebDriverEngine {
 			pause(5000);
 		} catch (Exception e) {
 			e.printStackTrace();
+
 		}
 		Log.info("Opened url " + url);
 	}
@@ -119,13 +110,20 @@ public class WebDriverEngine {
 		}
 		return false;
 	}
-
 	public void enter() {
 		action.sendKeys(Keys.ENTER);
 	}
 
 	public void typeAndClear(String locator, String value) {
 		WebElement element = finder.findElement(locator);
+		if (element != null) {
+			element.clear();
+			element.sendKeys(value);
+
+		}
+	}
+	
+	public void typeAndClear(WebElement element, String value) {
 		if (element != null) {
 			element.clear();
 			element.sendKeys(value);
@@ -139,11 +137,7 @@ public class WebDriverEngine {
 			element.sendKeys(value);
 		}
 	}
-	public void type(WebElement element,String value) {
-		if (element != null) {
-			element.sendKeys(value);
-		}
-	}
+
 	public boolean isChecked(String locator) {
 		WebElement element = finder.findElement(locator);
 		return element.isSelected();
@@ -157,11 +151,7 @@ public class WebDriverEngine {
 			this.pause(3000);
 		}
 	}
-	public void click(WebElement element) {
-		if (element != null) {
-			element.click();
-		}	
-	}
+
 	public void clickLonger(String locator) {
 
 		WebElement element = finder.findElement(locator);
@@ -174,7 +164,7 @@ public class WebDriverEngine {
 
 	public void doubleClick(String locator) throws InterruptedException {
 		WebElement element = finder.findElement(locator);
-
+	
 		action.doubleClick(element).build().perform();
 	}
 
@@ -208,14 +198,10 @@ public class WebDriverEngine {
 			return false;
 		}
 	}
-	
-	public String getValue(String locator,String attribute) {
 
-		return finder.findElement(locator).getAttribute(attribute);
-	}
-	public String getValue(WebElement element,String attribute) {
+	public String getValue(String locator) {
 
-		return element.getAttribute(attribute);
+		return finder.findElement(locator).getAttribute("value");
 	}
 
 	public String getUrl() {
@@ -225,10 +211,7 @@ public class WebDriverEngine {
 	public void goBack() {
 		driver.navigate().back();
 	}
-	
-	public void refresh() {
-		driver.navigate().refresh();
-	}
+
 	public void goForward() {
 
 		driver.navigate().forward();
@@ -238,7 +221,6 @@ public class WebDriverEngine {
 		Alert alert = driver.switchTo().alert();
 		return alert;
 	}
-
 	public String getAlertTest() {
 
 		return getAlert().getText();
@@ -247,7 +229,7 @@ public class WebDriverEngine {
 	public void alertAccept() {
 
 		getAlert().accept();
-	}
+		}
 
 	public Select getSelect(String locator) {
 		Select inputSelect = new Select(finder.findElement(locator));
@@ -258,10 +240,7 @@ public class WebDriverEngine {
 		getSelect(locator).selectByValue(value);
 		this.pause(5000);
 	}
-	public void selectByValue(Select element, String value) {
-		element.selectByValue(value);
-		this.pause(5000);
-	}
+
 	public void selectByVisibleText(String locator, String value) {
 		getSelect(locator).selectByVisibleText(value);
 	}
@@ -269,6 +248,8 @@ public class WebDriverEngine {
 	public void selectByIndex(String locator, int index) {
 		getSelect(locator).selectByIndex(index);
 	}
+
+	
 
 	public String getHtmlSource() {
 
@@ -278,12 +259,8 @@ public class WebDriverEngine {
 	public void runJs(String js) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
-		
 	}
-	public void runJs(String js,WebElement element) {
-		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript(js, element);
-	}
+
 
 	public void mouseToElement(String locator) throws InterruptedException {
 		action.moveToElement(finder.findElement(locator)).perform();
@@ -292,61 +269,45 @@ public class WebDriverEngine {
 	public void mouseToElementandClick(String locator) throws InterruptedException {
 		action.moveToElement(finder.findElement(locator)).click().perform();
 	}
-
-	public void switchWidow(int i) {
-		List<String> windows = new ArrayList<String>();
-		for (String handle : driver.getWindowHandles()) {
-
-			windows.add(handle);
-		}
-		driver.switchTo().window(windows.get(i));
+	public void switchWidow(int i){
+	    List<String> windows = new ArrayList<String>();
+	    for (String handle : driver.getWindowHandles()) {
+	    
+	    	windows.add(handle);
+	    }
+	    driver.switchTo().window(windows.get(i));
 	}
-
-	// �Ҽ�
+	//�Ҽ�
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
-	}
-
-	// Tab��
-	public void tapClick() {
-
-		action.sendKeys(Keys.TAB).perform();
-	}
-
-	public void tapType(String content) {
-
-		action.sendKeys(content).perform();
-	}
-
-	//down
-	public void down(int x) {
-		for (int i = 0; i < x; i++) {
-			action.sendKeys(Keys.DOWN).perform();
 		}
-		
+	//Tab��
+	public void tapClick(){
+	
+		action.sendKeys(Keys.TAB).perform();;
 	}
-	public void getWindow(int i) {
+	
+	public void tapType(String content){
+		
+			action.sendKeys(content).perform();
+		}
+	
+	public void getWindow(int i){
 		List<String> windows = new ArrayList<String>();
-		for (String handle : driver.getWindowHandles()) {
-			// System.out.println(handle); //杩涘叆鍒扮浜屼釜椤甸潰
+		for (String handle : driver.getWindowHandles())
+		{
+			//System.out.println(handle);  
 			windows.add(handle);
 		}
 		driver.switchTo().window(windows.get(i));
 	}
-	public List<WebElement> getElementsList(String target) {
-		List<WebElement> elements=finder.findElements(target);
+	
+	public List<WebElement> findElements(String target) {	
+		List<WebElement> elements = finder.findElements(target);
 		return elements;
 	}
-	public void chooseLocalImg(String fileName,String imgTitle) throws InterruptedException {
-		this.doubleClick("xpath=//a[@data-path='/upload/"+fileName+"']");
-		Thread.sleep(2000);
-		this.click("xpath=//div[@title='"+imgTitle+"']");
-//		this.click("xpath=//div[@class='modal-dialog modal-dialog- modal-xl my-0 mx-auto h-100']/div//button[@class='btn btn-primary']");
-	}
-	public void dragAndDrop(WebElement drag,WebElement drop) {
-		action.dragAndDrop(drag, drop).build().perform();
-	}
-	public WebElement getElement(String target) {
-		return finder.findElement(target);
-	}
+
+	
+	
+	
 }

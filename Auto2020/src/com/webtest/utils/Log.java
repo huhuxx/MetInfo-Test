@@ -2,7 +2,10 @@ package com.webtest.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+/**
+ * author:xiongjingyi
+ * 
+ */
 public class Log {
 	static Logger logger = LogManager.getLogger(Log.class);
 
