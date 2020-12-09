@@ -23,6 +23,5 @@
             <AppenderRef ref="STDOUT"/>
         </Root>
     </Loggers>
- 
- 
+
 </Configuration>
